@@ -1,0 +1,2447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#173d2a">
+<title>Tree ID Flashcards</title>
+<style>
+:root{
+  --bg:#eef3ed;--panel:#ffffff;--ink:#173126;--muted:#627268;
+  --green:#21633f;--green2:#2f8055;--pale:#dcebdd;--gold:#d6a83f;
+  --bad:#b84a45;--line:#d7e0d8;--shadow:0 8px 24px rgba(24,55,38,.10);
+  --header-art:url('/header-art.png');--hero-art:url('/header-art.png');
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+button:disabled{opacity:.45;cursor:not-allowed}
+header{
+  position:sticky;top:0;z-index:5;
+  color:#fff;padding:14px 16px 12px;box-shadow:0 8px 22px rgba(0,0,0,.26);
+  background:
+    linear-gradient(180deg,rgba(6,10,9,.18),rgba(8,12,10,.62)),
+    linear-gradient(90deg,rgba(12,18,15,.96),rgba(17,28,22,.82) 35%,rgba(20,30,24,.74) 65%,rgba(13,19,16,.9)),
+    var(--header-art);
+  background-size:cover;
+  background-position:center 28%;
+  border-bottom:1px solid rgba(212,184,115,.20)
+}
+.header-row{max-width:900px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.header-logo{
+  width:52px;height:52px;border-radius:14px;flex:0 0 52px;object-fit:cover;
+  box-shadow:0 8px 18px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.18);
+  border:1px solid rgba(223,196,133,.34);background:#1b251f
+}
+.brand-copy{min-width:0}
+h1{font-size:21px;margin:0;line-height:1.05;text-shadow:0 1px 4px rgba(0,0,0,.42)}
+.header-tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#e7d8ae;opacity:.95;margin-top:2px}
+.subtitle{font-size:12px;opacity:.84;margin-top:3px;color:#e7efea}
+.home-btn{
+  border:1px solid rgba(255,255,255,.28);
+  background:rgba(255,255,255,.10);backdrop-filter:blur(4px);
+  color:white;border-radius:12px;padding:9px 12px;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)
+}
+main{max-width:900px;margin:auto;padding:16px 14px 42px}
+.view{display:none}.view.active{display:block}
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(12,18,15,.28),rgba(10,14,12,.62)),
+    var(--hero-art);
+  background-size:cover;
+  background-position:center 34%;
+  color:white;border-radius:22px;padding:24px 18px;box-shadow:var(--shadow);margin-bottom:15px;
+  border:1px solid rgba(212,184,115,.18)
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 22% 22%, rgba(255,230,170,.10), transparent 18%),
+    linear-gradient(135deg, rgba(255,255,255,.04), transparent 34%);
+}
+.hero > *{position:relative;z-index:1}
+.hero h2{margin:0 0 6px;font-size:29px;text-shadow:0 2px 8px rgba(0,0,0,.38)}
+.hero p{margin:0;opacity:.92;color:#ecf0ec}
+.menu-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.menu-card{width:100%;text-align:left;border:0;background:var(--panel);border-radius:17px;padding:18px;box-shadow:var(--shadow);color:var(--ink)}
+.menu-card:active{transform:scale(.99)}
+.menu-card strong{display:block;font-size:19px;margin-bottom:4px}.menu-card span{color:var(--muted);font-size:14px}
+.icon{font-size:27px;float:right;margin-left:12px}
+.panel{background:var(--panel);border-radius:17px;padding:16px;box-shadow:var(--shadow);margin-bottom:14px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.row>*{flex:1}
+label{display:block;font-size:12px;font-weight:750;color:var(--muted);margin:0 0 5px}
+select,input,textarea{width:100%;border:1px solid var(--line);border-radius:11px;padding:11px;background:#fff;color:var(--ink)}
+.primary,.secondary,.danger{border:0;border-radius:12px;padding:12px 15px;font-weight:800}
+.primary{background:var(--green);color:#fff}.secondary{background:var(--pale);color:var(--ink)}.danger{background:#f8dddd;color:#7c2925}
+.small{padding:8px 10px;font-size:13px}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.stat{background:var(--pale);border-radius:999px;padding:7px 11px;font-size:13px;font-weight:750}
+.section-title{font-size:22px;margin:3px 0 12px}.hint{font-size:13px;color:var(--muted);margin:4px 0 12px}
+.flash-wrap{perspective:1000px;margin:16px auto;max-width:620px}
+.flashcard{position:relative;min-height:300px;border:0;width:100%;border-radius:22px;background:transparent;padding:0}
+.flash-inner{position:relative;width:100%;min-height:300px;transition:transform .45s;transform-style:preserve-3d}
+.flashcard.revealed .flash-inner{transform:rotateY(180deg)}
+.flashcard.resetting .flash-inner{transition:none!important;transform:rotateY(0deg)!important}
+.flashcard.resetting .face.back{visibility:hidden}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:white;border-radius:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px;text-align:center;border:2px solid #e1e9e2}
+.face.back{transform:rotateY(180deg);background:#173d2a;color:white;border-color:#173d2a}
+.face .kicker{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800}
+.face.back .kicker{color:#bbd7c5}.face .big{font-size:clamp(27px,7vw,44px);font-weight:850;line-height:1.12;margin:12px 0}
+.face .mini{font-size:15px;color:var(--muted)}.face.back .mini{color:#d8e8de}
+.answer-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:620px;margin:auto}
+.answer-row.three{grid-template-columns:1fr 1fr 1fr}
+.match-board{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.column-title{text-align:center;font-size:12px;color:var(--muted);font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+.match-col{display:flex;flex-direction:column;gap:9px}
+.match-card{min-height:64px;border:2px solid var(--line);border-radius:13px;background:#fff;padding:10px 8px;font-weight:750;color:var(--ink);display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.15}
+.match-card.selected{border-color:var(--gold);background:#fff6d8}
+.match-card.correct{border-color:#3e9b62;background:#dff3e5;color:#215a39;opacity:.52}
+.match-card.wrong{border-color:var(--bad);background:#fae0de;animation:shake .25s}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.message{min-height:24px;text-align:center;font-weight:800;margin:10px 0}
+.good{color:#237344}.bad{color:var(--bad)}
+.progressbar{height:9px;background:#dce4dd;border-radius:99px;overflow:hidden;margin:10px 0}
+.progressbar>div{height:100%;background:var(--green2);width:0%;transition:width .25s}
+.data-table{width:100%;border-collapse:separate;border-spacing:0;font-size:13px}
+.data-table th,.data-table td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.data-table th{color:var(--muted);position:sticky;top:0;z-index:2;background:#fff;box-shadow:0 1px 0 var(--line)}
+.scroll{overflow:auto;max-height:430px;position:relative}
+code{background:#f4f0e4;color:#283126;border:1px solid rgba(72,88,65,.14);border-radius:6px;padding:2px 5px}
+.note{background:#fff7dc;border-left:4px solid var(--gold);padding:11px;border-radius:8px;font-size:13px}
+.footer-note{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}
+.tutorial-step{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start;margin:14px 0}
+.tutorial-number{width:38px;height:38px;border-radius:50%;background:var(--green);color:white;display:flex;align-items:center;justify-content:center;font-weight:850}
+.tutorial-step h3{margin:0 0 4px;font-size:17px}
+.tutorial-step p{margin:0;color:var(--muted);line-height:1.45}
+.tutorial-actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:12px}
+@media(min-width:650px){.tutorial-actions{grid-template-columns:1fr 1fr}}
+.ai-panel{border:2px solid #b8d4c0;background:linear-gradient(180deg,#fff,#f4faf5)}
+.ai-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.ai-title strong{font-size:19px}
+.ai-input-row{display:grid;grid-template-columns:1fr auto auto;gap:8px}
+.ai-input-row input{min-width:0}
+.mic-btn{width:48px;border:0;border-radius:12px;background:var(--pale);font-size:20px}
+.mic-btn.listening{background:#f7d8d5;animation:pulse 1s infinite}
+@keyframes pulse{50%{transform:scale(1.06)}}
+.ai-response{min-height:22px;margin-top:10px;font-size:14px;font-weight:700;white-space:pre-wrap}
+.mic-help{margin-top:7px;font-size:12px;line-height:1.4;color:var(--muted)}
+.mic-help strong{color:var(--ink)}
+.ai-history{margin-top:10px;display:flex;flex-direction:column;gap:7px}
+.ai-log{border-left:4px solid var(--green2);background:#edf6ef;border-radius:8px;padding:9px;font-size:13px}
+.ai-log.user{border-left-color:var(--gold);background:#fff8e3}
+details.ai-settings{margin-top:12px;border-top:1px solid var(--line);padding-top:9px}
+details.ai-settings summary{cursor:pointer;font-weight:800;color:var(--muted)}
+.chips{display:flex;gap:7px;overflow:auto;padding:8px 0 2px}
+.chip{white-space:nowrap;border:1px solid var(--line);background:white;border-radius:999px;padding:7px 10px;font-size:12px;color:var(--ink)}
+.connection-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#b8a77d;margin-right:5px}
+.install-panel{display:none;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px}
+.install-panel.visible{display:grid}
+.install-copy{font-size:13px;line-height:1.4;color:var(--ink)!important}
+.install-copy strong{color:var(--ink)!important}
+.install-actions{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.install-dismiss{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;flex:0 0 38px;
+  border:1px solid var(--line);border-radius:11px;
+  background:var(--pale);color:var(--ink);
+  font-size:24px;font-weight:500;line-height:1;padding:0;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08)
+}
+.install-dismiss:hover,.install-dismiss:focus-visible{filter:brightness(.96);outline:2px solid var(--gold);outline-offset:2px}
+body.theme-mystical .install-copy,body.theme-mystical .install-copy strong{color:#f0eee4!important}
+body.theme-mystical .install-dismiss{background:#2b332c;color:#f0eee4;border-color:rgba(183,141,74,.18)}
+body.theme-journal .install-copy,body.theme-journal .install-copy strong{color:#3e2f1f!important}
+body.theme-journal .install-dismiss{background:#f3e6cb;color:#4d3924;border-color:rgba(114,82,48,.18)}
+body.theme-moonlit .install-copy,body.theme-moonlit .install-copy strong{color:#edf4ff!important}
+body.theme-moonlit .install-dismiss{background:#2a3c56;color:#edf4ff;border-color:rgba(150,190,255,.18)}
+body.theme-reddirt .install-copy,body.theme-reddirt .install-copy strong{color:#f7efe6!important}
+body.theme-reddirt .install-dismiss{background:#6b4334;color:#fff1e8;border-color:rgba(246,188,123,.18)}
+@media(max-width:520px){
+  .install-panel{grid-template-columns:1fr}
+  .install-actions{width:100%}
+  .install-actions #installApp{flex:1}
+}
+.update-banner{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;max-width:620px;margin:auto;background:#173d2a;color:white;border-radius:14px;padding:12px;box-shadow:var(--shadow)}
+.update-banner.visible{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.connection-dot.online{background:#3d9a60}.connection-dot.offline{background:#c05b51}
+@media(max-width:520px){.ai-input-row{grid-template-columns:1fr auto}.ai-input-row .primary{grid-column:1/-1}}
+@media(min-width:650px){.menu-grid{grid-template-columns:1fr 1fr}.match-card{min-height:72px;font-size:16px}}
+
+.skin-panel{margin-top:14px}
+
+/* Theme skins */
+body.theme-mystical{
+  background:
+    radial-gradient(circle at top, rgba(71,98,59,.38), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(183,141,74,.10), transparent 18%),
+    radial-gradient(circle at 15% 85%, rgba(71,98,59,.12), transparent 22%),
+    linear-gradient(180deg,#111712 0%,#182019 46%,#0d120e 100%);
+  color:#f0eee4;
+}
+body.theme-mystical header{
+  background:linear-gradient(180deg,rgba(255,255,255,.04),transparent 55%),linear-gradient(135deg,#121813 0%,#1c281d 52%,#141a15 100%);
+  border-bottom:1px solid rgba(183,141,74,.18);
+  box-shadow:0 10px 24px rgba(0,0,0,.36);
+}
+body.theme-mystical .subtitle,body.theme-mystical .hint{color:#b8c2b5}
+body.theme-mystical .home-btn{border:1px solid rgba(183,141,74,.28);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));color:#f6f1e5;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 10px 24px rgba(0,0,0,.22)}
+body.theme-mystical .hero{position:relative;overflow:hidden;color:#f7f3ea;border:1px solid rgba(183,141,74,.22);box-shadow:0 18px 34px rgba(0,0,0,.35);background:radial-gradient(circle at 85% 15%, rgba(242,211,145,.15), transparent 22%),linear-gradient(180deg,rgba(255,255,255,.05),transparent 45%),linear-gradient(135deg,#172019 0%,#26422c 36%,#202820 68%,#151a15 100%)}
+body.theme-mystical .hero h2{text-shadow:0 2px 10px rgba(0,0,0,.35)}
+body.theme-mystical .hero p{color:#dbe2d8}
+body.theme-mystical .menu-card,
+body.theme-mystical .panel,
+body.theme-mystical .install-panel,
+body.theme-mystical .ai-panel{
+  border:1px solid rgba(183,141,74,.14);
+  background:linear-gradient(180deg,rgba(255,255,255,.045),transparent 65%),linear-gradient(180deg,#212a22,#1a211b);
+  color:#f0eee4;
+  box-shadow:0 10px 24px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.05);
+}
+body.theme-mystical .menu-card strong,body.theme-mystical .section-title,body.theme-mystical label{color:#f3efe4}
+body.theme-mystical .menu-card span,body.theme-mystical .stat,body.theme-mystical .footer-note{color:#d7d1c5}
+body.theme-mystical select,body.theme-mystical input,body.theme-mystical textarea{background:#111712;border:1px solid rgba(183,141,74,.18);color:#f0eee4;box-shadow:inset 0 1px 2px rgba(0,0,0,.25)}
+body.theme-mystical .primary{background:linear-gradient(180deg,#5c7c4f,#35563a);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 8px 18px rgba(0,0,0,.2)}
+body.theme-mystical .secondary{background:linear-gradient(180deg,#323c32,#242d25);color:#ece7da;border:1px solid rgba(183,141,74,.15)}
+body.theme-mystical .danger{background:linear-gradient(180deg,#6a3c38,#472523);color:#fff1ef}
+body.theme-mystical .stat,body.theme-mystical .chip{background:linear-gradient(180deg,#2c352d,#232b24);border:1px solid rgba(183,141,74,.12);color:#f0ecdf}
+body.theme-mystical .progressbar{background:#111712;border:1px solid rgba(183,141,74,.14)}
+body.theme-mystical .progressbar>div{background:linear-gradient(90deg,#6f8b52,#b78d4a)}
+body.theme-mystical .face{background:radial-gradient(circle at 20% 18%, rgba(255,255,255,.45), transparent 18%),linear-gradient(180deg,rgba(255,255,255,.12),transparent 30%),linear-gradient(180deg,#ece6d7,#d9cfba);color:#2d2417;border:1px solid rgba(183,141,74,.22);box-shadow:0 18px 34px rgba(0,0,0,.35)}
+body.theme-mystical .face .kicker{color:#6b5b40}
+body.theme-mystical .face .mini{color:#6a6357}
+body.theme-mystical .face.back{background:radial-gradient(circle at 80% 15%, rgba(255,214,135,.12), transparent 20%),linear-gradient(180deg,rgba(255,255,255,.05),transparent 45%),linear-gradient(135deg,#18211a 0%,#243426 40%,#171c18 100%);color:#f6f1e7;border-color:rgba(183,141,74,.25)}
+body.theme-mystical .face.back .kicker{color:#cdb88f}
+body.theme-mystical .face.back .mini{color:#d8d2c6}
+body.theme-mystical .match-card{border:1px solid rgba(183,141,74,.16);background:linear-gradient(180deg,#232b24,#191f1a);color:#f0eee4;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+body.theme-mystical .match-card.selected{border-color:#b78d4a;background:linear-gradient(180deg,#46351c,#2d261a)}
+body.theme-mystical .match-card.correct{border-color:#7ea867;background:linear-gradient(180deg,#314331,#243125);color:#dcebd6}
+body.theme-mystical .match-card.wrong{border-color:#b66357;background:linear-gradient(180deg,#5a322d,#40211e)}
+body.theme-mystical .note{background:linear-gradient(180deg,#2c281e,#1f1a14);border-left:4px solid #b78d4a;color:#efe7d4}
+body.theme-mystical .ai-log{border-left:4px solid #729153;background:linear-gradient(180deg,#242d25,#1a221b);color:#ebe6d9}
+body.theme-mystical .ai-log.user{border-left-color:#b78d4a;background:linear-gradient(180deg,#32281b,#221c14)}
+body.theme-mystical .data-table th{background:#171d18;color:#c9d1c5;box-shadow:0 1px 0 rgba(183,141,74,.14)}
+body.theme-mystical .tutorial-number{background:#3b5d3d;color:#fff}
+body.theme-mystical .update-banner{background:#173d2a;color:#fff}
+
+body.theme-journal{
+  background:linear-gradient(180deg,#efe3c4 0%,#e4d1ad 100%);
+  color:#3e2f1f;
+}
+body.theme-journal header{background:linear-gradient(180deg,#8b6b45,#6f5335);color:#fff8ee;border-bottom:1px solid rgba(92,60,28,.24);box-shadow:0 6px 16px rgba(70,48,26,.25)}
+body.theme-journal .subtitle,body.theme-journal .hint{color:#6d5a46}
+body.theme-journal .home-btn{background:#f3e6cb;color:#4d3924;border:1px solid rgba(92,60,28,.18)}
+body.theme-journal .hero{background:linear-gradient(135deg,#786143,#9a7b53);color:#fff9f0;border:1px solid rgba(100,71,41,.18)}
+body.theme-journal .hero p{color:#f6ead6}
+body.theme-journal .panel,body.theme-journal .menu-card,body.theme-journal .install-panel,body.theme-journal .ai-panel{background:linear-gradient(180deg,#f8efd9,#ebdcc0);color:#3e2f1f;border:1px solid rgba(114,82,48,.12);box-shadow:0 8px 20px rgba(70,48,26,.12)}
+body.theme-journal .menu-card strong,body.theme-journal .section-title,body.theme-journal label{color:#4b3925}
+body.theme-journal .menu-card span,body.theme-journal .footer-note{color:#6c5a48}
+body.theme-journal select,body.theme-journal input,body.theme-journal textarea{background:#fffaf0;border:1px solid rgba(114,82,48,.18);color:#3e2f1f}
+body.theme-journal .primary{background:linear-gradient(180deg,#6f8a56,#587043);color:#fff}
+body.theme-journal .secondary{background:#f3e6cb;color:#4d3924;border:1px solid rgba(114,82,48,.15)}
+body.theme-journal .danger{background:#e5b9a9;color:#5e2b1f}
+body.theme-journal .stat,body.theme-journal .chip{background:#f3e6cb;color:#4d3924;border:1px solid rgba(114,82,48,.14)}
+body.theme-journal .progressbar{background:#eadabc}.progressbar>div{}
+body.theme-journal .progressbar>div{background:linear-gradient(90deg,#7f9a64,#c9a35a)}
+body.theme-journal .face{background:linear-gradient(180deg,#fff9ee,#efe2c6);color:#3e2f1f;border:1px solid rgba(114,82,48,.16)}
+body.theme-journal .face .kicker{color:#86653f}
+body.theme-journal .face .mini{color:#6c5a48}
+body.theme-journal .face.back{background:linear-gradient(135deg,#6e5539,#4d3a28);color:#fff7ea;border-color:#6c5237}
+body.theme-journal .face.back .kicker{color:#edd8b1}
+body.theme-journal .face.back .mini{color:#f2e5d1}
+body.theme-journal .match-card{background:#fff8eb;color:#3e2f1f;border:1px solid rgba(114,82,48,.14)}
+body.theme-journal .match-card.selected{background:#f6e4b5;border-color:#c59a4d}
+body.theme-journal .match-card.correct{background:#dce8d0;color:#315135;border-color:#7e9c66}
+body.theme-journal .match-card.wrong{background:#f0cfc4;border-color:#bb7862}
+body.theme-journal .note{background:#fff2d8;color:#5d4c34;border-left:4px solid #c59a4d}
+body.theme-journal .ai-log{background:#f1e6d1;color:#4b3925;border-left:4px solid #8ca36d}
+body.theme-journal .ai-log.user{background:#f7eed8;border-left-color:#c59a4d}
+body.theme-journal .data-table th{background:#efe0c1;color:#624d34;box-shadow:0 1px 0 rgba(114,82,48,.14)}
+body.theme-journal .tutorial-number{background:#8b6b45;color:#fff}
+body.theme-journal .update-banner{background:#6f5335;color:#fff}
+
+body.theme-moonlit{
+  background:linear-gradient(180deg,#0d1624 0%,#16243a 100%);
+  color:#edf4ff;
+}
+body.theme-moonlit header{background:linear-gradient(135deg,#111e31,#1b2f4d);color:#f3f8ff;border-bottom:1px solid rgba(150,190,255,.14);box-shadow:0 8px 20px rgba(0,0,0,.28)}
+body.theme-moonlit .subtitle,body.theme-moonlit .hint{color:#a8bfdc}
+body.theme-moonlit .home-btn{background:rgba(255,255,255,.06);border:1px solid rgba(150,190,255,.18);color:#f3f8ff}
+body.theme-moonlit .hero{background:radial-gradient(circle at 80% 15%, rgba(178,213,255,.16), transparent 25%),linear-gradient(135deg,#20324d,#152339 60%,#101827);color:#f3f8ff;border:1px solid rgba(150,190,255,.14)}
+body.theme-moonlit .hero p{color:#d7e7fb}
+body.theme-moonlit .panel,body.theme-moonlit .menu-card,body.theme-moonlit .install-panel,body.theme-moonlit .ai-panel{background:linear-gradient(180deg,#1b2a42,#142033);color:#edf4ff;border:1px solid rgba(150,190,255,.12);box-shadow:0 10px 24px rgba(0,0,0,.24)}
+body.theme-moonlit .menu-card strong,body.theme-moonlit .section-title,body.theme-moonlit label{color:#f3f8ff}
+body.theme-moonlit .menu-card span,body.theme-moonlit .footer-note{color:#b8cade}
+body.theme-moonlit select,body.theme-moonlit input,body.theme-moonlit textarea{background:#0f1828;border:1px solid rgba(150,190,255,.16);color:#edf4ff}
+body.theme-moonlit .primary{background:linear-gradient(180deg,#4e7fb6,#315b8c);color:#fff}
+body.theme-moonlit .secondary{background:linear-gradient(180deg,#2a3c56,#1d2c42);color:#edf4ff;border:1px solid rgba(150,190,255,.12)}
+body.theme-moonlit .danger{background:linear-gradient(180deg,#81495d,#5d3041);color:#fff4f8}
+body.theme-moonlit .stat,body.theme-moonlit .chip{background:#20314a;color:#edf4ff;border:1px solid rgba(150,190,255,.12)}
+body.theme-moonlit .progressbar{background:#0f1828;border:1px solid rgba(150,190,255,.12)}
+body.theme-moonlit .progressbar>div{background:linear-gradient(90deg,#5a87b6,#9fd8ff)}
+body.theme-moonlit .face{background:linear-gradient(180deg,#f1f6ff,#d9e5f6);color:#1f2a3a;border:1px solid rgba(150,190,255,.18)}
+body.theme-moonlit .face .kicker{color:#48627e}
+body.theme-moonlit .face .mini{color:#5c6f84}
+body.theme-moonlit .face.back{background:linear-gradient(135deg,#183049,#0e1c2e);color:#f3f8ff;border-color:#36547a}
+body.theme-moonlit .face.back .kicker{color:#bcd7f5}
+body.theme-moonlit .face.back .mini{color:#d8e5f5}
+body.theme-moonlit .match-card{background:#16263d;color:#edf4ff;border:1px solid rgba(150,190,255,.14)}
+body.theme-moonlit .match-card.selected{background:#2b4f76;border-color:#9fd8ff}
+body.theme-moonlit .match-card.correct{background:#27424b;color:#dbfbff;border-color:#69c5c8}
+body.theme-moonlit .match-card.wrong{background:#513041;border-color:#d483a3}
+body.theme-moonlit .note{background:#1d2b44;color:#dce9fb;border-left:4px solid #9fd8ff}
+body.theme-moonlit .ai-log{background:#18263c;color:#edf4ff;border-left:4px solid #69c5c8}
+body.theme-moonlit .ai-log.user{background:#20314a;border-left-color:#9fd8ff}
+body.theme-moonlit .data-table th{background:#162339;color:#cfe0f4;box-shadow:0 1px 0 rgba(150,190,255,.12)}
+body.theme-moonlit .tutorial-number{background:#315b8c;color:#fff}
+body.theme-moonlit .update-banner{background:#183049;color:#fff}
+
+body.theme-reddirt{
+  background:linear-gradient(180deg,#241512 0%,#5b3427 100%);
+  color:#f7efe6;
+}
+body.theme-reddirt header{background:linear-gradient(135deg,#3b241d,#6a4030);color:#fff7f2;border-bottom:1px solid rgba(246,188,123,.15);box-shadow:0 8px 20px rgba(0,0,0,.28)}
+body.theme-reddirt .subtitle,body.theme-reddirt .hint{color:#e4c8ba}
+body.theme-reddirt .home-btn{background:rgba(255,255,255,.06);border:1px solid rgba(246,188,123,.18);color:#fff7f2}
+body.theme-reddirt .hero{background:radial-gradient(circle at 82% 15%, rgba(255,220,158,.16), transparent 22%),linear-gradient(135deg,#5f382b,#7c4c36 48%,#3f261f);color:#fff7f2;border:1px solid rgba(246,188,123,.18)}
+body.theme-reddirt .hero p{color:#f4ddd0}
+body.theme-reddirt .panel,body.theme-reddirt .menu-card,body.theme-reddirt .install-panel,body.theme-reddirt .ai-panel{background:linear-gradient(180deg,#5a3427,#43261e);color:#f7efe6;border:1px solid rgba(246,188,123,.14);box-shadow:0 10px 24px rgba(0,0,0,.26)}
+body.theme-reddirt .menu-card strong,body.theme-reddirt .section-title,body.theme-reddirt label{color:#fff5ee}
+body.theme-reddirt .menu-card span,body.theme-reddirt .footer-note{color:#e7cdbf}
+body.theme-reddirt select,body.theme-reddirt input,body.theme-reddirt textarea{background:#2a1814;border:1px solid rgba(246,188,123,.18);color:#f7efe6}
+body.theme-reddirt .primary{background:linear-gradient(180deg,#8b8a53,#6f6f3e);color:#fff}
+body.theme-reddirt .secondary{background:linear-gradient(180deg,#6b4334,#543328);color:#fff1e8;border:1px solid rgba(246,188,123,.14)}
+body.theme-reddirt .danger{background:linear-gradient(180deg,#874338,#672d25);color:#fff3f0}
+body.theme-reddirt .stat,body.theme-reddirt .chip{background:#6a4030;color:#fff1e8;border:1px solid rgba(246,188,123,.12)}
+body.theme-reddirt .progressbar{background:#2a1814;border:1px solid rgba(246,188,123,.14)}
+body.theme-reddirt .progressbar>div{background:linear-gradient(90deg,#a59f5c,#f0bb6a)}
+body.theme-reddirt .face{background:linear-gradient(180deg,#fff1df,#ecd2b8);color:#452e21;border:1px solid rgba(120,78,52,.16)}
+body.theme-reddirt .face .kicker{color:#8a6045}
+body.theme-reddirt .face .mini{color:#6e584b}
+body.theme-reddirt .face.back{background:linear-gradient(135deg,#4d2b23,#2b1a17);color:#fff7f2;border-color:#7b523d}
+body.theme-reddirt .face.back .kicker{color:#efc79c}
+body.theme-reddirt .face.back .mini{color:#f2ddd0}
+body.theme-reddirt .match-card{background:#452820;color:#f7efe6;border:1px solid rgba(246,188,123,.14)}
+body.theme-reddirt .match-card.selected{background:#7a4b2a;border-color:#f0bb6a}
+body.theme-reddirt .match-card.correct{background:#57603a;color:#eaf2dc;border-color:#93a26a}
+body.theme-reddirt .match-card.wrong{background:#6a2e29;border-color:#cc8b7a}
+body.theme-reddirt .note{background:#5b3629;color:#fff0e5;border-left:4px solid #f0bb6a}
+body.theme-reddirt .ai-log{background:#4d2d24;color:#f7efe6;border-left:4px solid #93a26a}
+body.theme-reddirt .ai-log.user{background:#5d392b;border-left-color:#f0bb6a}
+body.theme-reddirt .data-table th{background:#43261e;color:#f0d9c7;box-shadow:0 1px 0 rgba(246,188,123,.14)}
+body.theme-reddirt .tutorial-number{background:#8b5d3b;color:#fff}
+body.theme-reddirt .update-banner{background:#4d2b23;color:#fff}
+
+
+/* v15.9 themed art */
+.mode-card{padding:0;overflow:hidden}
+.mode-copy{display:block;padding:17px 18px;text-align:left}
+.mode-art{display:none;width:100%;height:150px;object-fit:cover;object-position:center;border-bottom:1px solid var(--line)}
+body.has-theme-art .mode-art{display:block}
+body.has-theme-art .mode-card .icon{display:none}
+body.has-theme-art .mode-card{box-shadow:0 14px 28px rgba(0,0,0,.22)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 8px}
+.visit-stat{padding:13px 10px;border-radius:14px;background:var(--pale);border:1px solid var(--line)}
+.visit-stat span{display:block;font-size:28px;font-weight:900;line-height:1}
+.visit-stat small{display:block;margin-top:6px;color:var(--muted);font-size:12px;font-weight:750;text-transform:uppercase;letter-spacing:.06em}
+
+body.theme-mystical header{
+  background:linear-gradient(180deg,rgba(4,8,10,.24),rgba(6,12,12,.68)),linear-gradient(90deg,rgba(4,8,10,.92),rgba(10,22,20,.62) 55%,rgba(4,8,10,.78)),var(--header-art)!important;
+  background-size:cover!important;background-position:center 38%!important
+}
+body.theme-mystical .hero{background:linear-gradient(180deg,rgba(5,9,10,.18),rgba(4,9,9,.60)),var(--hero-art)!important;background-size:cover!important;background-position:center 46%!important}
+body.theme-journal header{
+  background:linear-gradient(90deg,rgba(66,43,24,.93),rgba(81,56,34,.72) 55%,rgba(68,43,23,.84)),var(--header-art)!important;
+  background-size:cover!important;background-position:center 46%!important
+}
+body.theme-journal .hero{background:linear-gradient(90deg,rgba(75,49,27,.58),rgba(69,42,21,.34),rgba(72,46,26,.58)),var(--hero-art)!important;background-size:cover!important;background-position:center!important;color:#fffaf0!important}
+body.theme-moonlit header{
+  background:linear-gradient(180deg,rgba(4,9,22,.22),rgba(4,9,20,.68)),linear-gradient(90deg,rgba(4,9,20,.90),rgba(10,28,48,.58) 58%,rgba(4,9,20,.78)),var(--header-art)!important;
+  background-size:cover!important;background-position:center 40%!important
+}
+body.theme-moonlit .hero{background:linear-gradient(180deg,rgba(4,9,22,.16),rgba(4,9,20,.62)),var(--hero-art)!important;background-size:cover!important;background-position:center 45%!important}
+body.theme-reddirt header{
+  background:linear-gradient(180deg,rgba(45,20,12,.18),rgba(41,18,10,.68)),linear-gradient(90deg,rgba(48,22,14,.90),rgba(79,38,22,.56) 58%,rgba(49,22,13,.78)),var(--header-art)!important;
+  background-size:cover!important;background-position:center 45%!important
+}
+body.theme-reddirt .hero{background:linear-gradient(180deg,rgba(48,21,12,.14),rgba(45,19,11,.58)),var(--hero-art)!important;background-size:cover!important;background-position:center 46%!important}
+body.theme-journal .visit-stat{background:#f3e6cb}
+body.theme-mystical .visit-stat{background:#242d25;border-color:rgba(183,141,74,.14)}
+body.theme-moonlit .visit-stat{background:#20314a;border-color:rgba(150,190,255,.12)}
+body.theme-reddirt .visit-stat{background:#6a4030;border-color:rgba(246,188,123,.12)}
+@media(max-width:560px){.mode-art{height:122px}.mode-copy{padding:15px 16px}}
+
+
+
+/* v15.10 — corrected theme art, uniform mode cards and complementary palettes */
+.menu-grid{align-items:stretch}
+.mode-card{display:flex;flex-direction:column;height:100%;padding:0!important;overflow:hidden}
+.mode-art-wrap{display:none;width:100%;aspect-ratio:12/5;overflow:hidden;flex:0 0 auto;background:#111}
+body.has-theme-art .mode-art-wrap{display:block}
+.mode-art{display:block!important;width:100%;height:100%!important;object-fit:cover;object-position:center;transform:scale(1.018);border:0!important}
+.mode-copy{display:flex!important;flex-direction:column;justify-content:center;min-height:112px;height:112px;padding:16px 18px!important;text-align:left;overflow:hidden}
+.mode-copy strong{flex:0 0 auto}
+.mode-copy>span:last-child{display:block;line-height:1.35}
+body.has-theme-art .mode-card .icon{display:none}
+
+/* Slightly yellower green for the quick-update action only. */
+#aiSend{background:linear-gradient(180deg,#91a84f,#667c32)!important;color:#fff!important}
+#aiSend:hover{filter:brightness(1.04)}
+
+/* Mystical Forest: deep foliage, old gold and warm moss drawn from the art. */
+body.theme-mystical{
+  background:
+    radial-gradient(circle at 16% 4%,rgba(116,137,74,.22),transparent 24%),
+    radial-gradient(circle at 88% 28%,rgba(175,132,63,.13),transparent 24%),
+    linear-gradient(180deg,#10160f 0%,#1a2418 48%,#0b100c 100%)!important;
+}
+body.theme-mystical .panel,body.theme-mystical .menu-card,body.theme-mystical .install-panel,body.theme-mystical .ai-panel{
+  background:linear-gradient(180deg,rgba(52,65,47,.96),rgba(24,32,25,.98))!important;
+  border-color:rgba(190,151,79,.22)!important;
+}
+body.theme-mystical .mode-copy{background:linear-gradient(180deg,#2b3828,#1b251d)!important}
+body.theme-mystical .stat,body.theme-mystical .chip{background:linear-gradient(180deg,#394634,#273127)!important}
+
+/* Field Journal: parchment, leather and muted botanical olive. */
+body.theme-journal{
+  background:
+    radial-gradient(circle at 18% 8%,rgba(255,249,222,.46),transparent 23%),
+    radial-gradient(circle at 86% 20%,rgba(139,101,57,.15),transparent 26%),
+    linear-gradient(180deg,#ead9b7 0%,#d8bf91 100%)!important;
+}
+body.theme-journal .panel,body.theme-journal .menu-card,body.theme-journal .install-panel,body.theme-journal .ai-panel{
+  background:linear-gradient(180deg,#f7ecd3,#e7d3ab)!important;
+  border-color:rgba(106,73,38,.18)!important;
+}
+body.theme-journal .mode-copy{background:linear-gradient(180deg,#f3e5c8,#e4c99b)!important}
+body.theme-journal .stat,body.theme-journal .chip{background:linear-gradient(180deg,#f0dfbd,#ddc18e)!important}
+
+/* Moonlit Canopy: ink navy, moon silver and cool eucalyptus blue. */
+body.theme-moonlit{
+  background:
+    radial-gradient(circle at 82% 4%,rgba(105,164,216,.18),transparent 23%),
+    radial-gradient(circle at 18% 30%,rgba(40,91,129,.18),transparent 27%),
+    linear-gradient(180deg,#08111e 0%,#11233a 52%,#07101c 100%)!important;
+}
+body.theme-moonlit .panel,body.theme-moonlit .menu-card,body.theme-moonlit .install-panel,body.theme-moonlit .ai-panel{
+  background:linear-gradient(180deg,#1b304a,#111f31)!important;
+  border-color:rgba(143,191,229,.18)!important;
+}
+body.theme-moonlit .mode-copy{background:linear-gradient(180deg,#203957,#13253b)!important}
+body.theme-moonlit .stat,body.theme-moonlit .chip{background:linear-gradient(180deg,#29435f,#1b2d43)!important}
+
+/* Red Dirt Camp: rust, leather, ember and dusty ochre. */
+body.theme-reddirt{
+  background:
+    radial-gradient(circle at 12% 8%,rgba(216,130,59,.22),transparent 25%),
+    radial-gradient(circle at 88% 24%,rgba(117,56,35,.23),transparent 27%),
+    linear-gradient(180deg,#291713 0%,#593325 50%,#22130f 100%)!important;
+}
+body.theme-reddirt .panel,body.theme-reddirt .menu-card,body.theme-reddirt .install-panel,body.theme-reddirt .ai-panel{
+  background:linear-gradient(180deg,#68402f,#44271f)!important;
+  border-color:rgba(236,170,101,.18)!important;
+}
+body.theme-reddirt .mode-copy{background:linear-gradient(180deg,#704431,#4d2c22)!important}
+body.theme-reddirt .stat,body.theme-reddirt .chip{background:linear-gradient(180deg,#774b37,#573225)!important}
+
+@media(max-width:420px){
+  .mode-copy{height:116px;min-height:116px;padding:14px 16px!important}
+}
+
+
+.help-tip{
+  position:relative;
+  overflow:visible;
+}
+.help-tip::after{content:none!important;display:none!important}
+.ui-help-bubble{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:10000;
+  width:max-content;
+  max-width:min(330px,calc(100vw - 24px));
+  padding:10px 12px;
+  border-radius:11px;
+  background:#101511;
+  color:#f6f1e7;
+  border:1px solid rgba(214,168,63,.34);
+  box-shadow:0 12px 28px rgba(0,0,0,.38);
+  font-size:12px;
+  line-height:1.42;
+  text-align:left;
+  pointer-events:none;
+  opacity:0;
+  transform:translateY(4px);
+  transition:opacity .12s,transform .12s;
+}
+.ui-help-bubble.visible{opacity:1;transform:translateY(0)}
+body.theme-journal .ui-help-bubble{
+  background:#fff6e2;color:#3e2f1f;border-color:rgba(114,82,48,.3)
+}
+
+
+.speech-compact-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(122px,.45fr);
+  gap:10px;
+  align-items:end;
+  margin-top:10px;
+}
+.speech-compact-row>div{min-width:0}
+
+.speech-compact-row select,
+.speech-compact-row #speechToggle{
+  height:38px!important;
+  min-height:38px!important;
+  max-height:38px!important;
+  padding:7px 9px!important;
+  line-height:1!important;
+}
+.speech-compact-row #speechToggle{
+  white-space:nowrap!important;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size:13px;
+}
+.speech-tool-grid .help-tip{
+  padding:8px 9px!important;
+}
+
+.speech-compact-row select{white-space:nowrap;text-overflow:ellipsis}
+.speech-status-line{
+  margin:7px 0 0;
+  font-size:12px;
+  line-height:1.3;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.speech-tools{
+  margin-top:7px;
+  border-top:1px solid var(--line);
+}
+.speech-tools summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  min-height:36px;
+  padding:7px 2px 3px;
+  cursor:pointer;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:800;
+  list-style:none;
+  user-select:none;
+}
+.speech-tools summary::-webkit-details-marker{display:none}
+.speech-tools summary::after{
+  content:"▾";
+  font-size:15px;
+  transition:transform .18s;
+}
+.speech-tools[open] summary::after{transform:rotate(180deg)}
+.speech-tools-body{
+  padding-top:7px;
+  animation:speechToolsOpen .15s ease-out;
+}
+@keyframes speechToolsOpen{
+  from{opacity:0;transform:translateY(-3px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.speech-tool-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+}
+.speech-tool-grid button{
+  width:100%;
+  min-width:0;
+  padding:9px 10px;
+  font-size:12px;
+}
+.speech-tools .stats{margin:8px 0 4px}
+.speech-tools .stat{font-size:12px}
+.speech-disclosure{
+  font-size:11px;
+  margin:5px 0 2px;
+  line-height:1.4;
+}
+@media(max-width:520px){
+  #flash>.panel{padding:12px}
+  .speech-compact-row{
+    grid-template-columns:minmax(0,1fr) 112px;
+    gap:8px;
+    margin-top:8px;
+  }
+  .speech-compact-row label{font-size:11px;margin-bottom:4px}
+  .speech-compact-row select,
+  .speech-compact-row button{padding:9px 8px}
+  .speech-status-line{margin-top:5px}
+  .speech-tools{margin-top:5px}
+  .speech-tools summary{min-height:32px;padding-top:5px}
+}
+@media(max-width:360px){
+  .speech-compact-row{grid-template-columns:minmax(0,1fr) 88px}
+  .speech-compact-row #speechToggle{font-size:12px}
+}
+
+</style>
+
+<link rel="manifest" href="/app.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/icons/favicon-64.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Tree ID Trainer">
+<meta name="tree-id-trainer-version" content="15.23-true-compact-voice-controls">
+<meta name="tree-id-trainer-build" content="15.23">
+
+</head>
+<body>
+<header>
+  <div class="header-row">
+    <div class="brand">
+      <img id="headerLogo" class="header-logo" src="/icons/icon-192.png" alt="Tree ID Trainer logo">
+      <div class="brand-copy">
+        <h1>Tree ID Trainer</h1>
+        <div class="subtitle" id="headerCount"></div>
+      </div>
+    </div>
+    <button class="home-btn" id="homeBtn" type="button">Home</button>
+  </div>
+</header>
+<main>
+<section id="home" class="view active">
+  <div class="hero">
+    <h2>Learn the tree list.</h2>
+    <p>Works offline. Tap a mode and start.</p>
+  </div>
+
+  <div class="panel install-panel" id="installPanel">
+    <div class="install-copy"><strong>Install Tree ID Trainer</strong><br>Install it on this device and open it like a normal app.</div>
+    <div class="install-actions">
+      <button class="primary small" id="installApp" type="button">Install</button>
+      <button class="install-dismiss" id="dismissInstall" type="button" title="Dismiss" aria-label="Dismiss install message">×</button>
+    </div>
+  </div>
+
+  <div class="menu-grid">
+    <button class="menu-card mode-card" data-go="flash"><span class="mode-art-wrap"><img class="mode-art" data-mode-art="flash" alt=""></span><span class="mode-copy"><span class="icon">🗂️</span><strong>Flashcards</strong><span>Common, binomial, genus and family study cards.</span></span></button>
+    <button class="menu-card mode-card" data-go="familyGame"><span class="mode-art-wrap"><img class="mode-art" data-mode-art="family" alt=""></span><span class="mode-copy"><span class="icon">🌿</span><strong>Family ↔ Genus</strong><span>Connect each family with a genus that belongs in it.</span></span></button>
+    <button class="menu-card mode-card" data-go="nameGame"><span class="mode-art-wrap"><img class="mode-art" data-mode-art="name" alt=""></span><span class="mode-copy"><span class="icon">🔗</span><strong>Binomial ↔ Common</strong><span>Match scientific names to common names.</span></span></button>
+    <button class="menu-card mode-card" data-go="tutorial"><span class="mode-art-wrap"><img class="mode-art" data-mode-art="tutorial" alt=""></span><span class="mode-copy"><span class="icon">❓</span><strong>How to use this app</strong><span>A quick guide to every study mode and control.</span></span></button>
+  </div>
+
+  <div class="panel" style="margin-top:14px">
+    <strong>Saved totals</strong>
+    <div class="stats">
+      <span class="stat" id="totalCorrect">Correct: 0</span>
+      <span class="stat" id="totalAttempts">Attempts: 0</span>
+      <span class="stat" id="bestStreak">Best streak: 0</span>
+    </div>
+  </div>
+
+  <div class="panel skin-panel">
+    <div class="row">
+      <div>
+        <label for="themeSelect">Skin</label>
+        <select id="themeSelect">
+          <option value="default">Default</option>
+          <option value="mystical">Mystical Forest</option>
+          <option value="journal">Field Journal</option>
+          <option value="moonlit">Moonlit Canopy</option>
+          <option value="reddirt">Red Dirt Camp</option>
+        </select>
+      </div>
+    </div>
+    <div class="hint">Changes the overall look of the app and stays saved on this device.</div>
+  </div>
+
+  <div class="panel ai-panel">
+    <div class="ai-title">
+      <strong>✨ Quick update commands</strong>
+      <span class="stat" id="aiConnection"><span class="connection-dot"></span>Checking</span>
+    </div>
+    <p class="hint">Type or speak things like “add a tree”, “turn speech on”, or “open the family game”. Changes happen immediately and can be undone.</p>
+    <div class="ai-input-row">
+      <input id="aiCommand" type="search" autocomplete="off" inputmode="text" placeholder="e.g. Add Corymbia ficifolia, Red-flowering Gum, Myrtaceae">
+      <button class="mic-btn" id="aiMic" type="button" aria-label="Speak command">🎙️</button>
+      <button class="primary" id="aiSend" type="button">Do it</button>
+    </div>
+    <div class="mic-help" id="micHelp">Tap the microphone. On downloaded copies, use the microphone on your Android keyboard when it opens.</div>
+    <div class="chips">
+      <button class="chip" data-ai-example="Turn speech on">Speech on</button>
+      <button class="chip" data-ai-example="Open the family and genus game">Open family game</button>
+      <button class="chip" data-ai-example="Add Corymbia ficifolia | Red-flowering Gum | Myrtaceae">Add a tree</button>
+    </div>
+    <div class="ai-response" id="aiResponse"></div>
+    <div class="row">
+      <button class="secondary small" id="aiUndo" type="button">↶ Undo last AI change</button>
+      <button class="secondary small" id="aiClearLog" type="button">Clear messages</button>
+    </div>
+    <div class="ai-history" id="aiHistory"></div>
+<p class="hint" style="margin-top:10px">Simple commands work offline. When online, the built-in AI can understand normal wording and apply supported changes.</p>
+  </div>
+
+  <div class="menu-grid" style="margin-top:14px">
+    <button class="menu-card" data-go="data"><span class="icon">✏️</span><strong>Edit / Import List</strong><span>Add trees or paste an updated list from the workbook.</span></button>
+  </div>
+
+  <div class="panel" style="margin-top:14px;text-align:center">
+    <div style="color:var(--muted);font-size:13px;line-height:1.45">
+      Built for arboriculture tree identification study.<br>
+      For corrections, suggestions or additions:
+    </div>
+    <div style="margin-top:6px">
+      <a href="mailto:dastrothard@gmail.com?subject=Tree%20ID%20Trainer%20feedback" style="color:var(--green);font-weight:750;text-decoration:none">dastrothard@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="panel visit-panel" style="margin-top:14px;text-align:center">
+    <strong>App visits</strong>
+    <div class="visit-grid">
+      <div class="visit-stat"><span id="globalVisits">—</span><small>Global</small></div>
+      <div class="visit-stat"><span id="localVisits">0</span><small>This device</small></div>
+    </div>
+    <div class="hint" id="visitStatus">Counting one visit per browser session.</div>
+  </div>
+</section>
+
+
+<section id="tutorial" class="view">
+  <h2 class="section-title">How to use this app</h2>
+
+  <div class="panel">
+    <div class="tutorial-step">
+      <div class="tutorial-number">1</div>
+      <div>
+        <h3>Choose a study mode</h3>
+        <p>Use Flashcards for individual recall, Family ↔ Genus to learn taxonomy groups, or Binomial ↔ Common to connect scientific and everyday names.</p>
+      </div>
+    </div>
+
+    <div class="tutorial-step">
+      <div class="tutorial-number">2</div>
+      <div>
+        <h3>Use the flashcards</h3>
+        <p>Choose the question direction and optionally filter by family. Tap the card to reveal the answer. Press <strong>Got it</strong>, <strong>Again</strong>, or <strong>Previous</strong>.</p>
+      </div>
+    </div>
+
+    <div class="tutorial-step">
+      <div class="tutorial-number">3</div>
+      <div>
+        <h3>Turn speech on</h3>
+        <p>Select an installed voice, test it, then switch speech on. The app reads the front of each card and reads the answer when the card flips.</p>
+      </div>
+    </div>
+
+    <div class="tutorial-step">
+      <div class="tutorial-number">4</div>
+      <div>
+        <h3>Play the matching games</h3>
+        <p>Tap one item in the left column, then its match in the right column. Correct pairs stay completed. Change the round size or press <strong>New round</strong> whenever you like.</p>
+      </div>
+    </div>
+
+    <div class="tutorial-step">
+      <div class="tutorial-number">5</div>
+      <div>
+        <h3>Use quick update commands</h3>
+        <p>On the main menu, type simple commands such as “turn speech on”, “open the family game”, or “add Corymbia ficifolia | Red-flowering Gum | Myrtaceae”. Tap 🎙️ and allow microphone access when Android asks. Speak naturally and the command is applied when you stop talking.</p>
+      </div>
+    </div>
+
+    <div class="tutorial-step">
+      <div class="tutorial-number">6</div>
+      <div>
+        <h3>Edit or import the list</h3>
+        <p>Open <strong>Edit / Import List</strong> to add trees manually, replace the list, remove entries, export a backup, or restore the built-in 80-tree list.</p>
+      </div>
+    </div>
+
+    <div class="tutorial-step">
+      <div class="tutorial-number">7</div>
+      <div>
+        <h3>Your progress is saved</h3>
+        <p>Correct answers, attempts, best streak, voice choice and edited tree data are stored in this browser on this device.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <strong>Jump straight in</strong>
+    <div class="tutorial-actions">
+      <button class="primary" type="button" data-go="flash">Open Flashcards</button>
+      <button class="secondary" type="button" data-go="familyGame">Open Family ↔ Genus</button>
+      <button class="secondary" type="button" data-go="nameGame">Open Binomial ↔ Common</button>
+      <button class="secondary" type="button" data-go="data">Open Edit / Import</button>
+    </div>
+  </div>
+</section>
+
+<section id="flash" class="view">
+  <h2 class="section-title">Flashcards</h2>
+  <div class="panel">
+    <div class="row">
+      <div><label>Question side</label><select id="flashMode">
+        <option value="common-binomial">Common → binomial</option>
+        <option value="binomial-common">Binomial → common</option>
+        <option value="genus-family">Genus → family</option>
+        <option value="family-genus">Family → genus</option>
+      </select></div>
+      <div><label>Family filter</label><select id="familyFilter"><option value="">All families</option></select></div>
+    </div>
+    <div class="speech-compact-row">
+      <div>
+        <label>Voice source</label>
+        <select id="speechVoice" title="AI accent and voice options appear first. Device voices appear below when this browser provides them.">
+          <option value="__ai_voice__:australian_female">AI Australian — Female</option>
+        </select>
+      </div>
+      <div>
+        <label>Read aloud</label>
+        <button class="secondary" id="speechToggle" type="button" style="width:100%"
+          data-help="Turns automatic reading on or off. When on, the front is read when a card appears and the answer is read when you flip it."
+          title="Turns automatic card reading on or off.">🔇 Off</button>
+      </div>
+    </div>
+
+    <div class="hint speech-status-line" id="speechStatus"
+      title="AI accent voices work across devices and save each recording after its first use.">AI accent voices work across devices and save each recording after its first use.</div>
+
+    <details class="speech-tools" id="speechTools">
+      <summary>Voice tools &amp; offline cache</summary>
+      <div class="speech-tools-body">
+        <div class="speech-tool-grid">
+          <button class="secondary help-tip" id="speechTest" type="button"
+            data-help="Plays a short sample using the currently selected AI accent or device voice."
+            title="Test the currently selected voice.">▶ Test voice</button>
+          <button class="secondary help-tip" id="speechRefresh" type="button"
+            data-help="Asks this browser to reload its available device voices. Device-voice support varies between browsers and machines."
+            title="Reload the device voices supplied by this browser.">↻ Reload voices</button>
+          <button class="secondary help-tip" id="speechCacheList" type="button"
+            data-help="Creates and saves recordings for every common name, binomial, genus and family in your current list using the selected AI accent and voice. This uses internet and API credit once; saved recordings then play from this device."
+            title="Save the current tree list as an offline voice pack in the selected AI accent.">⬇ Cache current list</button>
+          <button class="secondary help-tip" id="speechClearCache" type="button"
+            data-help="Deletes saved AI recordings from this browser or device only. It does not delete trees, scores, settings or counters. Recordings will be generated again when needed."
+            title="Clear saved AI recordings without deleting app data.">🗑 Clear AI cache</button>
+        </div>
+        <div class="stats"><span class="stat" id="voiceCacheStat">AI voice cache: checking…</span></div>
+        <div class="hint speech-disclosure" id="cloudVoiceDisclosure">AI voices are generated, not human recordings. Internet is needed only the first time each name is recorded in the selected accent on this device; saved recordings then play faster and can work offline. Device voices remain optional where supported by the browser.</div>
+      </div>
+    </details>
+    <div class="stats"><span class="stat" id="flashPosition">Card 1</span><span class="stat" id="flashKnown">Known: 0</span><span class="stat" id="flashAgain">Again: 0</span></div>
+    <div class="progressbar"><div id="flashProgress"></div></div>
+  </div>
+  <div class="flash-wrap">
+    <button class="flashcard" id="flashCard" type="button" aria-label="Reveal answer">
+      <div class="flash-inner">
+        <div class="face front"><div class="kicker" id="frontLabel"></div><div class="big" id="frontText"></div><div class="mini">Tap to reveal</div></div>
+        <div class="face back"><div class="kicker" id="backLabel"></div><div class="big" id="backText"></div><div class="mini" id="backExtra"></div></div>
+      </div>
+    </button>
+  </div>
+  <div class="answer-row three">
+    <button class="secondary" id="prevBtn" type="button">← Previous</button>
+    <button class="danger" id="againBtn" type="button">Again</button>
+    <button class="primary" id="knownBtn" type="button">Got it</button>
+  </div>
+  <button class="secondary" id="shuffleFlash" type="button" style="width:100%;max-width:620px;margin:10px auto;display:block">Shuffle / restart</button>
+</section>
+
+<section id="familyGame" class="view">
+  <h2 class="section-title">Family ↔ Genus</h2>
+  <div class="panel">
+    <div class="row">
+      <div><label>Pairs per round</label><select id="familySize"><option>4</option><option selected>6</option><option>8</option></select></div>
+      <button class="primary" id="newFamilyRound" type="button">New round</button>
+    </div>
+    <p class="hint">Tap one family, then tap a genus that belongs to that family. Repeated family cards are intentional.</p>
+    <div class="stats"><span class="stat" id="familyScore">Matched: 0</span><span class="stat" id="familyMoves">Moves: 0</span><span class="stat" id="familyStreak">Streak: 0</span></div>
+  </div>
+  <div class="message" id="familyMessage"></div>
+  <div class="match-board">
+    <div><div class="column-title">Families</div><div class="match-col" id="familyLeft"></div></div>
+    <div><div class="column-title">Genera</div><div class="match-col" id="familyRight"></div></div>
+  </div>
+</section>
+
+<section id="nameGame" class="view">
+  <h2 class="section-title">Binomial ↔ Common Name</h2>
+  <div class="panel">
+    <div class="row">
+      <div><label>Pairs per round</label><select id="nameSize"><option>4</option><option selected>6</option><option>8</option></select></div>
+      <button class="primary" id="newNameRound" type="button">New round</button>
+    </div>
+    <p class="hint">Tap a binomial name, then its common name.</p>
+    <div class="stats"><span class="stat" id="nameScore">Matched: 0</span><span class="stat" id="nameMoves">Moves: 0</span><span class="stat" id="nameStreak">Streak: 0</span></div>
+  </div>
+  <div class="message" id="nameMessage"></div>
+  <div class="match-board">
+    <div><div class="column-title">Binomial names</div><div class="match-col" id="nameLeft"></div></div>
+    <div><div class="column-title">Common names</div><div class="match-col" id="nameRight"></div></div>
+  </div>
+</section>
+
+<section id="data" class="view">
+  <h2 class="section-title">Edit / Import Tree List</h2>
+  <div class="panel">
+    <div class="note">Paste one tree per line as <code>binomial | common name | family</code>. Commas and tabs also work. The genus is taken from the first word of the binomial name.</div>
+    <textarea id="importText" rows="8" placeholder="Corymbia calophylla | Marri | Myrtaceae&#10;Eucalyptus marginata | Jarrah | Myrtaceae"></textarea>
+    <div class="row" style="margin-top:10px">
+      <button class="primary" id="appendData" type="button">Add to current list</button>
+      <button class="secondary" id="replaceData" type="button">Replace current list</button>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <button class="secondary" id="exportData" type="button">Export list</button>
+      <button class="danger" id="resetData" type="button">Restore built-in list</button>
+    </div>
+    <div class="message" id="dataMessage"></div>
+  </div>
+  <div class="panel">
+    <strong id="listHeading">Current list</strong>
+    <div class="scroll"><table class="data-table"><thead><tr><th>Binomial</th><th>Common</th><th>Family</th><th></th></tr></thead><tbody id="dataRows"></tbody></table></div>
+  </div>
+</section>
+
+<div class="footer-note">Hosted Edition · v15.23 · Your tree list and settings stay in this browser on this device.</div>
+</main>
+
+<div class="update-banner" id="updateBanner">
+  <span>A new version is available.</span>
+  <button class="primary small" id="reloadUpdate" type="button">Update now</button>
+</div>
+
+<script>
+const BUILTIN = [{"binomial": "Acacia acuminata", "common": "Raspberry Jam Wattle", "family": "Fabaceae"}, {"binomial": "Acacia cyclops", "common": "Red Eye Wattle", "family": "Fabaceae"}, {"binomial": "Acacia dealbata", "common": "Silver Wattle", "family": "Fabaceae"}, {"binomial": "Acacia melanoxylon", "common": "Blackwood", "family": "Fabaceae"}, {"binomial": "Acacia saligna", "common": "Golden Wreath Wattle", "family": "Fabaceae"}, {"binomial": "Acer palmatum", "common": "Japanese Maple", "family": "Sapindaceae"}, {"binomial": "Agonis flexuosa", "common": "WA Peppermint", "family": "Myrtaceae"}, {"binomial": "Allocasuarina fraseriana", "common": "Sheoak", "family": "Casuarinaceae"}, {"binomial": "Allocasuarina littoralis", "common": "Black Sheoak", "family": "Casuarinaceae"}, {"binomial": "Angophora costata", "common": "Smooth-barked Apple", "family": "Myrtaceae"}, {"binomial": "Araucaria bidwillii", "common": "Bunya Pine", "family": "Araucariaceae"}, {"binomial": "Araucaria heterophylla", "common": "Norfolk Island Pine", "family": "Araucariaceae"}, {"binomial": "Backhousia citriodora", "common": "Lemon Myrtle", "family": "Myrtaceae"}, {"binomial": "Banksia attenuata", "common": "Candlestick Banksia", "family": "Proteaceae"}, {"binomial": "Banksia grandis", "common": "Bull Banksia", "family": "Proteaceae"}, {"binomial": "Banksia ilicifolia", "common": "Holly-leaf Banksia", "family": "Proteaceae"}, {"binomial": "Banksia littoralis", "common": "Swamp Banksia", "family": "Proteaceae"}, {"binomial": "Banksia menziesii", "common": "Firewood Banksia", "family": "Proteaceae"}, {"binomial": "Banksia prionotes", "common": "Acorn Banksia", "family": "Proteaceae"}, {"binomial": "Brachychiton acerifolius", "common": "Illawarra Flame Tree", "family": "Malvaceae"}, {"binomial": "Brachychiton populneus", "common": "Kurrajong", "family": "Malvaceae"}, {"binomial": "Callistemon citrinus", "common": "Crimson Bottlebrush", "family": "Myrtaceae"}, {"binomial": "Callistemon viminalis", "common": "Weeping Bottlebrush", "family": "Myrtaceae"}, {"binomial": "Callitris columellaris", "common": "White Cypress Pine", "family": "Cupressaceae"}, {"binomial": "Casuarina cunninghamiana", "common": "River Sheoak", "family": "Casuarinaceae"}, {"binomial": "Cedrus deodara", "common": "Deodar Cedar", "family": "Pinaceae"}, {"binomial": "Cinnamomum camphora", "common": "Camphor Laurel", "family": "Lauraceae"}, {"binomial": "Corymbia calophylla", "common": "Marri", "family": "Myrtaceae"}, {"binomial": "Corymbia haematoxylon", "common": "Bloodwood", "family": "Myrtaceae"}, {"binomial": "Corymbia maculata", "common": "Spotted Gum", "family": "Myrtaceae"}, {"binomial": "Cupressus sempervirens", "common": "Italian Cypress", "family": "Cupressaceae"}, {"binomial": "Eucalyptus accedens", "common": "Powderbark Wandoo", "family": "Myrtaceae"}, {"binomial": "Eucalyptus camaldulensis", "common": "River Red Gum", "family": "Myrtaceae"}, {"binomial": "Eucalyptus cladocalyx", "common": "Sugar Gum", "family": "Myrtaceae"}, {"binomial": "Eucalyptus diversicolor", "common": "Karri", "family": "Myrtaceae"}, {"binomial": "Eucalyptus globulus", "common": "Tasmanian Blue Gum", "family": "Myrtaceae"}, {"binomial": "Eucalyptus gomphocephala", "common": "Tuart", "family": "Myrtaceae"}, {"binomial": "Eucalyptus grandis", "common": "Flooded Gum", "family": "Myrtaceae"}, {"binomial": "Eucalyptus guilfoylei", "common": "Yellow Tingle", "family": "Myrtaceae"}, {"binomial": "Eucalyptus jacksonii", "common": "Red Tingle", "family": "Myrtaceae"}, {"binomial": "Eucalyptus marginata", "common": "Jarrah", "family": "Myrtaceae"}, {"binomial": "Eucalyptus megacarpa", "common": "Bullich", "family": "Myrtaceae"}, {"binomial": "Eucalyptus patens", "common": "Blackbutt", "family": "Myrtaceae"}, {"binomial": "Eucalyptus pleurocarpa", "common": "Tallerack", "family": "Myrtaceae"}, {"binomial": "Eucalyptus rudis", "common": "Flooded Gum", "family": "Myrtaceae"}, {"binomial": "Eucalyptus sideroxylon", "common": "Red Ironbark", "family": "Myrtaceae"}, {"binomial": "Eucalyptus wandoo", "common": "Wandoo", "family": "Myrtaceae"}, {"binomial": "Fraxinus angustifolia", "common": "Narrow-leaved Ash", "family": "Oleaceae"}, {"binomial": "Fraxinus excelsior", "common": "European Ash", "family": "Oleaceae"}, {"binomial": "Ginkgo biloba", "common": "Ginkgo", "family": "Ginkgoaceae"}, {"binomial": "Grevillea robusta", "common": "Silky Oak", "family": "Proteaceae"}, {"binomial": "Hakea laurina", "common": "Pincushion Hakea", "family": "Proteaceae"}, {"binomial": "Hakea prostrata", "common": "Harsh Hakea", "family": "Proteaceae"}, {"binomial": "Jacaranda mimosifolia", "common": "Jacaranda", "family": "Bignoniaceae"}, {"binomial": "Liquidambar styraciflua", "common": "American Sweetgum", "family": "Altingiaceae"}, {"binomial": "Lophostemon confertus", "common": "Brush Box", "family": "Myrtaceae"}, {"binomial": "Magnolia grandiflora", "common": "Southern Magnolia", "family": "Magnoliaceae"}, {"binomial": "Melaleuca lanceolata", "common": "Rottnest Island Tea Tree", "family": "Myrtaceae"}, {"binomial": "Melaleuca preissiana", "common": "Moonah", "family": "Myrtaceae"}, {"binomial": "Melaleuca quinquenervia", "common": "Broad-leaved Paperbark", "family": "Myrtaceae"}, {"binomial": "Melaleuca rhaphiophylla", "common": "Swamp Paperbark", "family": "Myrtaceae"}, {"binomial": "Nuytsia floribunda", "common": "WA Christmas Tree", "family": "Loranthaceae"}, {"binomial": "Pinus pinea", "common": "Stone Pine", "family": "Pinaceae"}, {"binomial": "Pinus radiata", "common": "Monterey Pine", "family": "Pinaceae"}, {"binomial": "Platanus × acerifolia", "common": "London Plane", "family": "Platanaceae"}, {"binomial": "Populus alba", "common": "White Poplar", "family": "Salicaceae"}, {"binomial": "Syzygium australe", "common": "Brush Cherry", "family": "Myrtaceae"}, {"binomial": "Tristaniopsis laurina", "common": "Water Gum", "family": "Myrtaceae"}, {"binomial": "Ulmus procera", "common": "English Elm", "family": "Ulmaceae"}, {"binomial": "Washingtonia robusta", "common": "Mexican Fan Palm", "family": "Arecaceae"}, {"binomial": "Xanthorrhoea preissii", "common": "Grass Tree", "family": "Asphodelaceae"}, {"binomial": "Acacia drummondii", "common": "Drummond's Wattle", "family": "Fabaceae"}, {"binomial": "Corymbia citriodora", "common": "Lemon-scented Gum", "family": "Myrtaceae"}, {"binomial": "Acacia websteriana", "common": "Webster's Wattle", "family": "Fabaceae"}, {"binomial": "Eucalyptus norsemanica", "common": "Norseman Mallee", "family": "Myrtaceae"}, {"binomial": "Eucalyptus youngiana", "common": "Ooldea Mallee", "family": "Myrtaceae"}, {"binomial": "Eucalyptus victrix", "common": "Western Coolibah", "family": "Myrtaceae"}, {"binomial": "Eucalyptus mooreana", "common": "Moore's Mallee", "family": "Myrtaceae"}, {"binomial": "Eucalyptus lehmannii", "common": "Bushy Yate", "family": "Myrtaceae"}, {"binomial": "Corymbia eximia", "common": "Yellow Bloodwood", "family": "Myrtaceae"}];
+const STORAGE_KEY = "tree-id-trainer-data-v1";
+const STATS_KEY = "tree-id-trainer-stats-v1";
+const AI_UNDO_KEY = "tree-id-trainer-ai-undo-v1";
+const AI_LOG_KEY = "tree-id-trainer-ai-log-v1";
+
+let data = loadData();
+let stats = Object.assign({correct:0, attempts:0, bestStreak:0}, loadJSON(STATS_KEY, {}));
+let currentView = "home";
+
+function genusOf(binomial){ return String(binomial||"").trim().split(/\s+/)[0] || ""; }
+function cleanRecord(r){
+  return {binomial:String(r.binomial||"").trim(), common:String(r.common||"").trim(), family:String(r.family||"").trim()};
+}
+function uniqueData(rows){
+  const seen=new Set();
+  return rows.map(cleanRecord).filter(r=>{
+    if(!r.binomial||!r.common||!r.family) return false;
+    const k=r.binomial.toLowerCase();
+    if(seen.has(k)) return false;
+    seen.add(k); return true;
+  }).sort((a,b)=>a.binomial.localeCompare(b.binomial));
+}
+function loadJSON(key, fallback){ try{return JSON.parse(localStorage.getItem(key))||fallback}catch{return fallback} }
+function loadData(){ const saved=loadJSON(STORAGE_KEY,null); return uniqueData(Array.isArray(saved)?saved:BUILTIN); }
+function saveData(){ localStorage.setItem(STORAGE_KEY,JSON.stringify(data)); updateCounts(); renderFamilyFilter(); }
+function saveStats(){ localStorage.setItem(STATS_KEY,JSON.stringify(stats)); renderStats(); }
+function shuffle(a){ const x=[...a]; for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]];} return x; }
+function sample(a,n){ return shuffle(a).slice(0,Math.min(n,a.length)); }
+function esc(s){ return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m])); }
+function recordAttempt(ok, streak){
+  stats.attempts++;
+  if(ok) stats.correct++;
+  if(streak>stats.bestStreak) stats.bestStreak=streak;
+  saveStats();
+}
+function renderStats(){
+  document.getElementById("totalCorrect").textContent=`Correct: ${stats.correct}`;
+  document.getElementById("totalAttempts").textContent=`Attempts: ${stats.attempts}`;
+  document.getElementById("bestStreak").textContent=`Best streak: ${stats.bestStreak}`;
+}
+function updateCounts(){
+  document.getElementById("headerCount").textContent=`${data.length} trees loaded`;
+  const h=document.getElementById("listHeading"); if(h)h.textContent=`Current list — ${data.length} trees`;
+}
+function showView(id){
+  currentView=id;
+  document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id===id));
+  window.scrollTo(0,0);
+  if(id==="home")renderStats();
+  if(id==="flash")startFlash();
+  if(id==="familyGame")newFamilyRound();
+  if(id==="nameGame")newNameRound();
+  if(id==="data")renderData();
+}
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>showView(b.dataset.go)));
+document.getElementById("homeBtn").addEventListener("click",()=>showView("home"));
+
+/* Flashcards */
+let flashDeck=[], flashIndex=0, flashKnown=0, flashAgain=0;
+const SPEECH_KEY = "tree-id-trainer-speech-v7";
+const AI_VOICE_PREFIX = "__ai_voice__:";
+const DEFAULT_AI_PROFILE = "australian_female";
+const AI_VOICE_PROFILES = {
+  australian_female:{
+    id:"australian_female",
+    label:"AI Australian — Female"
+  },
+  australian_male:{
+    id:"australian_male",
+    label:"AI Australian — Male"
+  },
+  british_female:{
+    id:"british_female",
+    label:"AI British — Female"
+  },
+  british_male:{
+    id:"british_male",
+    label:"AI British — Male"
+  },
+  american_female:{
+    id:"american_female",
+    label:"AI American — Female"
+  },
+  american_male:{
+    id:"american_male",
+    label:"AI American — Male"
+  },
+  german_female:{
+    id:"german_female",
+    label:"AI German accent — Female"
+  },
+  german_male:{
+    id:"german_male",
+    label:"AI German accent — Male"
+  }
+};
+const DEVICE_DEFAULT_VALUE = "__device_default__";
+const AI_VOICE_DB = "tree-id-trainer-app-voice-v1";
+const AI_VOICE_STORE = "clips";
+const AI_VOICE_QUEUE_KEY = "tree-id-trainer-ai-voice-queue-v3";
+const AI_VOICE_FORMAT_VERSION = "natural-ai-accent-gender-v2";
+
+const previousSpeechSettings = loadJSON(
+  "tree-id-trainer-speech-v6",
+  loadJSON("tree-id-trainer-speech-v5",
+    loadJSON("tree-id-trainer-speech-v4",
+      loadJSON("tree-id-trainer-speech-v2",
+        loadJSON("tree-id-trainer-speech-v1", {})
+      )
+    )
+  )
+);
+
+function aiVoiceValue(profileId){
+  const id=AI_VOICE_PROFILES[profileId] ? profileId : DEFAULT_AI_PROFILE;
+  return AI_VOICE_PREFIX+id;
+}
+function aiProfileFromValue(value){
+  const text=String(value||"");
+  if(!text.startsWith(AI_VOICE_PREFIX))return null;
+  const id=text.slice(AI_VOICE_PREFIX.length);
+  return AI_VOICE_PROFILES[id] ? id : null;
+}
+function aiProfileLabel(profileId){
+  return AI_VOICE_PROFILES[profileId]?.label || AI_VOICE_PROFILES[DEFAULT_AI_PROFILE].label;
+}
+
+let previousVoice=String(previousSpeechSettings.voiceURI||"");
+let previousAiProfile=String(previousSpeechSettings.aiProfile||"");
+
+const LEGACY_AI_PROFILE_MAP={
+  australian:"australian_female",
+  british:"british_female",
+  american:"american_female",
+  german:"german_female"
+};
+
+const legacyValueProfile=aiProfileFromValue(previousVoice);
+if(LEGACY_AI_PROFILE_MAP[previousAiProfile]){
+  previousAiProfile=LEGACY_AI_PROFILE_MAP[previousAiProfile];
+}
+if(legacyValueProfile&&LEGACY_AI_PROFILE_MAP[legacyValueProfile]){
+  previousAiProfile=LEGACY_AI_PROFILE_MAP[legacyValueProfile];
+  previousVoice=aiVoiceValue(previousAiProfile);
+}
+if(!AI_VOICE_PROFILES[previousAiProfile]){
+  previousAiProfile=aiProfileFromValue(previousVoice)||DEFAULT_AI_PROFILE;
+}
+if(
+  !previousVoice ||
+  previousVoice==="__app_voice__" ||
+  previousVoice==="__cloud_australian__" ||
+  previousVoice==="__native_default__" ||
+  previousVoice.startsWith("__native_voice__:")
+){
+  previousVoice=aiVoiceValue(previousAiProfile);
+}
+
+let speechSettings={
+  enabled:!!previousSpeechSettings.enabled,
+  voiceURI:previousVoice,
+  aiProfile:previousAiProfile,
+  rate:Number(previousSpeechSettings.rate)||0.92
+};
+
+let speechVoices=[];
+let voicesReady=false;
+let deviceUtterance=null;
+let appAudioContext=null;
+let appAudioSource=null;
+let appHtmlAudio=null;
+let appAudioObjectUrl="";
+let appPlaybackId=0;
+let audioDbPromise=null;
+let cacheCountTimer=null;
+let backgroundVoiceRunning=false;
+let voicePackProgress=null;
+let voiceCacheGeneration=0;
+const appVoiceRequests=new Map();
+
+function normaliseAudioText(text){
+  return String(text||"").normalize("NFKC").trim().replace(/\s+/g," ");
+}
+function normaliseQueueItem(item){
+  if(typeof item==="string"){
+    const text=normaliseAudioText(item);
+    return text ? {text,profile:DEFAULT_AI_PROFILE} : null;
+  }
+  if(!item||typeof item!=="object")return null;
+  const text=normaliseAudioText(item.text);
+  const profile=AI_VOICE_PROFILES[item.profile] ? item.profile : DEFAULT_AI_PROFILE;
+  return text ? {text,profile} : null;
+}
+const oldQueue=loadJSON(AI_VOICE_QUEUE_KEY,[]);
+let backgroundVoiceQueue=(Array.isArray(oldQueue)?oldQueue:[])
+  .map(normaliseQueueItem).filter(Boolean);
+
+function selectedAiProfile(){
+  return aiProfileFromValue(speechSettings.voiceURI);
+}
+function activeAiProfile(){
+  const selected=selectedAiProfile();
+  if(selected)return selected;
+  return AI_VOICE_PROFILES[speechSettings.aiProfile]
+    ? speechSettings.aiProfile : DEFAULT_AI_PROFILE;
+}
+function aiVoiceSelected(){
+  return !!selectedAiProfile();
+}
+function setSpeechStatus(text){
+  const el=document.getElementById("speechStatus");
+  if(el){
+    el.textContent=text;
+    el.title=text;
+  }
+}
+function saveSpeechSettings(){
+  localStorage.setItem(SPEECH_KEY,JSON.stringify(speechSettings));
+}
+function speechSupported(){
+  return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+}
+function voiceLabel(v){
+  const local=v.localService ? "device" : "network";
+  return `${v.name} — ${v.lang||"unknown"} (${local})`;
+}
+function sortVoices(list){
+  return [...list].sort((a,b)=>{
+    const aEnglish=/^en[-_]/i.test(String(a.lang||"")) ? 0 : 1;
+    const bEnglish=/^en[-_]/i.test(String(b.lang||"")) ? 0 : 1;
+    const aLocal=a.localService ? 0 : 1;
+    const bLocal=b.localService ? 0 : 1;
+    return aEnglish-bEnglish || aLocal-bLocal ||
+      String(a.lang).localeCompare(String(b.lang)) ||
+      String(a.name).localeCompare(String(b.name));
+  });
+}
+function selectedDeviceVoice(){
+  if(!speechSettings.voiceURI ||
+     aiVoiceSelected() ||
+     speechSettings.voiceURI===DEVICE_DEFAULT_VALUE)return null;
+  return speechVoices.find(v=>v.voiceURI===speechSettings.voiceURI)||null;
+}
+function refreshSpeechVoices(){
+  if(!speechSupported()){
+    speechVoices=[];
+    voicesReady=false;
+    renderSpeechControls();
+    return;
+  }
+  try{
+    speechVoices=sortVoices(window.speechSynthesis.getVoices()||[]);
+  }catch{
+    speechVoices=[];
+  }
+  voicesReady=speechVoices.length>0;
+  if(
+    !aiVoiceSelected() &&
+    speechSettings.voiceURI!==DEVICE_DEFAULT_VALUE &&
+    !speechVoices.some(v=>v.voiceURI===speechSettings.voiceURI)
+  ){
+    speechSettings.voiceURI=aiVoiceValue(activeAiProfile());
+    saveSpeechSettings();
+  }
+  renderSpeechControls();
+}
+function scheduleVoiceLoading(){
+  refreshSpeechVoices();
+  [100,300,700,1400,2800,5000].forEach(ms=>setTimeout(refreshSpeechVoices,ms));
+}
+function describeVoiceState(){
+  const profile=selectedAiProfile();
+  if(profile)return `Using ${aiProfileLabel(profile)}.`;
+  if(speechSettings.voiceURI===DEVICE_DEFAULT_VALUE){
+    return "Using the browser's device-default voice.";
+  }
+  const voice=selectedDeviceVoice();
+  return voice
+    ? `Using device voice: ${voiceLabel(voice)}`
+    : `Using ${aiProfileLabel(activeAiProfile())}.`;
+}
+
+/* Accent-specific AI cache */
+function aiVoiceCacheKey(text,profileId=activeAiProfile()){
+  const profile=AI_VOICE_PROFILES[profileId] ? profileId : DEFAULT_AI_PROFILE;
+  return `${AI_VOICE_FORMAT_VERSION}:${profile}:${normaliseAudioText(text).toLowerCase()}`;
+}
+function openAudioDb(){
+  if(audioDbPromise)return audioDbPromise;
+  audioDbPromise=new Promise((resolve,reject)=>{
+    if(!("indexedDB" in window)){
+      reject(new Error("Local audio storage is unavailable."));
+      return;
+    }
+    const request=indexedDB.open(AI_VOICE_DB,1);
+    request.onupgradeneeded=()=>{
+      const db=request.result;
+      if(!db.objectStoreNames.contains(AI_VOICE_STORE)){
+        db.createObjectStore(AI_VOICE_STORE);
+      }
+    };
+    request.onsuccess=()=>resolve(request.result);
+    request.onerror=()=>reject(request.error||new Error("Could not open local audio storage."));
+  });
+  return audioDbPromise;
+}
+async function getCachedAiVoice(text,profileId=activeAiProfile()){
+  const key=aiVoiceCacheKey(text,profileId);
+  try{
+    const db=await openAudioDb();
+    return await new Promise((resolve,reject)=>{
+      const tx=db.transaction(AI_VOICE_STORE,"readonly");
+      const req=tx.objectStore(AI_VOICE_STORE).get(key);
+      req.onsuccess=()=>resolve(req.result||null);
+      req.onerror=()=>reject(req.error);
+    });
+  }catch{
+    return null;
+  }
+}
+async function storeCachedAiVoice(text,blob,profileId,generation){
+  if(generation!==voiceCacheGeneration)return;
+  const key=aiVoiceCacheKey(text,profileId);
+  try{
+    const db=await openAudioDb();
+    await new Promise((resolve,reject)=>{
+      const tx=db.transaction(AI_VOICE_STORE,"readwrite");
+      tx.objectStore(AI_VOICE_STORE).put(blob,key);
+      tx.oncomplete=resolve;
+      tx.onerror=()=>reject(tx.error);
+    });
+    scheduleCacheCountUpdate();
+  }catch{}
+}
+async function countCachedAiVoices(profileId=activeAiProfile()){
+  const prefix=`${AI_VOICE_FORMAT_VERSION}:${profileId}:`;
+  try{
+    const db=await openAudioDb();
+    return await new Promise((resolve,reject)=>{
+      const tx=db.transaction(AI_VOICE_STORE,"readonly");
+      const req=tx.objectStore(AI_VOICE_STORE).getAllKeys();
+      req.onsuccess=()=>resolve(
+        (req.result||[]).filter(key=>String(key).startsWith(prefix)).length
+      );
+      req.onerror=()=>reject(req.error);
+    });
+  }catch{
+    return 0;
+  }
+}
+async function clearAllAiVoiceCache(){
+  const ok=confirm(
+    "Clear all saved AI accent recordings from this browser/device?\n\n"+
+    "Your tree list, scores, settings and counters will not be deleted. "+
+    "Recordings will be generated again when needed."
+  );
+  if(!ok)return;
+
+  stopAppVoice();
+  voiceCacheGeneration++;
+  backgroundVoiceQueue=[];
+  voicePackProgress=null;
+  persistBackgroundQueue();
+
+  try{
+    const db=await openAudioDb();
+    await new Promise((resolve,reject)=>{
+      const tx=db.transaction(AI_VOICE_STORE,"readwrite");
+      tx.objectStore(AI_VOICE_STORE).clear();
+      tx.oncomplete=resolve;
+      tx.onerror=()=>reject(tx.error);
+    });
+    setSpeechStatus("AI voice cache cleared. Recordings will regenerate when needed.");
+  }catch{
+    setSpeechStatus("The AI voice cache could not be cleared in this browser.");
+  }
+  scheduleCacheCountUpdate();
+}
+function scheduleCacheCountUpdate(){
+  clearTimeout(cacheCountTimer);
+  cacheCountTimer=setTimeout(updateVoiceCacheStat,150);
+}
+async function updateVoiceCacheStat(){
+  const el=document.getElementById("voiceCacheStat");
+  if(!el)return;
+  const profile=activeAiProfile();
+  const count=await countCachedAiVoices(profile);
+  const accent=AI_VOICE_PROFILES[profile].label.replace(/^AI\s+/,"");
+  if(voicePackProgress&&voicePackProgress.profile===profile){
+    el.textContent=`${accent} AI cache: ${count} saved · pack ${voicePackProgress.done}/${voicePackProgress.total}`;
+  }else{
+    el.textContent=`${accent} AI cache: ${count} recording${count===1?"":"s"} saved`;
+  }
+}
+async function requestAiVoiceBlob(text,profileId=activeAiProfile()){
+  const clean=normaliseAudioText(text);
+  const profile=AI_VOICE_PROFILES[profileId] ? profileId : DEFAULT_AI_PROFILE;
+  if(!clean)throw new Error("Nothing to speak.");
+
+  const key=aiVoiceCacheKey(clean,profile);
+  const cached=await getCachedAiVoice(clean,profile);
+  if(cached)return cached;
+  if(appVoiceRequests.has(key))return appVoiceRequests.get(key);
+
+  const generation=voiceCacheGeneration;
+  const request=(async()=>{
+    if(!navigator.onLine){
+      throw new Error(
+        `This ${AI_VOICE_PROFILES[profile].label} recording is not cached yet. `+
+        "Connect to the internet once to create it."
+      );
+    }
+    const response=await fetch("/api/speech",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({text:clean,profile})
+    });
+    if(!response.ok){
+      let message=`AI voice failed (${response.status}).`;
+      try{
+        const body=await response.json();
+        if(body?.error)message=body.error;
+      }catch{}
+      throw new Error(message);
+    }
+    const blob=await response.blob();
+    await storeCachedAiVoice(clean,blob,profile,generation);
+    return blob;
+  })().finally(()=>appVoiceRequests.delete(key));
+
+  appVoiceRequests.set(key,request);
+  return request;
+}
+async function unlockAppAudio(){
+  const AudioContextClass=window.AudioContext||window.webkitAudioContext;
+  if(!AudioContextClass)return null;
+  if(!appAudioContext)appAudioContext=new AudioContextClass();
+  if(appAudioContext.state==="suspended"){
+    try{await appAudioContext.resume();}catch{}
+  }
+  try{
+    const buffer=appAudioContext.createBuffer(1,1,22050);
+    const source=appAudioContext.createBufferSource();
+    source.buffer=buffer;
+    source.connect(appAudioContext.destination);
+    source.start(0);
+  }catch{}
+  return appAudioContext;
+}
+function stopAppVoice(){
+  appPlaybackId++;
+  if(appAudioSource){
+    try{appAudioSource.stop(0);}catch{}
+    try{appAudioSource.disconnect();}catch{}
+    appAudioSource=null;
+  }
+  if(appHtmlAudio){
+    try{appHtmlAudio.pause();}catch{}
+    appHtmlAudio.removeAttribute("src");
+    try{appHtmlAudio.load();}catch{}
+    appHtmlAudio=null;
+  }
+  if(appAudioObjectUrl){
+    try{URL.revokeObjectURL(appAudioObjectUrl);}catch{}
+    appAudioObjectUrl="";
+  }
+}
+async function playBlobWithUniversalAudio(blob,playbackId){
+  const context=await unlockAppAudio();
+  if(playbackId!==appPlaybackId)return;
+
+  if(context){
+    try{
+      const arrayBuffer=await blob.arrayBuffer();
+      const decoded=await context.decodeAudioData(arrayBuffer.slice(0));
+      if(playbackId!==appPlaybackId)return;
+      const source=context.createBufferSource();
+      source.buffer=decoded;
+      source.connect(context.destination);
+      source.onended=()=>{
+        if(playbackId===appPlaybackId){
+          appAudioSource=null;
+          setSpeechStatus(describeVoiceState());
+        }
+      };
+      appAudioSource=source;
+      source.start(0);
+      return;
+    }catch{}
+  }
+
+  appAudioObjectUrl=URL.createObjectURL(blob);
+  appHtmlAudio=new Audio(appAudioObjectUrl);
+  appHtmlAudio.preload="auto";
+  appHtmlAudio.onended=()=>{
+    if(playbackId===appPlaybackId){
+      setSpeechStatus(describeVoiceState());
+      stopAppVoice();
+    }
+  };
+  appHtmlAudio.onerror=()=>{
+    if(playbackId===appPlaybackId){
+      setSpeechStatus("This browser could not play the saved AI recording.");
+    }
+  };
+  await appHtmlAudio.play();
+}
+async function speakWithAiVoice(text,profileId=activeAiProfile()){
+  const clean=normaliseAudioText(text);
+  const profile=AI_VOICE_PROFILES[profileId] ? profileId : DEFAULT_AI_PROFILE;
+  if(!clean)return;
+
+  stopDeviceVoice();
+  stopAppVoice();
+  const playbackId=appPlaybackId;
+  await unlockAppAudio();
+
+  try{
+    const cached=await getCachedAiVoice(clean,profile);
+    const accent=AI_VOICE_PROFILES[profile].label.replace(/^AI\s+/,"");
+    setSpeechStatus(
+      cached
+        ? `Playing saved ${accent} AI voice…`
+        : `Creating and saving ${accent} AI voice recording…`
+    );
+    const blob=cached||await requestAiVoiceBlob(clean,profile);
+    if(playbackId!==appPlaybackId)return;
+    await playBlobWithUniversalAudio(blob,playbackId);
+  }catch(error){
+    if(playbackId===appPlaybackId){
+      setSpeechStatus(error?.message||"AI voice failed.");
+    }
+  }
+}
+
+/* Optional browser/device voices */
+function stopDeviceVoice(){
+  deviceUtterance=null;
+  if(speechSupported()){
+    try{window.speechSynthesis.cancel();}catch{}
+  }
+}
+function deviceVoiceFailed(text,error){
+  const profile=activeAiProfile();
+  speechSettings.voiceURI=aiVoiceValue(profile);
+  saveSpeechSettings();
+  renderSpeechControls();
+  setSpeechStatus(
+    `Device voice failed (${error||"synthesis error"}). `+
+    `Falling back to ${aiProfileLabel(profile)}…`
+  );
+  setTimeout(()=>speakWithAiVoice(text,profile),120);
+}
+function speakWithDeviceVoice(text){
+  if(!speechSupported()){
+    deviceVoiceFailed(text,"unavailable");
+    return;
+  }
+  stopAppVoice();
+  const synth=window.speechSynthesis;
+  try{synth.cancel();}catch{}
+
+  const utterance=new SpeechSynthesisUtterance(String(text));
+  const voice=selectedDeviceVoice();
+  if(voice){
+    utterance.voice=voice;
+    utterance.lang=String(voice.lang||navigator.language||"en-AU").replace(/_/g,"-");
+  }else{
+    utterance.lang=String(navigator.language||"en-AU").replace(/_/g,"-");
+  }
+  utterance.rate=Math.min(1.4,Math.max(0.65,Number(speechSettings.rate)||0.92));
+  utterance.pitch=1;
+  utterance.volume=1;
+  utterance.onstart=()=>setSpeechStatus(
+    voice ? `Speaking with ${voice.name}…` : "Speaking with device-default voice…"
+  );
+  utterance.onend=()=>{
+    deviceUtterance=null;
+    setSpeechStatus(describeVoiceState());
+  };
+  utterance.onerror=e=>{
+    deviceUtterance=null;
+    const code=e?.error||"synthesis-failed";
+    if(code!=="canceled"&&code!=="interrupted")deviceVoiceFailed(text,code);
+  };
+  deviceUtterance=utterance;
+  setTimeout(()=>{
+    try{synth.speak(utterance);}
+    catch(error){deviceVoiceFailed(text,error?.message||"speak error");}
+  },90);
+}
+function speakCardText(text,force=false){
+  if((!speechSettings.enabled&&!force)||!text)return;
+  unlockAppAudio();
+  const profile=selectedAiProfile();
+  if(profile){
+    speechSettings.aiProfile=profile;
+    saveSpeechSettings();
+    speakWithAiVoice(text,profile);
+  }else{
+    speakWithDeviceVoice(text);
+  }
+}
+function stopSpeech(){
+  stopDeviceVoice();
+  stopAppVoice();
+  setSpeechStatus(describeVoiceState());
+}
+
+/* Background recording queue */
+function specimenVoiceTexts(rows){
+  const texts=[];
+  for(const row of rows||[]){
+    if(!row)continue;
+    texts.push(row.common,row.binomial,genusOf(row.binomial),row.family);
+  }
+  return [...new Set(texts.map(normaliseAudioText).filter(Boolean))];
+}
+function persistBackgroundQueue(){
+  localStorage.setItem(AI_VOICE_QUEUE_KEY,JSON.stringify(backgroundVoiceQueue));
+}
+function queueAiVoiceTexts(texts,profileId=activeAiProfile(),front=false){
+  const profile=AI_VOICE_PROFILES[profileId] ? profileId : DEFAULT_AI_PROFILE;
+  const existing=new Set(
+    backgroundVoiceQueue.map(item=>aiVoiceCacheKey(item.text,item.profile))
+  );
+  const clean=[...new Set((texts||[]).map(normaliseAudioText).filter(Boolean))]
+    .map(text=>({text,profile}))
+    .filter(item=>!existing.has(aiVoiceCacheKey(item.text,item.profile)));
+
+  if(front)backgroundVoiceQueue=[...clean,...backgroundVoiceQueue];
+  else backgroundVoiceQueue.push(...clean);
+  persistBackgroundQueue();
+  processBackgroundVoiceQueue();
+}
+function queueSpecimenAudio(rows){
+  const texts=specimenVoiceTexts(rows);
+  if(!texts.length)return;
+  const profile=activeAiProfile();
+  queueAiVoiceTexts(texts,profile,false);
+  setSpeechStatus(
+    navigator.onLine
+      ? `New specimen saved. Queued ${texts.length} ${aiProfileLabel(profile)} recording${texts.length===1?"":"s"}.`
+      : `New specimen saved. Its ${aiProfileLabel(profile)} recordings will be created when this device is online.`
+  );
+}
+async function processBackgroundVoiceQueue(){
+  if(backgroundVoiceRunning||!navigator.onLine||!backgroundVoiceQueue.length)return;
+  backgroundVoiceRunning=true;
+  try{
+    while(backgroundVoiceQueue.length&&navigator.onLine){
+      const item=backgroundVoiceQueue[0];
+      try{
+        await requestAiVoiceBlob(item.text,item.profile);
+        backgroundVoiceQueue.shift();
+        persistBackgroundQueue();
+        if(
+          voicePackProgress &&
+          voicePackProgress.profile===item.profile
+        ){
+          voicePackProgress.done++;
+          scheduleCacheCountUpdate();
+          setSpeechStatus(
+            `Caching ${aiProfileLabel(item.profile)} list: `+
+            `${voicePackProgress.done}/${voicePackProgress.total}`
+          );
+        }
+        await new Promise(resolve=>setTimeout(resolve,100));
+      }catch(error){
+        setSpeechStatus(error?.message||"AI voice cache generation paused.");
+        break;
+      }
+    }
+  }finally{
+    backgroundVoiceRunning=false;
+    if(voicePackProgress&&!backgroundVoiceQueue.length){
+      const finished={...voicePackProgress};
+      voicePackProgress=null;
+      scheduleCacheCountUpdate();
+      setSpeechStatus(
+        `${aiProfileLabel(finished.profile)} list pack ready: `+
+        `${finished.total} names saved on this device.`
+      );
+    }
+  }
+}
+function prefetchFlashAudio(){
+  const profile=selectedAiProfile();
+  if(!profile||!flashDeck.length)return;
+  const mode=document.getElementById("flashMode").value;
+  const texts=[];
+  for(let offset=0;offset<3;offset++){
+    const row=flashDeck[(flashIndex+offset)%flashDeck.length];
+    if(!row)continue;
+    const sides=flashSides(row,mode);
+    texts.push(sides[1],sides[3]);
+  }
+  queueAiVoiceTexts(texts,profile,true);
+}
+async function cacheCurrentListVoices(){
+  await unlockAppAudio();
+  const profile=selectedAiProfile()||activeAiProfile();
+  const texts=specimenVoiceTexts(data);
+  if(!texts.length)return;
+
+  const uncached=[];
+  for(const text of texts){
+    if(!(await getCachedAiVoice(text,profile)))uncached.push(text);
+  }
+  if(!uncached.length){
+    setSpeechStatus(
+      `The current list is already saved in ${aiProfileLabel(profile)} on this device.`
+    );
+    scheduleCacheCountUpdate();
+    return;
+  }
+  voicePackProgress={done:0,total:uncached.length,profile};
+  queueAiVoiceTexts(uncached,profile,true);
+  setSpeechStatus(
+    `Caching ${aiProfileLabel(profile)} list: 0/${uncached.length}`
+  );
+  scheduleCacheCountUpdate();
+}
+
+function renderSpeechControls(){
+  const toggle=document.getElementById("speechToggle");
+  const select=document.getElementById("speechVoice");
+  const test=document.getElementById("speechTest");
+  if(!toggle||!select||!test)return;
+
+  toggle.disabled=false;
+  test.disabled=false;
+  toggle.textContent=speechSettings.enabled?"🔊 On":"🔇 Off";
+  toggle.className=speechSettings.enabled?"primary":"secondary";
+
+  let options='<optgroup label="AI accent voices">';
+  options+=Object.values(AI_VOICE_PROFILES).map(profile=>
+    `<option value="${esc(aiVoiceValue(profile.id))}">${esc(profile.label)}</option>`
+  ).join("");
+  options+='</optgroup>';
+
+  if(speechSupported()){
+    options+='<optgroup label="Device voices — browser dependent">';
+    options+='<option value="__device_default__">Device default voice</option>';
+    options+=speechVoices.map(v=>
+      `<option value="${esc(v.voiceURI)}">${esc(voiceLabel(v))}</option>`
+    ).join("");
+    options+='</optgroup>';
+  }
+  select.innerHTML=options;
+
+  if(![...select.options].some(o=>o.value===speechSettings.voiceURI)){
+    speechSettings.voiceURI=aiVoiceValue(activeAiProfile());
+    saveSpeechSettings();
+  }
+  select.value=speechSettings.voiceURI;
+  setSpeechStatus(describeVoiceState());
+  scheduleCacheCountUpdate();
+}
+
+if(speechSupported()){
+  try{window.speechSynthesis.addEventListener?.("voiceschanged",refreshSpeechVoices);}catch{}
+  window.addEventListener("pageshow",scheduleVoiceLoading);
+  window.addEventListener("focus",refreshSpeechVoices);
+  document.addEventListener("visibilitychange",()=>{
+    if(!document.hidden)refreshSpeechVoices();
+  });
+}
+window.addEventListener("online",processBackgroundVoiceQueue);
+scheduleVoiceLoading();
+setTimeout(processBackgroundVoiceQueue,600);
+function renderFamilyFilter(){
+  const sel=document.getElementById("familyFilter");
+  const keep=sel.value;
+  const families=[...new Set(data.map(x=>x.family))].sort();
+  sel.innerHTML='<option value="">All families</option>'+families.map(f=>`<option>${esc(f)}</option>`).join("");
+  if(families.includes(keep))sel.value=keep;
+}
+function startFlash(){
+  const family=document.getElementById("familyFilter").value;
+  flashDeck=shuffle(data.filter(x=>!family||x.family===family));
+  flashIndex=0;flashKnown=0;flashAgain=0;
+  renderFlash();
+}
+function flashSides(r,mode){
+  const g=genusOf(r.binomial);
+  if(mode==="common-binomial")return ["Common name",r.common,"Binomial name",r.binomial,r.family];
+  if(mode==="binomial-common")return ["Binomial name",r.binomial,"Common name",r.common,r.family];
+  if(mode==="genus-family")return ["Genus",g,"Family",r.family,r.binomial];
+  return ["Family",r.family,"Genus",g,r.binomial];
+}
+function renderFlash(speakFront=true){
+  const card=document.getElementById("flashCard");
+  card.classList.add("resetting");
+  card.classList.remove("revealed");
+  // Force the browser to commit the non-animated front position before changing text.
+  void card.offsetWidth;
+  if(!flashDeck.length){
+    document.getElementById("frontLabel").textContent="";
+    document.getElementById("frontText").textContent="No trees in this filter";
+    document.getElementById("backLabel").textContent="";
+    document.getElementById("backText").textContent="";
+    requestAnimationFrame(()=>requestAnimationFrame(()=>card.classList.remove("resetting")));
+    return;
+  }
+  if(flashIndex>=flashDeck.length) flashIndex=0;
+  const r=flashDeck[flashIndex], sides=flashSides(r,document.getElementById("flashMode").value);
+  document.getElementById("frontLabel").textContent=sides[0];
+  document.getElementById("frontText").textContent=sides[1];
+  document.getElementById("backLabel").textContent=sides[2];
+  document.getElementById("backText").textContent=sides[3];
+  document.getElementById("backExtra").textContent=sides[4];
+  document.getElementById("flashPosition").textContent=`Card ${flashIndex+1} / ${flashDeck.length}`;
+  document.getElementById("flashKnown").textContent=`Known: ${flashKnown}`;
+  document.getElementById("flashAgain").textContent=`Again: ${flashAgain}`;
+  document.getElementById("flashProgress").style.width=`${((flashIndex+1)/flashDeck.length)*100}%`;
+  document.getElementById("prevBtn").disabled = flashIndex <= 0;
+  // Wait until the new front has been painted before restoring the flip animation.
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    card.classList.remove("resetting");
+  }));
+  prefetchFlashAudio();
+  if(speakFront) setTimeout(()=>speakCardText(sides[1]), 120);
+}
+document.getElementById("flashCard").addEventListener("click",e=>{
+  const card=e.currentTarget;
+  card.classList.toggle("revealed");
+  const text=card.classList.contains("revealed")
+    ? document.getElementById("backText").textContent
+    : document.getElementById("frontText").textContent;
+  speakCardText(text);
+});
+document.getElementById("prevBtn").addEventListener("click",()=>{
+  if(!flashDeck.length || flashIndex<=0)return;
+  flashIndex--;
+  renderFlash();
+});
+document.getElementById("knownBtn").addEventListener("click",()=>{if(!flashDeck.length)return;flashKnown++;recordAttempt(true,0);flashIndex++;renderFlash()});
+document.getElementById("againBtn").addEventListener("click",()=>{if(!flashDeck.length)return;flashAgain++;recordAttempt(false,0);flashDeck.push(flashDeck[flashIndex]);flashIndex++;renderFlash()});
+document.getElementById("shuffleFlash").addEventListener("click",startFlash);
+document.getElementById("flashMode").addEventListener("change",()=>renderFlash());
+document.getElementById("familyFilter").addEventListener("change",startFlash);
+document.getElementById("speechToggle").addEventListener("click",async()=>{
+  await unlockAppAudio();
+  speechSettings.enabled=!speechSettings.enabled;
+  saveSpeechSettings();
+  renderSpeechControls();
+  if(speechSettings.enabled){
+    speakCardText(document.getElementById("frontText").textContent,true);
+    prefetchFlashAudio();
+  }else{
+    stopSpeech();
+  }
+});
+document.getElementById("speechVoice").addEventListener("change",async e=>{
+  await unlockAppAudio();
+  speechSettings.voiceURI=e.target.value;
+  const profile=selectedAiProfile();
+  if(profile)speechSettings.aiProfile=profile;
+  saveSpeechSettings();
+  renderSpeechControls();
+  speakCardText("Jarrah. Eucalyptus marginata.",true);
+  prefetchFlashAudio();
+});
+document.getElementById("speechTest").addEventListener("click",async()=>{
+  await unlockAppAudio();
+  speakCardText(
+    "Jarrah. Eucalyptus marginata. Marri. Corymbia calophylla.",
+    true
+  );
+});
+document.getElementById("speechRefresh").addEventListener("click",()=>{
+  stopDeviceVoice();
+  speechVoices=[];
+  voicesReady=false;
+  refreshSpeechVoices();
+  scheduleVoiceLoading();
+  setSpeechStatus("Reloading device voices. AI accent voices remain available.");
+});
+document.getElementById("speechCacheList").addEventListener("click",cacheCurrentListVoices);
+document.getElementById("speechClearCache").addEventListener("click",clearAllAiVoiceCache);
+
+/* Generic matching game */
+function makeMatchGame(cfg){
+  let round=[], leftSel=null, rightSel=null, matched=0, moves=0, streak=0;
+  const left=document.getElementById(cfg.left),right=document.getElementById(cfg.right);
+  function clearSelections(){ leftSel=null;rightSel=null; left.querySelectorAll(".selected").forEach(x=>x.classList.remove("selected")); right.querySelectorAll(".selected").forEach(x=>x.classList.remove("selected")); }
+  function message(text,type=""){ const el=document.getElementById(cfg.message);el.textContent=text;el.className="message "+type; }
+  function update(){
+    document.getElementById(cfg.score).textContent=`Matched: ${matched} / ${round.length}`;
+    document.getElementById(cfg.moves).textContent=`Moves: ${moves}`;
+    document.getElementById(cfg.streak).textContent=`Streak: ${streak}`;
+  }
+  function select(btn,side){
+    if(btn.classList.contains("correct"))return;
+    const container=side==="left"?left:right;
+    container.querySelectorAll(".selected").forEach(x=>x.classList.remove("selected"));
+    btn.classList.add("selected");
+    if(side==="left")leftSel=btn;else rightSel=btn;
+    if(leftSel&&rightSel)check();
+  }
+  function check(){
+    moves++;
+    const ok=cfg.isMatch(leftSel.dataset,rightSel.dataset);
+    if(ok){
+      matched++;streak++;
+      leftSel.classList.remove("selected");rightSel.classList.remove("selected");
+      leftSel.classList.add("correct");rightSel.classList.add("correct");
+      message("Correct","good");recordAttempt(true,streak);
+      leftSel=null;rightSel=null;
+      if(matched===round.length)message(`Round complete — ${moves} moves`,"good");
+    }else{
+      streak=0;message("Not that pair","bad");recordAttempt(false,streak);
+      const a=leftSel,b=rightSel;a.classList.add("wrong");b.classList.add("wrong");
+      setTimeout(()=>{a.classList.remove("wrong");b.classList.remove("wrong");clearSelections()},380);
+    }
+    update();
+  }
+  function newRound(){
+    const n=parseInt(document.getElementById(cfg.size).value,10);
+    round=cfg.makeRound(n); matched=0;moves=0;streak=0;clearSelections();message("");
+    const litems=shuffle(round.map((r,i)=>cfg.leftItem(r,i)));
+    const ritems=shuffle(round.map((r,i)=>cfg.rightItem(r,i)));
+    left.innerHTML="";right.innerHTML="";
+    litems.forEach(item=>{const b=document.createElement("button");b.type="button";b.className="match-card";b.textContent=item.text;Object.assign(b.dataset,item.data);b.addEventListener("click",()=>select(b,"left"));left.appendChild(b)});
+    ritems.forEach(item=>{const b=document.createElement("button");b.type="button";b.className="match-card";b.textContent=item.text;Object.assign(b.dataset,item.data);b.addEventListener("click",()=>select(b,"right"));right.appendChild(b)});
+    update();
+  }
+  return {newRound};
+}
+const familyGame=makeMatchGame({
+  left:"familyLeft",right:"familyRight",message:"familyMessage",score:"familyScore",moves:"familyMoves",streak:"familyStreak",size:"familySize",
+  makeRound:n=>{
+    const byGenus=new Map();
+    data.forEach(r=>{const g=genusOf(r.binomial);if(!byGenus.has(g))byGenus.set(g,{genus:g,family:r.family})});
+    return sample([...byGenus.values()],n);
+  },
+  leftItem:(r,i)=>({text:r.family,data:{family:r.family,id:String(i)}}),
+  rightItem:(r,i)=>({text:r.genus,data:{family:r.family,id:String(i)}}),
+  isMatch:(l,r)=>l.family===r.family
+});
+const nameGame=makeMatchGame({
+  left:"nameLeft",right:"nameRight",message:"nameMessage",score:"nameScore",moves:"nameMoves",streak:"nameStreak",size:"nameSize",
+  makeRound:n=>sample(data,n),
+  leftItem:(r,i)=>({text:r.binomial,data:{id:r.binomial}}),
+  rightItem:(r,i)=>({text:r.common,data:{id:r.binomial}}),
+  isMatch:(l,r)=>l.id===r.id
+});
+function newFamilyRound(){familyGame.newRound()}
+function newNameRound(){nameGame.newRound()}
+document.getElementById("newFamilyRound").addEventListener("click",newFamilyRound);
+document.getElementById("newNameRound").addEventListener("click",newNameRound);
+document.getElementById("familySize").addEventListener("change",newFamilyRound);
+document.getElementById("nameSize").addEventListener("change",newNameRound);
+
+
+/* AI command bar */
+let aiLog = loadJSON(AI_LOG_KEY, []);
+let aiBusy = false;
+
+function defaultAIEndpoint(){
+  return "/api/ai";
+}
+function renderAIConnection(state){
+  const el=document.getElementById("aiConnection");
+  const dot=state==="online"?"online":state==="offline"?"offline":"";
+  const text=state==="online"?"Full ChatGPT ready":state==="offline"?"Basic commands ready":"Basic commands ready";
+  el.innerHTML=`<span class="connection-dot ${dot}"></span>${text}`;
+}
+function setAIResponse(text,type=""){
+  const el=document.getElementById("aiResponse");
+  el.textContent=text||"";
+  el.className="ai-response "+type;
+}
+function saveAILog(){
+  aiLog=aiLog.slice(-12);
+  localStorage.setItem(AI_LOG_KEY,JSON.stringify(aiLog));
+  renderAILog();
+}
+function addAILog(role,text){
+  aiLog.push({role,text:String(text),time:new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"})});
+  saveAILog();
+}
+function renderAILog(){
+  const el=document.getElementById("aiHistory");
+  el.innerHTML="";
+  aiLog.slice().reverse().forEach(item=>{
+    const d=document.createElement("div");
+    d.className="ai-log "+(item.role==="user"?"user":"");
+    d.textContent=`${item.role==="user"?"You":"AI"} · ${item.time}: ${item.text}`;
+    el.appendChild(d);
+  });
+}
+function snapshotForUndo(){
+  const snap={
+    data:JSON.parse(JSON.stringify(data)),
+    speechSettings:JSON.parse(JSON.stringify(speechSettings)),
+    flashMode:document.getElementById("flashMode").value,
+    familyFilter:document.getElementById("familyFilter").value
+  };
+  localStorage.setItem(AI_UNDO_KEY,JSON.stringify(snap));
+}
+function undoAIChange(){
+  const snap=loadJSON(AI_UNDO_KEY,null);
+  if(!snap){setAIResponse("Nothing to undo.","bad");return}
+  if(Array.isArray(snap.data)){data=uniqueData(snap.data);saveData()}
+  if(snap.speechSettings){
+    speechSettings=Object.assign({enabled:false,accent:"en-AU"},snap.speechSettings);
+    saveSpeechSettings();renderSpeechControls();
+  }
+  if(snap.flashMode)document.getElementById("flashMode").value=snap.flashMode;
+  renderFamilyFilter();
+  if(snap.familyFilter)document.getElementById("familyFilter").value=snap.familyFilter;
+  renderData();
+  setAIResponse("Last AI change undone.","good");
+  addAILog("ai","Last AI change undone.");
+  localStorage.removeItem(AI_UNDO_KEY);
+}
+function accentCode(value){
+  const v=String(value||"").toLowerCase();
+  if(v.includes("austral")||v==="en-au")return"en-AU";
+  if(v.includes("brit")||v.includes("english")||v.includes("uk")||v==="en-gb")return"en-GB";
+  if(v.includes("america")||v.includes("us")||v==="en-us")return"en-US";
+  if(v.includes("german")||v.includes("deutsch")||v==="de-de")return"de-DE";
+  return "";
+}
+function flashModeCode(value){
+  const v=String(value||"").toLowerCase();
+  if(v.includes("common")&&v.includes("binomial")){
+    return v.indexOf("common")<v.indexOf("binomial")?"common-binomial":"binomial-common";
+  }
+  if(v.includes("genus")&&v.includes("family")){
+    return v.indexOf("genus")<v.indexOf("family")?"genus-family":"family-genus";
+  }
+  return ["common-binomial","binomial-common","genus-family","family-genus"].includes(value)?value:"";
+}
+function viewCode(value){
+  const v=String(value||"").toLowerCase();
+  if(v.includes("family"))return"familyGame";
+  if(v.includes("binomial")||v.includes("common")||v.includes("name game"))return"nameGame";
+  if(v.includes("flash"))return"flash";
+  if(v.includes("data")||v.includes("edit")||v.includes("import"))return"data";
+  if(v.includes("home"))return"home";
+  return "";
+}
+function findTreeIndex(target){
+  const t=String(target||"").trim().toLowerCase();
+  if(!t)return-1;
+  let i=data.findIndex(r=>r.binomial.toLowerCase()===t);
+  if(i<0)i=data.findIndex(r=>r.common.toLowerCase()===t);
+  if(i<0)i=data.findIndex(r=>r.binomial.toLowerCase().includes(t)||r.common.toLowerCase().includes(t));
+  return i;
+}
+function applyAIActions(actions){
+  if(!Array.isArray(actions)||!actions.length)return{changed:false,notes:[]};
+  snapshotForUndo();
+  let changed=false,navigateTo="",notes=[],audioRows=[];
+  for(const a of actions){
+    const type=String(a.type||"");
+    if(type==="add_tree"){
+      const r=cleanRecord({binomial:a.binomial,common:a.common,family:a.family});
+      if(r.binomial&&r.common&&r.family){
+        const before=data.length; data=uniqueData([...data,r]);
+        if(data.length>before){changed=true;audioRows.push(r);notes.push(`Added ${r.binomial}.`)}
+        else notes.push(`${r.binomial} was already present.`);
+      }
+    }else if(type==="update_tree"){
+      const i=findTreeIndex(a.target||a.binomial);
+      if(i>=0){
+        data[i]=cleanRecord({
+          binomial:a.binomial||data[i].binomial,
+          common:a.common||data[i].common,
+          family:a.family||data[i].family
+        });
+        data=uniqueData(data);changed=true;audioRows.push(data[Math.min(i,data.length-1)]);notes.push(`Updated ${data[Math.min(i,data.length-1)]?.binomial||a.target}.`);
+      }else notes.push(`Could not find ${a.target||a.binomial}.`);
+    }else if(type==="delete_tree"){
+      const i=findTreeIndex(a.target||a.binomial);
+      if(i>=0){const name=data[i].binomial;data.splice(i,1);changed=true;notes.push(`Deleted ${name}.`)}
+      else notes.push(`Could not find ${a.target||a.binomial}.`);
+    }else if(type==="set_speech"){
+      const v=String(a.value||"").toLowerCase();
+      speechSettings.enabled=["on","true","enabled","yes","1"].some(x=>v.includes(x));
+      saveSpeechSettings();renderSpeechControls();changed=true;
+      notes.push(`Speech ${speechSettings.enabled?"enabled":"disabled"}.`);
+    }else if(type==="set_accent"){
+      const code=accentCode(a.value);
+      if(code){
+        const matches=speechVoices.filter(v=>String(v.lang||"").toLowerCase()===code.toLowerCase());
+        const found=matches.find(v=>v.localService)||matches[0];
+        if(found){
+          speechSettings.voiceURI=found.voiceURI;
+          saveSpeechSettings();renderSpeechControls();changed=true;
+          notes.push(`Installed voice selected: ${found.name}.`);
+        }else notes.push(`No ${code} voice is installed on this phone.`);
+      }
+    }else if(type==="set_flash_mode"){
+      const mode=flashModeCode(a.value);
+      if(mode){document.getElementById("flashMode").value=mode;changed=true;notes.push("Flashcard mode changed.")}
+    }else if(type==="set_family_filter"){
+      renderFamilyFilter();
+      const wanted=String(a.value||"").trim();
+      const options=[...document.getElementById("familyFilter").options];
+      const found=options.find(o=>o.value.toLowerCase()===wanted.toLowerCase());
+      if(found){document.getElementById("familyFilter").value=found.value;changed=true;notes.push(`Family filter set to ${found.value||"All"}.`)}
+    }else if(type==="navigate"){
+      const v=viewCode(a.value);
+      if(v)navigateTo=v;
+    }
+  }
+  if(changed){
+    saveData();renderFamilyFilter();updateCounts();
+    if(audioRows.length)queueSpecimenAudio(audioRows);
+    if(currentView==="data")renderData();
+    if(currentView==="flash")startFlash();
+  }
+  if(navigateTo)showView(navigateTo);
+  return{changed,notes};
+}
+function offlineCommand(request){
+  const q=String(request||"").trim();
+  let m;
+  if((m=q.match(/^add(?:\s+tree)?\s+(.+?)\s*[|,]\s*(.+?)\s*[|,]\s*(.+)$/i))){
+    return{reply:"Added using offline command mode.",actions:[{type:"add_tree",binomial:m[1],common:m[2],family:m[3],target:"",value:""}]};
+  }
+  if((m=q.match(/^(?:delete|remove)(?:\s+tree)?\s+(.+)$/i))){
+    return{reply:"Removed using offline command mode.",actions:[{type:"delete_tree",binomial:"",common:"",family:"",target:m[1],value:""}]};
+  }
+  if(/speech.*\b(on|enable|start)\b|\b(turn|switch)\s+on\s+speech/i.test(q))
+    return{reply:"Speech turned on.",actions:[{type:"set_speech",binomial:"",common:"",family:"",target:"",value:"on"}]};
+  if(/speech.*\b(off|disable|stop)\b|\b(turn|switch)\s+off\s+speech/i.test(q))
+    return{reply:"Speech turned off.",actions:[{type:"set_speech",binomial:"",common:"",family:"",target:"",value:"off"}]};
+  if((m=q.match(/(?:accent|voice)(?:\s+to|\s+as)?\s+(australian|aussie|english|british|american|german)/i)))
+    return{reply:"Accent changed.",actions:[{type:"set_accent",binomial:"",common:"",family:"",target:"",value:m[1]}]};
+  if(/open|go to|show/i.test(q)){
+    const v=viewCode(q);
+    if(v)return{reply:"Opening that section.",actions:[{type:"navigate",binomial:"",common:"",family:"",target:"",value:v}]};
+  }
+  return null;
+}
+async function callAIBackend(request){
+  const endpoint=defaultAIEndpoint();
+  if(!endpoint)throw new Error("AI is unavailable.");
+  const response=await fetch(endpoint,{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      request,
+      trees:data,
+      settings:{
+        speech:speechSettings,
+        flashMode:document.getElementById("flashMode").value,
+        familyFilter:document.getElementById("familyFilter").value,
+        currentView
+      }
+    })
+  });
+  const payload=await response.json().catch(()=>({}));
+  if(!response.ok)throw new Error(payload.error||`AI server error ${response.status}`);
+  return payload;
+}
+async function runAICommand(){
+  if(aiBusy)return;
+  const input=document.getElementById("aiCommand");
+  const request=input.value.trim();
+  if(!request){setAIResponse("Type or speak a request first.","bad");return}
+  aiBusy=true;document.getElementById("aiSend").disabled=true;
+  addAILog("user",request);setAIResponse("Thinking…");
+  try{
+    let result;
+    const endpoint=defaultAIEndpoint();
+    if(endpoint){
+      try{
+        result=await callAIBackend(request);
+        renderAIConnection("online");
+      }catch(err){
+        const fallback=offlineCommand(request);
+        if(!fallback)throw err;
+        result=fallback;
+        renderAIConnection("offline");
+        result.reply+=" The secure AI server was unavailable, so I used the built-in command parser.";
+      }
+    }else{
+      result=offlineCommand(request);
+      renderAIConnection("offline");
+      if(!result)throw new Error("This request needs the secure ChatGPT backend. Open Optional full ChatGPT connection — advanced after deploying the included server package.");
+    }
+    const applied=applyAIActions(result.actions||[]);
+    const notes=applied.notes.length?"\n"+applied.notes.join(" "):"";
+    const reply=(result.reply||"Done.")+notes;
+    setAIResponse(reply,applied.changed?"good":"");
+    addAILog("ai",reply);
+    input.value="";
+  }catch(err){
+    setAIResponse(err.message||String(err),"bad");
+    addAILog("ai","Error: "+(err.message||String(err)));
+    renderAIConnection("offline");
+  }finally{
+    aiBusy=false;document.getElementById("aiSend").disabled=false;
+  }
+}
+async function checkAIStatus(){
+  if(!navigator.onLine){
+    renderAIConnection("offline");
+    return;
+  }
+  try{
+    const response=await fetch(defaultAIEndpoint(),{method:"GET",cache:"no-store"});
+    const result=await response.json();
+    renderAIConnection(result.ready?"online":"offline");
+    if(!result.ready){
+      setAIResponse("AI is not connected yet. Simple built-in commands still work.");
+    }
+  }catch{
+    renderAIConnection("offline");
+  }
+}
+function initAI(){
+  renderAILog();
+  renderAIConnection("offline");
+  checkAIStatus();
+  document.getElementById("aiSend").addEventListener("click",runAICommand);
+  document.getElementById("aiCommand").addEventListener("keydown",e=>{if(e.key==="Enter")runAICommand()});
+  document.getElementById("aiUndo").addEventListener("click",undoAIChange);
+  document.getElementById("aiClearLog").addEventListener("click",()=>{aiLog=[];saveAILog();setAIResponse("")});
+  document.querySelectorAll("[data-ai-example]").forEach(b=>b.addEventListener("click",()=>{
+    document.getElementById("aiCommand").value=b.dataset.aiExample;
+    document.getElementById("aiCommand").focus();
+  }));
+  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  const mic=document.getElementById("aiMic");
+  const commandInput=document.getElementById("aiCommand");
+  const micHelp=document.getElementById("micHelp");
+  const downloadedFile=location.protocol==="file:";
+  let rec=null;
+  let micStarting=false;
+
+  function showKeyboardMic(){
+    mic.classList.remove("listening");
+    commandInput.focus();
+    try{
+      commandInput.setSelectionRange(commandInput.value.length,commandInput.value.length);
+    }catch{}
+    setAIResponse("Your Android keyboard is open. Tap its microphone, speak the command, then press Do it.");
+    micHelp.innerHTML="<strong>Downloaded-file mode:</strong> Android blocks direct webpage microphone access. The keyboard microphone still works.";
+  }
+
+  async function requestMicAndListen(){
+    if(micStarting)return;
+    micStarting=true;
+
+    // A downloaded file is not a secure website, so Android usually blocks direct
+    // microphone access without offering a permission prompt.
+    if(downloadedFile || !window.isSecureContext){
+      showKeyboardMic();
+      micStarting=false;
+      return;
+    }
+
+    if(!SR){
+      showKeyboardMic();
+      micStarting=false;
+      return;
+    }
+
+    try{
+      // This explicit request is what triggers Android/Chrome's permission prompt.
+      if(navigator.mediaDevices?.getUserMedia){
+        const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+        stream.getTracks().forEach(track=>track.stop());
+      }
+
+      if(!rec){
+        rec=new SR();
+        rec.lang="en-AU";
+        rec.interimResults=false;
+        rec.maxAlternatives=1;
+
+        rec.onresult=e=>{
+          const text=e.results?.[0]?.[0]?.transcript||"";
+          commandInput.value=text;
+          mic.classList.remove("listening");
+          setAIResponse(`Heard: “${text}”`);
+          if(text)runAICommand();
+        };
+        rec.onerror=e=>{
+          mic.classList.remove("listening");
+          if(e.error==="not-allowed" || e.error==="service-not-allowed"){
+            setAIResponse("Microphone permission is blocked. Enable microphone permission for this browser, or use the keyboard microphone.");
+            micHelp.innerHTML="<strong>Permission blocked:</strong> Android Settings → Apps → your browser → Permissions → Microphone → Allow.";
+          }else if(e.error==="no-speech"){
+            setAIResponse("I did not hear anything. Tap the microphone and try again.");
+          }else{
+            setAIResponse("The in-app microphone could not start. Use the microphone on your Android keyboard instead.");
+          }
+        };
+        rec.onend=()=>{
+          mic.classList.remove("listening");
+          micStarting=false;
+        };
+      }
+
+      rec.start();
+      mic.classList.add("listening");
+      setAIResponse("Listening…");
+      micHelp.textContent="Speak now. The command will be applied when you stop speaking.";
+    }catch(err){
+      mic.classList.remove("listening");
+      micStarting=false;
+      if(err?.name==="NotAllowedError" || err?.name==="SecurityError"){
+        setAIResponse("Microphone permission was not allowed. Use the keyboard microphone, or enable microphone permission for your browser.");
+        micHelp.innerHTML="<strong>To enable it:</strong> Android Settings → Apps → your browser → Permissions → Microphone → Allow.";
+        commandInput.focus();
+      }else{
+        showKeyboardMic();
+      }
+    }
+  }
+
+  mic.addEventListener("click",requestMicAndListen);
+
+  if(downloadedFile){
+    mic.title="Opens the Android keyboard microphone on downloaded copies";
+    micHelp.innerHTML="<strong>Downloaded-file mode:</strong> tap 🎙️, then tap the microphone on your Android keyboard.";
+  }else if(!SR){
+    mic.title="Uses the Android keyboard microphone in this browser";
+    micHelp.textContent="This browser does not support direct speech recognition. Tap 🎙️ and use the keyboard microphone.";
+  }else{
+    mic.title="Speak a quick update command";
+    micHelp.textContent="The first tap may ask Android for microphone permission.";
+  }
+
+  window.addEventListener("online",checkAIStatus);
+  window.addEventListener("offline",()=>renderAIConnection("offline"));
+}
+
+
+
+const THEME_KEY = "tree-id-trainer-theme-v1";
+const THEMES = ["default","mystical","journal","moonlit","reddirt"];
+const THEME_ASSETS = {
+  default:{header:"/header-art.png",hero:"/header-art.png",logo:"/icons/icon-192.png",modes:null},
+  mystical:{header:"/theme-assets/mystical/header.webp",hero:"/theme-assets/mystical/header.webp",logo:"/theme-assets/mystical/logo.webp",modes:{flash:"/theme-assets/mystical/flash.webp",family:"/theme-assets/mystical/family.webp",name:"/theme-assets/mystical/name.webp",tutorial:"/theme-assets/mystical/tutorial.webp"}},
+  journal:{header:"/theme-assets/journal/header.webp",hero:"/theme-assets/journal/header.webp",logo:"/theme-assets/journal/logo.webp",modes:{flash:"/theme-assets/journal/flash.webp",family:"/theme-assets/journal/family.webp",name:"/theme-assets/journal/name.webp",tutorial:"/theme-assets/journal/tutorial.webp"}},
+  moonlit:{header:"/theme-assets/moonlit/header.webp",hero:"/theme-assets/moonlit/header.webp",logo:"/theme-assets/moonlit/logo.webp",modes:{flash:"/theme-assets/moonlit/flash.webp",family:"/theme-assets/moonlit/family.webp",name:"/theme-assets/moonlit/name.webp",tutorial:"/theme-assets/moonlit/tutorial.webp"}},
+  reddirt:{header:"/theme-assets/reddirt/header.webp",hero:"/theme-assets/reddirt/header.webp",logo:"/theme-assets/reddirt/logo.webp",modes:{flash:"/theme-assets/reddirt/flash.webp",family:"/theme-assets/reddirt/family.webp",name:"/theme-assets/reddirt/name.webp",tutorial:"/theme-assets/reddirt/tutorial.webp"}}
+};
+
+function applyTheme(theme){
+  if(!THEMES.includes(theme)) theme = "default";
+  document.body.classList.remove("theme-mystical","theme-journal","theme-moonlit","theme-reddirt");
+  if(theme !== "default") document.body.classList.add(`theme-${theme}`);
+  const assets = THEME_ASSETS[theme] || THEME_ASSETS.default;
+  document.documentElement.style.setProperty("--header-art", `url('${assets.header}')`);
+  document.documentElement.style.setProperty("--hero-art", `url('${assets.hero}')`);
+  const logo = document.getElementById("headerLogo");
+  if(logo) logo.src = assets.logo;
+  document.body.classList.toggle("has-theme-art", Boolean(assets.modes));
+  document.querySelectorAll("[data-mode-art]").forEach(img=>{
+    const src = assets.modes?.[img.dataset.modeArt];
+    if(src){img.src=src;}else{img.removeAttribute("src");}
+  });
+  localStorage.setItem(THEME_KEY, theme);
+  const sel = document.getElementById("themeSelect");
+  if(sel) sel.value = theme;
+}
+
+function initTheme(){
+  const saved = localStorage.getItem(THEME_KEY) || "default";
+  applyTheme(saved);
+  const sel = document.getElementById("themeSelect");
+  if(sel) sel.addEventListener("change", e => applyTheme(e.target.value));
+}
+
+
+const LOCAL_VISIT_KEY="tree-id-trainer-local-visits-v2";
+const SESSION_VISIT_KEY="tree-id-trainer-counted-session-v2";
+async function initVisitCounters(){
+  const localEl=document.getElementById("localVisits");
+  const globalEl=document.getElementById("globalVisits");
+  const statusEl=document.getElementById("visitStatus");
+  let isNewSession=true;
+  let localCount=0;
+  try{
+    isNewSession=sessionStorage.getItem(SESSION_VISIT_KEY)!=="yes";
+    localCount=Number(localStorage.getItem(LOCAL_VISIT_KEY)||"0");
+    if(isNewSession){
+      localCount+=1;
+      localStorage.setItem(LOCAL_VISIT_KEY,String(localCount));
+      sessionStorage.setItem(SESSION_VISIT_KEY,"yes");
+    }
+  }catch(error){
+    localCount=1;
+  }
+  if(localEl)localEl.textContent=localCount.toLocaleString();
+  try{
+    const response=await fetch("/api/visit",{method:isNewSession?"POST":"GET",headers:{"Accept":"application/json"},cache:"no-store"});
+    const result=await response.json().catch(()=>({}));
+    if(!response.ok)throw new Error(result.error||"counter unavailable");
+    if(globalEl)globalEl.textContent=Number(result.count||0).toLocaleString();
+    if(statusEl)statusEl.textContent="Global count plus visits on this device. One visit is counted per browser session.";
+  }catch(error){
+    if(globalEl)globalEl.textContent="—";
+    if(statusEl)statusEl.textContent=navigator.onLine?"Global counter needs its database connected in Vercel.":"Global counter unavailable while offline.";
+  }
+}
+
+/* Data */
+function parseLines(text){
+  const rows=[];
+  text.split(/\r?\n/).forEach(line=>{
+    line=line.trim();if(!line)return;
+    let parts;
+    if(line.includes("|"))parts=line.split("|");
+    else if(line.includes("\t"))parts=line.split("\t");
+    else parts=parseCSVLine(line);
+    parts=parts.map(x=>x.trim().replace(/^["']|["']$/g,""));
+    if(parts.length>=3){
+      const low=parts.join(" ").toLowerCase();
+      if(low.includes("species / tree id")||low.includes("binomial")&&low.includes("family"))return;
+      rows.push({binomial:parts[0],common:parts[1],family:parts[2]});
+    }
+  });
+  return uniqueData(rows);
+}
+function parseCSVLine(line){
+  const out=[];let cur="",q=false;
+  for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'){if(q&&line[i+1]==='"'){cur+='"';i++}else q=!q}else if(c===","&&!q){out.push(cur);cur=""}else cur+=c}
+  out.push(cur);return out;
+}
+function setDataMessage(t,type=""){const el=document.getElementById("dataMessage");el.textContent=t;el.className="message "+type}
+function importData(replace){
+  const rows=parseLines(document.getElementById("importText").value);
+  if(!rows.length){setDataMessage("No valid rows found. Use: binomial | common | family","bad");return}
+  const beforeKeys=new Set(data.map(r=>`${r.binomial}|${r.common}|${r.family}`.toLowerCase()));
+  data=uniqueData(replace?rows:[...data,...rows]);
+  const newlyAdded=data.filter(r=>!beforeKeys.has(`${r.binomial}|${r.common}|${r.family}`.toLowerCase()));
+  saveData();renderData();
+  if(newlyAdded.length)queueSpecimenAudio(newlyAdded);
+  setDataMessage(`${rows.length} valid rows imported`,"good");
+}
+document.getElementById("appendData").addEventListener("click",()=>importData(false));
+document.getElementById("replaceData").addEventListener("click",()=>{if(confirm("Replace the whole current list?"))importData(true)});
+document.getElementById("resetData").addEventListener("click",()=>{if(confirm("Restore the built-in list and discard your changes?")){data=uniqueData(BUILTIN);saveData();renderData();setDataMessage("Built-in list restored","good")}});
+document.getElementById("exportData").addEventListener("click",()=>{
+  const body=["Binomial,Common Name,Family",...data.map(r=>[r.binomial,r.common,r.family].map(v=>`"${String(v).replace(/"/g,'""')}"`).join(","))].join("\n");
+  const blob=new Blob([body],{type:"text/csv;charset=utf-8"}),a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);a.download="tree-id-list.csv";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+});
+function renderData(){
+  updateCounts();
+  const body=document.getElementById("dataRows");body.innerHTML="";
+  data.forEach((r,i)=>{
+    const tr=document.createElement("tr");
+    tr.innerHTML=`<td><em>${esc(r.binomial)}</em></td><td>${esc(r.common)}</td><td>${esc(r.family)}</td><td><button class="danger small" data-i="${i}">×</button></td>`;
+    tr.querySelector("button").addEventListener("click",()=>{data.splice(i,1);saveData();renderData()});
+    body.appendChild(tr);
+  });
+}
+
+renderFamilyFilter();updateCounts();renderStats();renderSpeechControls();initTheme();initVisitCounters();initAI();
+</script>
+
+<script>
+let deferredInstallPrompt=null;
+const INSTALL_DISMISSED_KEY="tree-id-trainer-install-dismissed-v1";
+const installPanel=document.getElementById("installPanel");
+const installButton=document.getElementById("installApp");
+const dismissInstallButton=document.getElementById("dismissInstall");
+
+window.addEventListener("beforeinstallprompt",event=>{
+  event.preventDefault();
+  deferredInstallPrompt=event;
+  if(localStorage.getItem(INSTALL_DISMISSED_KEY)!=="yes"){
+    installPanel?.classList.add("visible");
+  }
+});
+
+dismissInstallButton?.addEventListener("click",()=>{
+  localStorage.setItem(INSTALL_DISMISSED_KEY,"yes");
+  installPanel?.classList.remove("visible");
+});
+
+installButton?.addEventListener("click",async()=>{
+  if(!deferredInstallPrompt)return;
+  deferredInstallPrompt.prompt();
+  await deferredInstallPrompt.userChoice;
+  deferredInstallPrompt=null;
+  installPanel.classList.remove("visible");
+});
+
+window.addEventListener("appinstalled",()=>{
+  deferredInstallPrompt=null;
+  installPanel?.classList.remove("visible");
+});
+
+if("serviceWorker" in navigator){
+  window.addEventListener("load",async()=>{
+    try{
+      const registration=await navigator.serviceWorker.register("/service-worker.js");
+      registration.addEventListener("updatefound",()=>{
+        const worker=registration.installing;
+        if(!worker)return;
+        worker.addEventListener("statechange",()=>{
+          if(worker.state==="installed" && navigator.serviceWorker.controller){
+            document.getElementById("updateBanner")?.classList.add("visible");
+          }
+        });
+      });
+    }catch(error){
+      console.warn("Offline install support could not start:",error);
+    }
+  });
+}
+
+document.getElementById("reloadUpdate")?.addEventListener("click",()=>{
+  location.reload();
+});
+</script>
+
+<div id="uiHelpBubble" class="ui-help-bubble" role="tooltip"></div>
+</body>
+</html>

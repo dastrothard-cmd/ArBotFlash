@@ -1,0 +1,24 @@
+{
+  "query": {
+    "pages": [
+      {
+        "title": "File:Eucalyptus marginata example.jpg",
+        "canonicalurl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_marginata_example.jpg",
+        "imageinfo": [{
+          "url": "https://upload.wikimedia.org/example-original.jpg",
+          "thumburl": "https://upload.wikimedia.org/example-thumb.jpg",
+          "extmetadata": {
+            "Artist": {"value": "Example photographer"},
+            "LicenseShortName": {"value": "CC BY-SA 4.0"},
+            "LicenseUrl": {"value": "https://creativecommons.org/licenses/by-sa/4.0/"},
+            "ImageDescription": {"value": "A diagnostic tree image"}
+          }
+        }]
+      },
+      {
+        "title": "File:Nonfree example.jpg",
+        "imageinfo": [{"url": "https://example.invalid/nonfree.jpg", "extmetadata": {"LicenseShortName": {"value": "All rights reserved"}}}]
+      }
+    ]
+  }
+}

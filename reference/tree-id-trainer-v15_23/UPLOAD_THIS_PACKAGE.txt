@@ -1,0 +1,42 @@
+TREE ID TRAINER v15.9.1 — VERIFIED FULL GITHUB UPLOAD
+
+THIS PACKAGE HAS THE CORRECT GITHUB FOLDER STRUCTURE.
+
+Upload the CONTENTS of this unzipped folder from the MAIN PAGE of the GitHub repository.
+
+Top-level items:
+- api/
+- public/
+- package.json
+- vercel.json
+- README files
+
+Verified theme artwork:
+- 4 themes
+- 6 images per theme
+- 24 theme images total
+
+Each theme contains:
+- header.webp
+- logo.webp
+- flash.webp
+- family.webp
+- name.webp
+- tutorial.webp
+
+Themes:
+- Mystical Forest
+- Field Journal
+- Moonlit Canopy
+- Red Dirt Camp
+
+Also included:
+- Common favicon and app icons
+- Default header art
+- Global + local visits counter code
+- AI backend
+- Service worker and offline cache
+
+IMPORTANT:
+After GitHub commits the upload, wait for Vercel to show the newest deployment as Ready.
+Then hard-refresh the live app.

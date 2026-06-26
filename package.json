@@ -1,0 +1,27 @@
+{
+  "name": "arbotflash",
+  "version": "0.12.0",
+  "private": true,
+  "description": "Source-aware tree-of-life learning platform with versioned regional offline packs and review-only authority pipelines.",
+  "scripts": {
+    "db:build": "python scripts/build_dev_db.py",
+    "serve": "python -m apps.api.main",
+    "validate:seed": "python tests/validate_seed.py",
+    "validate:v0.3": "python tests/validate_v0_3.py",
+    "validate": "python tests/validate_seed.py && python tests/test_reconciliation_parser.py && python tests/test_media_candidate_parser.py && python tests/validate_v0_3.py && python tests/validate_v0_4.py && python tests/validate_v0_5.py && python tests/validate_v0_10.py && python tests/validate_v0_12.py && npm run validate:js",
+    "validate:reconciliation": "python tests/test_reconciliation_parser.py",
+    "validate:v0.4": "python tests/validate_v0_4.py",
+    "validate:js": "node --check apps/web/app.js && node --check apps/web/offline-db.js && node --check apps/admin/app.js && node --check apps/web/sw.js",
+    "pack:build": "python scripts/build_offline_pack.py",
+    "authority:batch": "python scripts/run_authority_batch.py --limit-per-source 80",
+    "validate:media": "python tests/test_media_candidate_parser.py",
+    "validate:v0.5": "python tests/validate_v0_5.py",
+    "validate:v0.6": "python tests/validate_v0_6.py",
+    "validate:v0.7": "python tests/validate_v0_7.py",
+    "validate:v0.8": "python tests/validate_v0_8.py",
+    "validate:v0.9": "python tests/validate_v0_9.py",
+    "validate:v0.10": "python tests/validate_v0_10.py",
+    "validate:v0.11": "python tests/validate_v0_11.py",
+    "validate:v0.12": "python tests/validate_v0_12.py"
+  }
+}

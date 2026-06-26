@@ -1,0 +1,24 @@
+{
+  "offset": 0,
+  "limit": 10,
+  "total": 1,
+  "result": [
+    {
+      "id": "synthetic-col-id",
+      "classification": [
+        {"name": "Plantae", "rank": "kingdom", "status": "accepted"},
+        {"name": "Myrtaceae", "rank": "family", "status": "accepted"},
+        {"name": "Eucalyptus", "rank": "genus", "status": "accepted"},
+        {"name": "Eucalyptus marginata", "rank": "species", "status": "accepted"}
+      ],
+      "usage": {
+        "id": "synthetic-col-id",
+        "name": {"scientificName": "Eucalyptus marginata", "rank": "species", "authorship": "Synthetic parser fixture"},
+        "status": "accepted",
+        "extinct": false,
+        "environments": ["terrestrial"]
+      },
+      "group": "angiosperms"
+    }
+  ]
+}
