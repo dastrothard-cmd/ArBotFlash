@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1714">
+  <title>ArbotFlash</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Independent biology learning project</p>
+      <h1>ArbotFlash</h1>
+      <p class="subtitle">Flashcards, field ID and games for the living world.</p>
+    </div>
+    <div class="topbar-status">
+      <div class="release-badge">v0.12.2 · image + field-card fix</div>
+      <div id="dataStatus" class="connection-status">Loading catalogue…</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero panel">
+      <div>
+        <p class="eyebrow">Working foundation</p>
+        <h2>A clean practice deck built from the current verified specimen set.</h2>
+        <p>Use the search and filters to build a deck, then open a card for images, identification features, habitat, distribution, source notes and attribution.</p>
+        <p id="databaseSummary" class="source-line"></p>
+      </div>
+      <div class="hero-stat"><strong id="matchCount">0</strong><span>matching cards</span></div>
+    </section>
+
+    <section id="errorBanner" class="error-banner hidden" role="alert"></section>
+
+    <section class="active-panel panel compact-panel">
+      <div class="section-heading">
+        <div><p class="eyebrow">Current deck builder</p><h2>Filters</h2></div>
+        <button id="clearAll" class="button ghost">Clear</button>
+      </div>
+      <label class="search-label">Search names, family or genus
+        <input id="nameSearch" type="search" placeholder="sheoak, jarrah, eucalyptus…" autocomplete="off">
+      </label>
+      <div id="activeFilters" class="chips"><span class="empty-chip">No filters selected.</span></div>
+    </section>
+
+    <div class="workspace">
+      <aside class="filter-panel panel">
+        <div class="section-heading compact">
+          <div><p class="eyebrow">Narrow the deck</p><h2>Filter groups</h2></div>
+        </div>
+        <p class="filter-help">Pick values to narrow the deck. Open filter groups stay open while you work.</p>
+        <div id="filters"></div>
+      </aside>
+
+      <section class="results-panel panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">Cards</p><h2><span id="resultCount">0</span> matches</h2></div>
+          <button id="saveStack" class="button ghost">Save stack</button>
+        </div>
+        <div id="resultList" class="result-list"></div>
+      </section>
+    </div>
+
+    <section class="deck-panel panel">
+      <div class="section-heading">
+        <div><p class="eyebrow">Practice mode</p><h2>Build study deck</h2></div>
+      </div>
+      <div class="deck-controls">
+        <label>Deck size
+          <select id="deckSize">
+            <option value="10">10</option><option value="20">20</option><option value="40">40</option>
+            <option value="80">80</option><option value="custom">Custom</option><option value="all" selected>All matching</option>
+          </select>
+        </label>
+        <label id="customDeckSizeWrap" class="hidden">Custom size
+          <input id="customDeckSize" type="number" min="1" value="25">
+        </label>
+        <label>Selection
+          <select id="selectionMode">
+            <option value="random">Random</option><option value="alphabetical">Alphabetical</option>
+            <option value="new">New cards</option><option value="incorrect">Previously incorrect</option>
+            <option value="least">Least studied</option><option value="difficult">Most difficult</option>
+          </select>
+        </label>
+        <label>Question
+          <select id="questionMode">
+            <option value="common-to-scientific">Common → scientific</option>
+            <option value="scientific-to-common">Scientific → common</option>
+            <option value="genus-to-family">Genus → family</option>
+            <option value="family-to-genus">Family → genus</option>
+          </select>
+        </label>
+        <button id="buildDeck" class="button primary">Build deck</button>
+      </div>
+      <p id="deckMessage" class="muted">Build a deck from the current results.</p>
+    </section>
+
+    <section id="studyArea" class="study-grid hidden">
+      <article class="flashcard panel">
+        <div class="card-topline"><p class="eyebrow">Card · <span id="cardPosition"></span></p><button id="speakCard" class="button ghost small hidden" type="button">Speak</button></div>
+        <p id="cardPromptLabel" class="muted"></p>
+        <div id="cardPrompt" class="card-prompt"></div>
+        <button id="revealAnswer" class="button primary">Reveal answer</button>
+        <p id="cardAnswerLabel" class="muted"></p>
+        <div id="cardAnswer" class="card-answer hidden"></div>
+        <div id="answerActions" class="answer-actions hidden">
+          <button id="markIncorrect" class="button incorrect">Incorrect</button>
+          <button id="markCorrect" class="button correct">Correct</button>
+        </div>
+        <div class="session-stats">
+          <span>Correct <strong id="sessionCorrect">0</strong></span>
+          <span>Incorrect <strong id="sessionIncorrect">0</strong></span>
+          <span>Streak <strong id="sessionStreak">0</strong></span>
+        </div>
+        <div class="card-actions">
+          <button id="previousCard" class="button ghost">Previous</button>
+          <button id="nextCard" class="button ghost">Next</button>
+        </div>
+      </article>
+
+      <article class="profile panel">
+        <p class="eyebrow">Species card</p>
+        <h2 id="profileName"></h2>
+        <p id="profileScientific" class="scientific"></p>
+        <div id="profileBadges" class="chips"></div>
+
+        <section class="profile-section image-section">
+          <h3>Images</h3>
+          <div id="profileMedia" class="media-placeholder">Loading image records…</div>
+        </section>
+
+        <section class="profile-section">
+          <h3>Quick field ID</h3>
+          <div id="profileTraitSnapshot" class="trait-grid"></div>
+        </section>
+
+        <section class="profile-section">
+          <h3>Overview</h3>
+          <p id="profileSummary"></p>
+        </section>
+
+        <section class="profile-section">
+          <h3>Identifying features</h3>
+          <p id="profileFeatures"></p>
+        </section>
+
+        <section class="profile-section">
+          <h3>Distribution and habitat</h3>
+          <p id="profileDistribution"></p>
+        </section>
+
+        <section id="profileAdditionalWrap" class="profile-section hidden">
+          <h3>More details</h3>
+          <div id="profileAdditionalSections" class="profile-details"></div>
+        </section>
+
+        <section class="profile-section fineprint-section">
+          <details>
+            <summary>Taxonomy, sources and attribution</summary>
+            <h4>Taxonomic path</h4>
+            <div id="profileClassification" class="classification-path"></div>
+            <h4>Name records</h4>
+            <div id="profileNames" class="data-list"></div>
+            <h4>Source reconciliation</h4>
+            <div id="profileReconciliation" class="data-list"></div>
+            <h4>Citations</h4>
+            <ul id="profileSources"></ul>
+          </details>
+        </section>
+      </article>
+    </section>
+
+    <section class="panel hidden" aria-hidden="true">
+      <span id="packStatus"></span><span id="packMessage"></span>
+      <button id="installPack" type="button"></button><button id="removePack" type="button"></button>
+    </section>
+  </main>
+
+  <footer>ArbotFlash is an independent Catalogue-of-Life-scale project. This deployment is the working product foundation.</footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
