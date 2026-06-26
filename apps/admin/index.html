@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10231c">
+  <title>ArbotFlash Review Workspace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Protected data-quality workspace</p>
+      <h1>ArbotFlash review</h1>
+      <p>Inspect authority matches and retain a permanent decision trail.</p>
+    </div>
+    <nav><a href="/">Return to ArbotFlash</a><span>v0.5</span></nav>
+  </header>
+
+  <main>
+    <section id="warning" class="warning">Loading source status…</section>
+
+    <section class="overview" id="overview">
+      <article><strong>—</strong><span>taxa</span></article>
+      <article><strong>—</strong><span>enriched taxa</span></article>
+      <article><strong>—</strong><span>licensed media</span></article>
+      <article><strong>—</strong><span>local media files</span></article>
+      <article><strong>—</strong><span>profile shells</span></article>
+      <article><strong>—</strong><span>offline packs</span></article>
+      <article><strong>—</strong><span>review decisions</span></article>
+    </section>
+
+    <section class="panel controls">
+      <div>
+        <label>Status
+          <select id="statusFilter">
+            <option value="">All statuses</option>
+            <option value="pending">Pending</option>
+            <option value="review_required">Review required</option>
+            <option value="specialist_confirmed">Specialist confirmed</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+            <option value="deferred">Deferred</option>
+          </select>
+        </label>
+        <label>Source
+          <select id="sourceFilter">
+            <option value="">All sources</option>
+            <option value="florabase">Florabase</option>
+            <option value="catalogue_of_life">Catalogue of Life</option>
+            <option value="gbif">GBIF</option>
+          </select>
+        </label>
+      </div>
+      <div class="token-box">
+        <label>Administrator token
+          <input id="adminToken" type="password" autocomplete="off" placeholder="Only required for decisions">
+        </label>
+        <p id="writeMode">Checking write-mode configuration…</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="heading">
+        <div><p class="eyebrow">Taxonomy reconciliation</p><h2><span id="queueCount">0</span> records</h2></div>
+        <button id="refresh">Refresh</button>
+      </div>
+      <div id="message" role="status"></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Taxon</th><th>Source</th><th>Status</th><th>Candidate</th><th>Evidence</th><th>Decision</th></tr></thead>
+          <tbody id="queue"><tr><td colspan="6">Loading…</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

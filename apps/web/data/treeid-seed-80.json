@@ -1,0 +1,3282 @@
+[
+  {
+    "id": "treeid-acacia-acuminata",
+    "sourceRecordIndex": 1,
+    "commonName": "Raspberry Jam Wattle",
+    "scientificName": "Acacia acuminata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Fabaceae",
+    "genus": "Acacia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 1; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-acacia-cyclops",
+    "sourceRecordIndex": 2,
+    "commonName": "Red Eye Wattle",
+    "scientificName": "Acacia cyclops",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Fabaceae",
+    "genus": "Acacia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 2; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-acacia-dealbata",
+    "sourceRecordIndex": 3,
+    "commonName": "Silver Wattle",
+    "scientificName": "Acacia dealbata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Fabaceae",
+    "genus": "Acacia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 3; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-acacia-melanoxylon",
+    "sourceRecordIndex": 4,
+    "commonName": "Blackwood",
+    "scientificName": "Acacia melanoxylon",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Fabaceae",
+    "genus": "Acacia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 4; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-acacia-saligna",
+    "sourceRecordIndex": 5,
+    "commonName": "Golden Wreath Wattle",
+    "scientificName": "Acacia saligna",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Fabaceae",
+    "genus": "Acacia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 5; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-acer-palmatum",
+    "sourceRecordIndex": 6,
+    "commonName": "Japanese Maple",
+    "scientificName": "Acer palmatum",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Sapindaceae",
+    "genus": "Acer",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 6; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-agonis-flexuosa",
+    "sourceRecordIndex": 7,
+    "commonName": "WA Peppermint",
+    "scientificName": "Agonis flexuosa",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Agonis",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 7; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-allocasuarina-fraseriana",
+    "sourceRecordIndex": 8,
+    "commonName": "Sheoak",
+    "scientificName": "Allocasuarina fraseriana",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Casuarinaceae",
+    "genus": "Allocasuarina",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 8; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-allocasuarina-littoralis",
+    "sourceRecordIndex": 9,
+    "commonName": "Black Sheoak",
+    "scientificName": "Allocasuarina littoralis",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Casuarinaceae",
+    "genus": "Allocasuarina",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 9; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-angophora-costata",
+    "sourceRecordIndex": 10,
+    "commonName": "Smooth-barked Apple",
+    "scientificName": "Angophora costata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Angophora",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 10; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-araucaria-bidwillii",
+    "sourceRecordIndex": 11,
+    "commonName": "Bunya Pine",
+    "scientificName": "Araucaria bidwillii",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Araucariaceae",
+    "genus": "Araucaria",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 11; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-araucaria-heterophylla",
+    "sourceRecordIndex": 12,
+    "commonName": "Norfolk Island Pine",
+    "scientificName": "Araucaria heterophylla",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Araucariaceae",
+    "genus": "Araucaria",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 12; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-backhousia-citriodora",
+    "sourceRecordIndex": 13,
+    "commonName": "Lemon Myrtle",
+    "scientificName": "Backhousia citriodora",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Backhousia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 13; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-banksia-attenuata",
+    "sourceRecordIndex": 14,
+    "commonName": "Candlestick Banksia",
+    "scientificName": "Banksia attenuata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Banksia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 14; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-banksia-grandis",
+    "sourceRecordIndex": 15,
+    "commonName": "Bull Banksia",
+    "scientificName": "Banksia grandis",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Banksia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 15; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-banksia-ilicifolia",
+    "sourceRecordIndex": 16,
+    "commonName": "Holly-leaf Banksia",
+    "scientificName": "Banksia ilicifolia",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Banksia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 16; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-banksia-littoralis",
+    "sourceRecordIndex": 17,
+    "commonName": "Swamp Banksia",
+    "scientificName": "Banksia littoralis",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Banksia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 17; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-banksia-menziesii",
+    "sourceRecordIndex": 18,
+    "commonName": "Firewood Banksia",
+    "scientificName": "Banksia menziesii",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Banksia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 18; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-banksia-prionotes",
+    "sourceRecordIndex": 19,
+    "commonName": "Acorn Banksia",
+    "scientificName": "Banksia prionotes",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Banksia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 19; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-brachychiton-acerifolius",
+    "sourceRecordIndex": 20,
+    "commonName": "Illawarra Flame Tree",
+    "scientificName": "Brachychiton acerifolius",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Malvaceae",
+    "genus": "Brachychiton",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 20; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-brachychiton-populneus",
+    "sourceRecordIndex": 21,
+    "commonName": "Kurrajong",
+    "scientificName": "Brachychiton populneus",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Malvaceae",
+    "genus": "Brachychiton",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 21; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-callistemon-citrinus",
+    "sourceRecordIndex": 22,
+    "commonName": "Crimson Bottlebrush",
+    "scientificName": "Callistemon citrinus",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Callistemon",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 22; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-callistemon-viminalis",
+    "sourceRecordIndex": 23,
+    "commonName": "Weeping Bottlebrush",
+    "scientificName": "Callistemon viminalis",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Callistemon",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 23; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-callitris-columellaris",
+    "sourceRecordIndex": 24,
+    "commonName": "White Cypress Pine",
+    "scientificName": "Callitris columellaris",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Cupressaceae",
+    "genus": "Callitris",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 24; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-casuarina-cunninghamiana",
+    "sourceRecordIndex": 25,
+    "commonName": "River Sheoak",
+    "scientificName": "Casuarina cunninghamiana",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Casuarinaceae",
+    "genus": "Casuarina",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 25; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-cedrus-deodara",
+    "sourceRecordIndex": 26,
+    "commonName": "Deodar Cedar",
+    "scientificName": "Cedrus deodara",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Pinaceae",
+    "genus": "Cedrus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 26; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-cinnamomum-camphora",
+    "sourceRecordIndex": 27,
+    "commonName": "Camphor Laurel",
+    "scientificName": "Cinnamomum camphora",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Lauraceae",
+    "genus": "Cinnamomum",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 27; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-corymbia-calophylla",
+    "sourceRecordIndex": 28,
+    "commonName": "Marri",
+    "scientificName": "Corymbia calophylla",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Corymbia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 28; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-corymbia-haematoxylon",
+    "sourceRecordIndex": 29,
+    "commonName": "Bloodwood",
+    "scientificName": "Corymbia haematoxylon",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Corymbia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 29; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-corymbia-maculata",
+    "sourceRecordIndex": 30,
+    "commonName": "Spotted Gum",
+    "scientificName": "Corymbia maculata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Corymbia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 30; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-cupressus-sempervirens",
+    "sourceRecordIndex": 31,
+    "commonName": "Italian Cypress",
+    "scientificName": "Cupressus sempervirens",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Cupressaceae",
+    "genus": "Cupressus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 31; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-accedens",
+    "sourceRecordIndex": 32,
+    "commonName": "Powderbark Wandoo",
+    "scientificName": "Eucalyptus accedens",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 32; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-camaldulensis",
+    "sourceRecordIndex": 33,
+    "commonName": "River Red Gum",
+    "scientificName": "Eucalyptus camaldulensis",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 33; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-cladocalyx",
+    "sourceRecordIndex": 34,
+    "commonName": "Sugar Gum",
+    "scientificName": "Eucalyptus cladocalyx",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 34; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-diversicolor",
+    "sourceRecordIndex": 35,
+    "commonName": "Karri",
+    "scientificName": "Eucalyptus diversicolor",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 35; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-globulus",
+    "sourceRecordIndex": 36,
+    "commonName": "Tasmanian Blue Gum",
+    "scientificName": "Eucalyptus globulus",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 36; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-gomphocephala",
+    "sourceRecordIndex": 37,
+    "commonName": "Tuart",
+    "scientificName": "Eucalyptus gomphocephala",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 37; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-grandis",
+    "sourceRecordIndex": 38,
+    "commonName": "Flooded Gum",
+    "scientificName": "Eucalyptus grandis",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 38; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-guilfoylei",
+    "sourceRecordIndex": 39,
+    "commonName": "Yellow Tingle",
+    "scientificName": "Eucalyptus guilfoylei",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 39; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-jacksonii",
+    "sourceRecordIndex": 40,
+    "commonName": "Red Tingle",
+    "scientificName": "Eucalyptus jacksonii",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 40; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-marginata",
+    "sourceRecordIndex": 41,
+    "commonName": "Jarrah",
+    "scientificName": "Eucalyptus marginata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 41; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-megacarpa",
+    "sourceRecordIndex": 42,
+    "commonName": "Bullich",
+    "scientificName": "Eucalyptus megacarpa",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 42; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-patens",
+    "sourceRecordIndex": 43,
+    "commonName": "Blackbutt",
+    "scientificName": "Eucalyptus patens",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 43; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-pleurocarpa",
+    "sourceRecordIndex": 44,
+    "commonName": "Tallerack",
+    "scientificName": "Eucalyptus pleurocarpa",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 44; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-rudis",
+    "sourceRecordIndex": 45,
+    "commonName": "Flooded Gum",
+    "scientificName": "Eucalyptus rudis",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 45; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-sideroxylon",
+    "sourceRecordIndex": 46,
+    "commonName": "Red Ironbark",
+    "scientificName": "Eucalyptus sideroxylon",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 46; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-wandoo",
+    "sourceRecordIndex": 47,
+    "commonName": "Wandoo",
+    "scientificName": "Eucalyptus wandoo",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 47; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-fraxinus-angustifolia",
+    "sourceRecordIndex": 48,
+    "commonName": "Narrow-leaved Ash",
+    "scientificName": "Fraxinus angustifolia",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Oleaceae",
+    "genus": "Fraxinus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 48; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-fraxinus-excelsior",
+    "sourceRecordIndex": 49,
+    "commonName": "European Ash",
+    "scientificName": "Fraxinus excelsior",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Oleaceae",
+    "genus": "Fraxinus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 49; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-ginkgo-biloba",
+    "sourceRecordIndex": 50,
+    "commonName": "Ginkgo",
+    "scientificName": "Ginkgo biloba",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Ginkgoaceae",
+    "genus": "Ginkgo",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 50; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-grevillea-robusta",
+    "sourceRecordIndex": 51,
+    "commonName": "Silky Oak",
+    "scientificName": "Grevillea robusta",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Grevillea",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 51; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-hakea-laurina",
+    "sourceRecordIndex": 52,
+    "commonName": "Pincushion Hakea",
+    "scientificName": "Hakea laurina",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Hakea",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 52; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-hakea-prostrata",
+    "sourceRecordIndex": 53,
+    "commonName": "Harsh Hakea",
+    "scientificName": "Hakea prostrata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Proteaceae",
+    "genus": "Hakea",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 53; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-jacaranda-mimosifolia",
+    "sourceRecordIndex": 54,
+    "commonName": "Jacaranda",
+    "scientificName": "Jacaranda mimosifolia",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Bignoniaceae",
+    "genus": "Jacaranda",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 54; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-liquidambar-styraciflua",
+    "sourceRecordIndex": 55,
+    "commonName": "American Sweetgum",
+    "scientificName": "Liquidambar styraciflua",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Altingiaceae",
+    "genus": "Liquidambar",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 55; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-lophostemon-confertus",
+    "sourceRecordIndex": 56,
+    "commonName": "Brush Box",
+    "scientificName": "Lophostemon confertus",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Lophostemon",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 56; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-magnolia-grandiflora",
+    "sourceRecordIndex": 57,
+    "commonName": "Southern Magnolia",
+    "scientificName": "Magnolia grandiflora",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Magnoliaceae",
+    "genus": "Magnolia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 57; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-melaleuca-lanceolata",
+    "sourceRecordIndex": 58,
+    "commonName": "Rottnest Island Tea Tree",
+    "scientificName": "Melaleuca lanceolata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Melaleuca",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 58; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-melaleuca-preissiana",
+    "sourceRecordIndex": 59,
+    "commonName": "Moonah",
+    "scientificName": "Melaleuca preissiana",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Melaleuca",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 59; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-melaleuca-quinquenervia",
+    "sourceRecordIndex": 60,
+    "commonName": "Broad-leaved Paperbark",
+    "scientificName": "Melaleuca quinquenervia",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Melaleuca",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 60; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-melaleuca-rhaphiophylla",
+    "sourceRecordIndex": 61,
+    "commonName": "Swamp Paperbark",
+    "scientificName": "Melaleuca rhaphiophylla",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Melaleuca",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 61; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-nuytsia-floribunda",
+    "sourceRecordIndex": 62,
+    "commonName": "WA Christmas Tree",
+    "scientificName": "Nuytsia floribunda",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Loranthaceae",
+    "genus": "Nuytsia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 62; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-pinus-pinea",
+    "sourceRecordIndex": 63,
+    "commonName": "Stone Pine",
+    "scientificName": "Pinus pinea",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Pinaceae",
+    "genus": "Pinus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 63; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-pinus-radiata",
+    "sourceRecordIndex": 64,
+    "commonName": "Monterey Pine",
+    "scientificName": "Pinus radiata",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Pinaceae",
+    "genus": "Pinus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 64; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-platanus-acerifolia",
+    "sourceRecordIndex": 65,
+    "commonName": "London Plane",
+    "scientificName": "Platanus × acerifolia",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Platanaceae",
+    "genus": "Platanus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 65; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-populus-alba",
+    "sourceRecordIndex": 66,
+    "commonName": "White Poplar",
+    "scientificName": "Populus alba",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Salicaceae",
+    "genus": "Populus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 66; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-syzygium-australe",
+    "sourceRecordIndex": 67,
+    "commonName": "Brush Cherry",
+    "scientificName": "Syzygium australe",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Syzygium",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 67; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-tristaniopsis-laurina",
+    "sourceRecordIndex": 68,
+    "commonName": "Water Gum",
+    "scientificName": "Tristaniopsis laurina",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Tristaniopsis",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 68; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-ulmus-procera",
+    "sourceRecordIndex": 69,
+    "commonName": "English Elm",
+    "scientificName": "Ulmus procera",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Ulmaceae",
+    "genus": "Ulmus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 69; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-washingtonia-robusta",
+    "sourceRecordIndex": 70,
+    "commonName": "Mexican Fan Palm",
+    "scientificName": "Washingtonia robusta",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Arecaceae",
+    "genus": "Washingtonia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 70; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-xanthorrhoea-preissii",
+    "sourceRecordIndex": 71,
+    "commonName": "Grass Tree",
+    "scientificName": "Xanthorrhoea preissii",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Asphodelaceae",
+    "genus": "Xanthorrhoea",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 71; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-acacia-drummondii",
+    "sourceRecordIndex": 72,
+    "commonName": "Drummond's Wattle",
+    "scientificName": "Acacia drummondii",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Fabaceae",
+    "genus": "Acacia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 72; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-corymbia-citriodora",
+    "sourceRecordIndex": 73,
+    "commonName": "Lemon-scented Gum",
+    "scientificName": "Corymbia citriodora",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Corymbia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 73; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-acacia-websteriana",
+    "sourceRecordIndex": 74,
+    "commonName": "Webster's Wattle",
+    "scientificName": "Acacia websteriana",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Fabaceae",
+    "genus": "Acacia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 74; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-norsemanica",
+    "sourceRecordIndex": 75,
+    "commonName": "Norseman Mallee",
+    "scientificName": "Eucalyptus norsemanica",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 75; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-youngiana",
+    "sourceRecordIndex": 76,
+    "commonName": "Ooldea Mallee",
+    "scientificName": "Eucalyptus youngiana",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 76; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-victrix",
+    "sourceRecordIndex": 77,
+    "commonName": "Western Coolibah",
+    "scientificName": "Eucalyptus victrix",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 77; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-mooreana",
+    "sourceRecordIndex": 78,
+    "commonName": "Moore's Mallee",
+    "scientificName": "Eucalyptus mooreana",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 78; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-eucalyptus-lehmannii",
+    "sourceRecordIndex": 79,
+    "commonName": "Bushy Yate",
+    "scientificName": "Eucalyptus lehmannii",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Eucalyptus",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 79; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  },
+  {
+    "id": "treeid-corymbia-eximia",
+    "sourceRecordIndex": 80,
+    "commonName": "Yellow Bloodwood",
+    "scientificName": "Corymbia eximia",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "",
+    "order": "",
+    "family": "Myrtaceae",
+    "genus": "Corymbia",
+    "lifeStatus": "Extant",
+    "continent": [],
+    "country": [],
+    "region": [],
+    "environment": [
+      "Terrestrial"
+    ],
+    "organisation": "Multicellular",
+    "trophicMode": [
+      "Autotroph"
+    ],
+    "establishment": [],
+    "plantForm": [],
+    "leafArrangement": [],
+    "barkType": [],
+    "exudate": [],
+    "verifiedImages": "Not available",
+    "verification": "Verified seed import",
+    "sourcePack": "Tree ID Trainer 80",
+    "profile": {
+      "summary": "Migrated from the finished Tree ID Trainer seed list. A sourced full profile has not yet been attached.",
+      "features": "The original trainer record supplies the accepted study name, common name and family only.",
+      "distribution": "Pending sourced geographic enrichment.",
+      "sources": [
+        "Tree ID Trainer v15.23 verified seed",
+        "Source record 80; upload SHA-256 b94715dd289d…"
+      ]
+    }
+  }
+]

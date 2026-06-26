@@ -1,0 +1,1373 @@
+[
+  {
+    "key": "lifeStatus",
+    "label": "Life status",
+    "group": "Universal",
+    "values": [
+      "Extant",
+      "Recently extinct",
+      "Extinct",
+      "Uncertain"
+    ]
+  },
+  {
+    "key": "sourcePack",
+    "label": "Loaded source pack",
+    "group": "Universal",
+    "values": []
+  },
+  {
+    "key": "domain",
+    "label": "Domain",
+    "group": "Taxonomy",
+    "values": [
+      "Archaea",
+      "Bacteria",
+      "Eukaryota"
+    ]
+  },
+  {
+    "key": "kingdom",
+    "label": "Kingdom",
+    "group": "Taxonomy",
+    "values": [
+      "Animalia",
+      "Plantae",
+      "Fungi",
+      "Chromista",
+      "Protozoa",
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "phylum",
+    "label": "Phylum / division",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "class",
+    "label": "Class",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "order",
+    "label": "Order",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "family",
+    "label": "Family",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "genus",
+    "label": "Genus",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "continent",
+    "label": "Continent / ocean",
+    "group": "Geography",
+    "values": [
+      "Africa",
+      "Antarctica",
+      "Asia",
+      "Australia",
+      "Europe",
+      "North America",
+      "South America",
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean",
+      "Southern Ocean"
+    ]
+  },
+  {
+    "key": "country",
+    "label": "Country",
+    "group": "Geography",
+    "values": [
+      "Australia",
+      "Worldwide"
+    ]
+  },
+  {
+    "key": "region",
+    "label": "State / province / bioregion",
+    "group": "Geography",
+    "values": [
+      "Western Australia",
+      "South-west Western Australia",
+      "Swan Coastal Plain"
+    ]
+  },
+  {
+    "key": "environment",
+    "label": "Environment",
+    "group": "Ecology",
+    "values": [
+      "Terrestrial",
+      "Freshwater",
+      "Marine",
+      "Brackish",
+      "Aerial",
+      "Subterranean",
+      "Host-associated"
+    ]
+  },
+  {
+    "key": "organisation",
+    "label": "Organisation",
+    "group": "Biology",
+    "values": [
+      "Unicellular",
+      "Colonial",
+      "Multicellular"
+    ]
+  },
+  {
+    "key": "trophicMode",
+    "label": "Trophic mode",
+    "group": "Biology",
+    "values": [
+      "Autotroph",
+      "Heterotroph",
+      "Mixotroph",
+      "Chemotroph",
+      "Decomposer",
+      "Parasite"
+    ]
+  },
+  {
+    "key": "establishment",
+    "label": "Establishment",
+    "group": "Status",
+    "values": [
+      "Native",
+      "Introduced",
+      "Naturalised",
+      "Invasive",
+      "Vagrant",
+      "Uncertain"
+    ]
+  },
+  {
+    "key": "conservation",
+    "label": "Conservation status",
+    "group": "Status",
+    "values": [
+      "Least concern",
+      "Near threatened",
+      "Vulnerable",
+      "Endangered",
+      "Critically endangered",
+      "Data deficient",
+      "Not assessed"
+    ]
+  },
+  {
+    "key": "verifiedImages",
+    "label": "Verified images",
+    "group": "Data quality",
+    "values": [
+      "Available",
+      "Not available"
+    ]
+  },
+  {
+    "key": "verification",
+    "label": "Record verification",
+    "group": "Data quality",
+    "values": [
+      "Authoritative import",
+      "Specialist import",
+      "Expert verified",
+      "Community submitted",
+      "AI-assisted draft",
+      "Unverified",
+      "Disputed",
+      "Verified seed import"
+    ]
+  },
+  {
+    "key": "plantForm",
+    "label": "Plant growth form",
+    "group": "Plants",
+    "appliesTo": [
+      "Plantae",
+      "Chromista"
+    ],
+    "values": [
+      "Tree",
+      "Shrub",
+      "Palm",
+      "Climber",
+      "Herb",
+      "Grass",
+      "Fern",
+      "Moss",
+      "Aquatic plant",
+      "Alga"
+    ]
+  },
+  {
+    "key": "leafArrangement",
+    "label": "Leaf arrangement",
+    "group": "Plants",
+    "appliesTo": [
+      "Plantae"
+    ],
+    "values": [
+      "Alternate",
+      "Opposite",
+      "Whorled",
+      "Basal",
+      "None"
+    ]
+  },
+  {
+    "key": "barkType",
+    "label": "Bark type",
+    "group": "Plants",
+    "appliesTo": [
+      "Plantae"
+    ],
+    "values": [
+      "Smooth",
+      "Fibrous",
+      "Stringy",
+      "Tessellated",
+      "Fissured",
+      "Papery",
+      "Scaly",
+      "None"
+    ]
+  },
+  {
+    "key": "exudate",
+    "label": "Sap / exudate",
+    "group": "Plants",
+    "appliesTo": [
+      "Plantae",
+      "Fungi"
+    ],
+    "values": [
+      "Sap",
+      "Gum",
+      "Kino",
+      "Resin",
+      "Latex",
+      "Oil",
+      "None recorded"
+    ]
+  },
+  {
+    "key": "animalGroup",
+    "label": "Animal form",
+    "group": "Animals",
+    "appliesTo": [
+      "Animalia"
+    ],
+    "values": [
+      "Mammal",
+      "Bird",
+      "Reptile",
+      "Amphibian",
+      "Fish",
+      "Insect",
+      "Arachnid",
+      "Mollusc",
+      "Crustacean",
+      "Cnidarian",
+      "Worm",
+      "Other invertebrate"
+    ]
+  },
+  {
+    "key": "diet",
+    "label": "Diet / feeding guild",
+    "group": "Animals",
+    "appliesTo": [
+      "Animalia"
+    ],
+    "values": [
+      "Herbivore",
+      "Carnivore",
+      "Omnivore",
+      "Detritivore",
+      "Filter feeder",
+      "Nectarivore",
+      "Parasite"
+    ]
+  },
+  {
+    "key": "thermoregulation",
+    "label": "Thermoregulation",
+    "group": "Animals",
+    "appliesTo": [
+      "Animalia"
+    ],
+    "values": [
+      "Endothermic",
+      "Ectothermic",
+      "Variable"
+    ]
+  },
+  {
+    "key": "fungalForm",
+    "label": "Fungal growth form",
+    "group": "Fungi",
+    "appliesTo": [
+      "Fungi"
+    ],
+    "values": [
+      "Mushroom",
+      "Bracket",
+      "Puffball",
+      "Cup",
+      "Crust",
+      "Yeast",
+      "Mould",
+      "Lichenised"
+    ]
+  },
+  {
+    "key": "fungalGuild",
+    "label": "Fungal trophic guild",
+    "group": "Fungi",
+    "appliesTo": [
+      "Fungi"
+    ],
+    "values": [
+      "Saprotroph",
+      "Parasite",
+      "Mycorrhizal",
+      "Lichenised",
+      "Pathogen"
+    ]
+  },
+  {
+    "key": "cellShape",
+    "label": "Cell shape",
+    "group": "Microbes",
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ],
+    "values": [
+      "Coccus",
+      "Bacillus",
+      "Spiral",
+      "Vibrio",
+      "Filamentous",
+      "Pleomorphic"
+    ]
+  },
+  {
+    "key": "oxygen",
+    "label": "Oxygen requirement",
+    "group": "Microbes",
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ],
+    "values": [
+      "Aerobic",
+      "Anaerobic",
+      "Facultative",
+      "Microaerophilic"
+    ]
+  },
+  {
+    "key": "pathogenic",
+    "label": "Pathogenicity",
+    "group": "Human relevance",
+    "values": [
+      "Known pathogen",
+      "Opportunistic pathogen",
+      "Non-pathogenic",
+      "Unknown"
+    ]
+  },
+  {
+    "key": "humanUse",
+    "label": "Human relationship",
+    "group": "Human relevance",
+    "values": [
+      "Food",
+      "Medicine",
+      "Timber",
+      "Crop",
+      "Livestock",
+      "Companion",
+      "Pest",
+      "Pathogen",
+      "Culturally significant",
+      "Protected"
+    ]
+  },
+  {
+    "key": "taxonRank",
+    "label": "Taxonomic rank",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "nameStatus",
+    "label": "Name status",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "authorship",
+    "label": "Scientific-name authorship",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "describedYear",
+    "label": "Year formally described",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "subspecies",
+    "label": "Subspecies",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "variety",
+    "label": "Variety / form",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "cultivar",
+    "label": "Cultivar",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "hybridStatus",
+    "label": "Hybrid status",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "synonymAvailable",
+    "label": "Synonyms recorded",
+    "group": "Taxonomy",
+    "values": []
+  },
+  {
+    "key": "botanicalRegion",
+    "label": "Botanical region",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "bioregion",
+    "label": "Bioregion",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "ecoregion",
+    "label": "Ecoregion",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "marineRealm",
+    "label": "Marine realm",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "freshwaterBasin",
+    "label": "Freshwater basin",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "localGovernmentArea",
+    "label": "Local government area",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "locality",
+    "label": "Locality",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "radiusBand",
+    "label": "Distance from map point",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "elevationBand",
+    "label": "Elevation band",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "depthBand",
+    "label": "Water-depth band",
+    "group": "Geography",
+    "values": []
+  },
+  {
+    "key": "biome",
+    "label": "Biome",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "habitat",
+    "label": "Habitat",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "microhabitat",
+    "label": "Microhabitat",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "substrate",
+    "label": "Substrate",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "climateZone",
+    "label": "Climate zone",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "temperatureBand",
+    "label": "Temperature band",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "rainfallBand",
+    "label": "Rainfall band",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "moistureBand",
+    "label": "Moisture band",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "salinityBand",
+    "label": "Salinity band",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "pHBand",
+    "label": "pH band",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "fireAssociation",
+    "label": "Fire association",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "seasonality",
+    "label": "Seasonality",
+    "group": "Ecology",
+    "values": []
+  },
+  {
+    "key": "lifeCycle",
+    "label": "Life-cycle pattern",
+    "group": "Biology",
+    "values": []
+  },
+  {
+    "key": "reproductionMode",
+    "label": "Reproduction mode",
+    "group": "Biology",
+    "values": []
+  },
+  {
+    "key": "dispersalMode",
+    "label": "Dispersal mode",
+    "group": "Biology",
+    "values": []
+  },
+  {
+    "key": "symbiosis",
+    "label": "Symbiotic relationship",
+    "group": "Biology",
+    "values": []
+  },
+  {
+    "key": "hostTaxon",
+    "label": "Host taxon",
+    "group": "Biology",
+    "values": []
+  },
+  {
+    "key": "iucnStatus",
+    "label": "IUCN status",
+    "group": "Status",
+    "values": []
+  },
+  {
+    "key": "nationalStatus",
+    "label": "National conservation status",
+    "group": "Status",
+    "values": []
+  },
+  {
+    "key": "regionalStatus",
+    "label": "Regional conservation status",
+    "group": "Status",
+    "values": []
+  },
+  {
+    "key": "legalProtection",
+    "label": "Legal protection",
+    "group": "Status",
+    "values": []
+  },
+  {
+    "key": "populationTrend",
+    "label": "Population trend",
+    "group": "Status",
+    "values": []
+  },
+  {
+    "key": "endemicStatus",
+    "label": "Endemism",
+    "group": "Status",
+    "values": []
+  },
+  {
+    "key": "hasDescription",
+    "label": "Profile description available",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "hasDistribution",
+    "label": "Distribution evidence available",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "hasTraits",
+    "label": "Identification traits available",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "hasAudio",
+    "label": "Audio available",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "hasGenome",
+    "label": "Genome data linked",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "lastReviewedBand",
+    "label": "Last reviewed",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "sourceDataset",
+    "label": "Source dataset",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "taxonomyRelease",
+    "label": "Taxonomy release",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "communityConfidence",
+    "label": "Community confidence",
+    "group": "Data quality",
+    "values": []
+  },
+  {
+    "key": "plantWoodiness",
+    "label": "Woody / herbaceous",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "plantLongevity",
+    "label": "Annual / biennial / perennial",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "evergreenStatus",
+    "label": "Evergreen / deciduous",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "heightBand",
+    "label": "Mature height",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "spreadBand",
+    "label": "Mature spread",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "crownForm",
+    "label": "Crown form",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "stemForm",
+    "label": "Stem / trunk form",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "leafPersistence",
+    "label": "Leaf persistence",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "leafComposition",
+    "label": "Leaf composition",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "leafShape",
+    "label": "Leaf shape",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "leafMargin",
+    "label": "Leaf margin",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "leafVenation",
+    "label": "Leaf venation",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "leafTexture",
+    "label": "Leaf texture",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "leafColour",
+    "label": "Leaf colour",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "barkColour",
+    "label": "Bark colour",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "flowerColour",
+    "label": "Flower colour",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "flowerSymmetry",
+    "label": "Flower symmetry",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "flowerStructure",
+    "label": "Flower structure",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "floweringSeason",
+    "label": "Flowering season",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "fruitType",
+    "label": "Fruit type",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "fruitingSeason",
+    "label": "Fruiting season",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "seedType",
+    "label": "Seed type",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "pollinationMode",
+    "label": "Pollination mode",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "rootType",
+    "label": "Root type",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "photosyntheticPathway",
+    "label": "Photosynthetic pathway",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "fireResponse",
+    "label": "Fire response",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "exudateColour",
+    "label": "Exudate colour",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "exudateTexture",
+    "label": "Exudate texture",
+    "group": "Plants",
+    "values": [],
+    "appliesTo": [
+      "Plantae"
+    ]
+  },
+  {
+    "key": "toxicity",
+    "label": "Toxicity",
+    "group": "Human relevance",
+    "values": []
+  },
+  {
+    "key": "allergenicity",
+    "label": "Allergenicity",
+    "group": "Human relevance",
+    "values": []
+  },
+  {
+    "key": "animalBodyPlan",
+    "label": "Body plan",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "symmetry",
+    "label": "Body symmetry",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "segmentation",
+    "label": "Segmentation",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "skeletonType",
+    "label": "Skeleton type",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "bodyCovering",
+    "label": "Body covering",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "limbType",
+    "label": "Limbs / wings / fins",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "locomotion",
+    "label": "Locomotion",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "activityCycle",
+    "label": "Activity cycle",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "socialSystem",
+    "label": "Social system",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "reproductiveStrategy",
+    "label": "Reproductive strategy",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "developmentType",
+    "label": "Development type",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "venomStatus",
+    "label": "Venomous / poisonous",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "nestType",
+    "label": "Nest / burrow / colony",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "migrationStatus",
+    "label": "Migration status",
+    "group": "Animals",
+    "values": [],
+    "appliesTo": [
+      "Animalia"
+    ]
+  },
+  {
+    "key": "fruitingBody",
+    "label": "Fruiting-body type",
+    "group": "Fungi",
+    "values": [],
+    "appliesTo": [
+      "Fungi"
+    ]
+  },
+  {
+    "key": "capShape",
+    "label": "Cap shape",
+    "group": "Fungi",
+    "values": [],
+    "appliesTo": [
+      "Fungi"
+    ]
+  },
+  {
+    "key": "hymeniumType",
+    "label": "Gills / pores / teeth",
+    "group": "Fungi",
+    "values": [],
+    "appliesTo": [
+      "Fungi"
+    ]
+  },
+  {
+    "key": "sporePrint",
+    "label": "Spore-print colour",
+    "group": "Fungi",
+    "values": [],
+    "appliesTo": [
+      "Fungi"
+    ]
+  },
+  {
+    "key": "fungalSubstrate",
+    "label": "Fungal substrate",
+    "group": "Fungi",
+    "values": [],
+    "appliesTo": [
+      "Fungi"
+    ]
+  },
+  {
+    "key": "mycorrhizalType",
+    "label": "Mycorrhizal type",
+    "group": "Fungi",
+    "values": [],
+    "appliesTo": [
+      "Fungi"
+    ]
+  },
+  {
+    "key": "edibility",
+    "label": "Edibility",
+    "group": "Fungi",
+    "values": [],
+    "appliesTo": [
+      "Fungi"
+    ]
+  },
+  {
+    "key": "bioluminescence",
+    "label": "Bioluminescence",
+    "group": "Fungi",
+    "values": [],
+    "appliesTo": [
+      "Fungi"
+    ]
+  },
+  {
+    "key": "cellArrangement",
+    "label": "Cell arrangement",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "gramReaction",
+    "label": "Gram reaction",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria"
+    ]
+  },
+  {
+    "key": "cellWallType",
+    "label": "Cell-wall type",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "motility",
+    "label": "Motility",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "metabolism",
+    "label": "Metabolism",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "temperatureClass",
+    "label": "Temperature class",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "salinityClass",
+    "label": "Salinity class",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "biosafetyLevel",
+    "label": "Biosafety level",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "colonyMorphology",
+    "label": "Colony morphology",
+    "group": "Microbes",
+    "values": [],
+    "appliesTo": [
+      "Bacteria",
+      "Archaea"
+    ]
+  },
+  {
+    "key": "protistForm",
+    "label": "Protist form",
+    "group": "Protists and algae",
+    "values": [],
+    "appliesTo": [
+      "Protozoa",
+      "Chromista"
+    ]
+  },
+  {
+    "key": "pigmentGroup",
+    "label": "Pigment group",
+    "group": "Protists and algae",
+    "values": [],
+    "appliesTo": [
+      "Chromista",
+      "Plantae"
+    ]
+  },
+  {
+    "key": "motilityStructure",
+    "label": "Cilia / flagella / pseudopodia",
+    "group": "Protists and algae",
+    "values": [],
+    "appliesTo": [
+      "Protozoa",
+      "Chromista"
+    ]
+  },
+  {
+    "key": "testType",
+    "label": "Shell / test type",
+    "group": "Protists and algae",
+    "values": [],
+    "appliesTo": [
+      "Protozoa",
+      "Chromista"
+    ]
+  },
+  {
+    "key": "bloomStatus",
+    "label": "Bloom-forming status",
+    "group": "Protists and algae",
+    "values": [],
+    "appliesTo": [
+      "Chromista",
+      "Plantae"
+    ]
+  },
+  {
+    "key": "toxinProduction",
+    "label": "Toxin-producing status",
+    "group": "Protists and algae",
+    "values": [],
+    "appliesTo": [
+      "Chromista",
+      "Plantae"
+    ]
+  },
+  {
+    "key": "profileStatus",
+    "label": "Profile completeness",
+    "group": "Data quality",
+    "values": [
+      "Seed shell only",
+      "Partially enriched",
+      "Profile reviewed"
+    ]
+  },
+  {
+    "key": "taxonomyReconciliation",
+    "label": "Taxonomy reconciliation",
+    "group": "Data quality",
+    "values": [
+      "Pending authoritative match",
+      "Review required",
+      "Partially matched",
+      "Authoritatively matched"
+    ]
+  },
+  {
+    "key": "mediaStatus",
+    "label": "Species media status",
+    "group": "Data quality",
+    "values": [
+      "No licensed species media attached",
+      "Media candidate attached",
+      "Licensed media verified"
+    ]
+  },
+  {
+    "key": "hasCommonName",
+    "label": "Common-name availability",
+    "group": "Data quality",
+    "values": [
+      "Common name available",
+      "No common name recorded"
+    ]
+  }
+]

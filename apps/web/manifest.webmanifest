@@ -1,0 +1,11 @@
+{
+  "name": "ArbotFlash Evidence Build",
+  "short_name": "ArbotFlash",
+  "id": "/arbotflash/",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07110d",
+  "theme_color": "#10231c",
+  "description": "Source-aware learning and identification across the known tree of life, with reviewed evidence and versioned regional offline packs."
+}

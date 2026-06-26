@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10231c">
+  <title>ArbotFlash Offline Pack Foundation</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Independent next-generation project</p>
+      <h1>ArbotFlash</h1>
+      <p class="subtitle">Flashcards and identification across the known tree of life</p>
+    </div>
+    <div class="topbar-status">
+      <div class="topbar-links"><a href="/admin/">Review workspace</a></div>
+      <div class="release-badge">v0.5 · offline pack foundation</div>
+      <div id="dataStatus" class="connection-status">Connecting to ArbotFlash API…</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero panel">
+      <div>
+        <p class="eyebrow">Scalable data boundary</p>
+        <h2>The complete 80-tree course is now available as a versioned offline pack.</h2>
+        <p>All 80 study records and linked profiles install independently. Twenty source-enriched Western Australian taxa include locally stored, individually licensed images; the remaining 60 are clearly marked profile shells awaiting authority review.</p>
+        <p id="databaseSummary" class="source-line"></p>
+      </div>
+      <div class="hero-stat"><strong id="matchCount">0</strong><span>matching loaded taxa</span></div>
+    </section>
+
+    <section id="errorBanner" class="error-banner hidden" role="alert"></section>
+
+    <section class="panel offline-pack-panel">
+      <div class="section-heading">
+        <div><p class="eyebrow">Regional offline data</p><h2>Tree ID 80 pack</h2></div>
+        <span id="packStatus" class="connection-status">Checking installation…</span>
+      </div>
+      <div class="pack-grid">
+        <div>
+          <p><strong>80 taxa</strong> · 80 source-enriched profiles · 80 locally stored licensed images · 0 transparent profile shells.</p>
+          <p class="muted">Installing stores searchable taxa and full profiles in IndexedDB and caches the reviewed images. Scores and streaks remain separate.</p>
+        </div>
+        <div class="pack-actions">
+          <button id="installPack" class="button primary">Install/update offline pack</button>
+          <button id="removePack" class="button ghost hidden">Remove installed pack</button>
+          <a class="button ghost" href="/api/packs/tree-id-80/download">Download pack ZIP</a>
+        </div>
+      </div>
+      <p id="packMessage" class="source-line"></p>
+    </section>
+
+    <section class="active-panel panel">
+      <div class="section-heading">
+        <div><p class="eyebrow">Stacked filter state</p><h2>Active filters</h2></div>
+        <button id="clearAll" class="button ghost">Clear all</button>
+      </div>
+      <div id="activeFilters" class="chips"><span class="empty-chip">No filters — showing the complete 80-taxon seed pack</span></div>
+    </section>
+
+    <div class="workspace">
+      <aside class="filter-panel panel">
+        <div class="section-heading compact">
+          <div><p class="eyebrow">EUCLID-style narrowing</p><h2>Filters</h2></div>
+        </div>
+        <label class="search-label">Search names, family or genus
+          <input id="nameSearch" type="search" placeholder="Jarrah, Eucalyptus, Myrtaceae…" autocomplete="off">
+        </label>
+        <p class="filter-help">Choose a value to add it as a chip. Multiple values inside one filter use OR; different filter types stack with AND.</p>
+        <div id="filters"></div>
+      </aside>
+
+      <section class="results-panel panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">Database result set</p><h2><span id="resultCount">0</span> taxa</h2></div>
+          <button id="saveStack" class="button ghost">Save filter stack</button>
+        </div>
+        <div id="resultList" class="result-list"></div>
+      </section>
+    </div>
+
+    <section class="deck-panel panel">
+      <div class="section-heading">
+        <div><p class="eyebrow">Build from the current query</p><h2>Study deck</h2></div>
+      </div>
+      <div class="deck-controls">
+        <label>Deck size
+          <select id="deckSize">
+            <option value="10">10</option><option value="20">20</option><option value="40">40</option>
+            <option value="80">80</option><option value="100">100</option><option value="120">120</option>
+            <option value="custom">Custom</option><option value="all" selected>All matching</option>
+          </select>
+        </label>
+        <label id="customDeckSizeWrap" class="hidden">Custom size
+          <input id="customDeckSize" type="number" min="1" value="25">
+        </label>
+        <label>Selection
+          <select id="selectionMode">
+            <option value="random">Random</option><option value="alphabetical">Alphabetical</option>
+            <option value="new">New taxa</option><option value="incorrect">Previously incorrect</option>
+            <option value="least">Least studied</option><option value="difficult">Most difficult</option>
+          </select>
+        </label>
+        <label>Question mode
+          <select id="questionMode">
+            <option value="common-to-scientific">Common name → scientific name</option>
+            <option value="scientific-to-common">Scientific name → common name</option>
+            <option value="genus-to-family">Genus → family</option>
+            <option value="family-to-genus">Family → genus</option>
+          </select>
+        </label>
+        <button id="buildDeck" class="button primary">Build deck</button>
+      </div>
+      <p id="deckMessage" class="muted">No deck built yet.</p>
+    </section>
+
+    <section id="studyArea" class="study-grid hidden">
+      <article class="flashcard panel">
+        <div class="card-topline"><p class="eyebrow">Fast card · <span id="cardPosition"></span></p><button id="speakCard" class="button ghost small">Speak</button></div>
+        <p id="cardPromptLabel" class="muted"></p>
+        <div id="cardPrompt" class="card-prompt"></div>
+        <button id="revealAnswer" class="button primary">Reveal answer</button>
+        <p id="cardAnswerLabel" class="muted"></p>
+        <div id="cardAnswer" class="card-answer hidden"></div>
+        <div id="answerActions" class="answer-actions hidden">
+          <button id="markIncorrect" class="button incorrect">Incorrect</button>
+          <button id="markCorrect" class="button correct">Correct</button>
+        </div>
+        <div class="session-stats">
+          <span>Correct <strong id="sessionCorrect">0</strong></span>
+          <span>Incorrect <strong id="sessionIncorrect">0</strong></span>
+          <span>Streak <strong id="sessionStreak">0</strong></span>
+        </div>
+        <div class="card-actions">
+          <button id="previousCard" class="button ghost">Previous</button>
+          <button id="nextCard" class="button ghost">Next</button>
+        </div>
+      </article>
+
+      <article class="profile panel">
+        <p class="eyebrow">Linked database taxon profile</p>
+        <h2 id="profileName"></h2>
+        <p id="profileScientific" class="scientific"></p>
+        <div id="profileBadges" class="chips"></div>
+
+        <section class="profile-section">
+          <h3>Taxonomic path</h3>
+          <div id="profileClassification" class="classification-path"></div>
+        </section>
+
+        <section class="profile-section">
+          <h3>Overview</h3>
+          <p id="profileSummary"></p>
+        </section>
+
+        <section class="profile-section">
+          <h3>Identifying features</h3>
+          <p id="profileFeatures"></p>
+        </section>
+
+        <section class="profile-section">
+          <h3>Distribution</h3>
+          <p id="profileDistribution"></p>
+        </section>
+
+        <section id="profileAdditionalWrap" class="profile-section hidden">
+          <h3>Expanded species profile</h3>
+          <div id="profileAdditionalSections" class="profile-details"></div>
+        </section>
+
+        <section class="profile-section">
+          <h3>Name records</h3>
+          <div id="profileNames" class="data-list"></div>
+        </section>
+
+        <section class="profile-section">
+          <h3>Taxonomy reconciliation</h3>
+          <div id="profileReconciliation" class="data-list"></div>
+        </section>
+
+        <section class="profile-section">
+          <h3>Images</h3>
+          <div id="profileMedia" class="media-placeholder">No licensed species images attached yet.</div>
+        </section>
+
+        <section class="profile-section">
+          <h3>Sources and status</h3>
+          <ul id="profileSources"></ul>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <footer>ArbotFlash v0.5 offline-pack foundation. The hosted Tree ID Trainer remains untouched and independently deployed.</footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
