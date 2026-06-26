@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArbotFlash</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav"><div class="brand">ArbotFlash</div><div class="tag">Independent eight-kingdom learning platform</div></nav>
+    <section class="hero-inner">
+      <p class="eyebrow">Catalogue-of-Life scale · product shell</p>
+      <h1>Learn life like a living deck.</h1>
+      <p class="lede">A clean flashcard and identification workspace for specimens, traits, filters and games. This release uses the current verified specimen set as the product framework before the long eight-kingdom expansion.</p>
+      <div class="hero-actions"><a href="#deck" class="button primary">Open deck</a><a href="#catalogue" class="button ghost">Browse catalogue</a></div>
+    </section>
+  </header>
+  <main>
+    <section class="status-strip" aria-label="project status">
+      <div><strong id="stat-count">80</strong><span>specimen cards</span></div>
+      <div><strong>Independent</strong><span>separate project</span></div>
+      <div><strong>No noise</strong><span>packs/admin hidden from public UI</span></div>
+      <div><strong>Images</strong><span>local licensed media included</span></div>
+    </section>
+
+    <section class="workspace" id="deck">
+      <aside class="filters" aria-label="deck filters">
+        <div class="filter-head"><h2>Build a deck</h2><button id="resetBtn" type="button">Reset</button></div>
+        <label>Search<input id="search" type="search" placeholder="sheoak, bark, jarrah forest…" /></label>
+        <label>Family<select id="familyFilter"><option value="">All families</option></select></label>
+        <label>Region<select id="regionFilter"><option value="">All regions</option></select></label>
+        <label>Form<select id="formFilter"><option value="">All forms</option></select></label>
+        <div class="filter-note">Filters stay open. The deck updates without collapsing.</div>
+      </aside>
+
+      <section class="deck-panel">
+        <div class="deck-toolbar"><div><h2 id="deckTitle">Study deck</h2><p id="deckMeta">Loading cards…</p></div><div class="mode-tabs"><button id="studyBtn" class="active" type="button">Study</button><button id="quizBtn" type="button">Quick quiz</button></div></div>
+        <article class="flashcard" id="flashcard" aria-live="polite"></article>
+        <div class="card-controls"><button id="prevBtn" type="button">Previous</button><button id="revealBtn" type="button">Reveal ID</button><button id="nextBtn" type="button">Next</button></div>
+      </section>
+    </section>
+
+    <section class="catalogue" id="catalogue">
+      <div class="section-title"><h2>Catalogue</h2><p>Readable cards first. Source and licence details are available without crowding the learning view.</p></div>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+  <footer>ArbotFlash is an independent project. Public learning UI first; authority, review and expansion systems stay behind the scenes.</footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
