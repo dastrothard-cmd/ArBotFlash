@@ -1,0 +1,48 @@
+{
+  "catalogue_of_life": {
+    "release_key": "2026-05-15-XR",
+    "issued_on": "2026-05-15",
+    "doi": "10.48580/dgxsq",
+    "checklistbank_dataset_key": 315192,
+    "api_base": "https://api.checklistbank.org",
+    "role": "global taxonomic backbone",
+    "notes": "Pinned release metadata only. Taxon matches remain review-required until imported and approved."
+  },
+  "gbif": {
+    "api_base": "https://api.gbif.org/v1",
+    "catalogue_of_life_xr_checklist_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+    "role": "name matching, occurrences, distribution evidence and media discovery",
+    "notes": "Record the retrieval date, dataset and licence for every imported record."
+  },
+  "wikimedia": {
+    "mediawiki_rest_base": "https://en.wikipedia.org/w/rest.php/v1",
+    "wikidata_sparql": "https://query.wikidata.org/sparql",
+    "role": "supplemental readable summaries, multilingual labels and individually licensed media"
+  },
+  "open_tree_of_life": {
+    "api_base": "https://api.opentreeoflife.org/v3",
+    "role": "phylogenetic and tree-of-life cross-reference",
+    "notes": "Pin the Open Tree taxonomy and synthetic-tree versions when imported."
+  },
+  "florabase": {
+    "release_key": "retrieved-2026-06-17-read-only-migration-window",
+    "issued_on": null,
+    "download_url": "https://florabase.dbca.wa.gov.au/",
+    "role": "Western Australian taxon profiles, descriptive fields and regional status",
+    "notes": "Curated profile snapshot retrieved 17 June 2026. Florabase warns that WAHerb and WACensus have been read-only since 1 October 2025 during migration testing, so later APC/Catalogue of Life cross-checking remains required."
+  },
+  "australian_plant_census": {
+    "release_key": "configured-not-imported-2026-06-17",
+    "issued_on": null,
+    "download_url": "https://biodiversity.org.au/nsl/services/apc",
+    "role": "National accepted-name and taxonomic-concept cross-check for Australian vascular plants",
+    "notes": "Registered as a required authority but no APC records are claimed imported in v0.4.0."
+  },
+  "plants_of_the_world_online": {
+    "release_key": "retrieved-2026-06-17-wcvp-live",
+    "issued_on": null,
+    "download_url": "https://powo.science.kew.org/",
+    "role": "Accepted names, synonyms, authorship and native-range cross-check for vascular plants",
+    "notes": "Ten v0.11 records were checked against POWO/WCVP on 17 June 2026. Record-level identifiers and URLs are retained; Catalogue of Life review remains separate."
+  }
+}

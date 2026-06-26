@@ -1,0 +1,73 @@
+[
+  {
+    "key": "tree_id_trainer_v15_23",
+    "role": "verified_initial_seed_and_behaviour_reference",
+    "release_policy": "pin_uploaded_sha256",
+    "authority": "user_supplied_seed_pending_taxonomic_reconciliation",
+    "enabled": true,
+    "sha256": "b94715dd289d17ecf6415121565148cbd671f608a04b531606adf72be55f0b55"
+  },
+  {
+    "key": "catalogue_of_life",
+    "role": "global_taxonomic_backbone",
+    "release_policy": "pin_release",
+    "authority": "primary_global",
+    "enabled": true
+  },
+  {
+    "key": "florabase",
+    "role": "western_australian_taxonomy_profiles_distribution_and_descriptive_evidence",
+    "release_policy": "record_profile_id_retrieval_date_and_service_warning",
+    "authority": "regional_specialist_authority",
+    "enabled": true
+  },
+  {
+    "key": "australian_plant_census",
+    "role": "accepted_australian_vascular_plant_names_and_taxonomic_concepts",
+    "release_policy": "pin_nsl_record_and_retrieval_or_dataset_release",
+    "authority": "national_specialist_authority",
+    "enabled": true
+  },
+  {
+    "key": "plants_of_the_world_online",
+    "role": "global_vascular_plant_names_synonyms_distribution_and_descriptive_evidence",
+    "release_policy": "record_taxon_lsid_or_search_record_and_retrieval_date",
+    "authority": "global_specialist_plant_authority",
+    "enabled": true
+  },
+  {
+    "key": "gbif",
+    "role": "occurrence_distribution_media_discovery",
+    "release_policy": "record_dataset_and_retrieval",
+    "authority": "evidence_provider",
+    "enabled": true
+  },
+  {
+    "key": "wikidata",
+    "role": "multilingual_labels_and_cross_identifiers",
+    "release_policy": "record_entity_and_revision_or_retrieval",
+    "authority": "supplemental",
+    "enabled": true
+  },
+  {
+    "key": "wikipedia",
+    "role": "optional_readable_summary",
+    "release_policy": "record_language_page_and_permanent_revision",
+    "authority": "supplemental_not_taxonomic",
+    "enabled": true
+  },
+  {
+    "key": "wikimedia_commons",
+    "role": "licensed_media_candidates",
+    "release_policy": "record_file_revision_creator_and_license",
+    "authority": "media_provider",
+    "enabled": true
+  },
+  {
+    "key": "open_tree_of_life",
+    "role": "phylogenetic_tree_and_taxonomy_cross_reference",
+    "release_policy": "pin_taxonomy_and_synthetic_tree_release",
+    "authority": "supplemental_phylogenetic",
+    "enabled": true
+  }
+]

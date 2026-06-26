@@ -1,0 +1,2466 @@
+{
+  "sliceKey": "wa-authority-slice-20",
+  "version": "2026-06-17-v2",
+  "reviewStatus": "curated_source_pass",
+  "reviewedAt": "2026-06-17T00:00:00+08:00",
+  "sourceWarning": "Florabase states that WAHerb and WACensus have been read-only since 1 October 2025 while data migration is tested, so recent taxonomic changes may not yet be reflected. ArbotFlash retains this warning and requires later APC/Catalogue of Life cross-checking.",
+  "records": [
+    {
+      "taxonId": "treeid-eucalyptus-marginata",
+      "scientificName": "Eucalyptus marginata",
+      "authorship": "Sm.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "5708"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Myrtales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "endemicStatus": [
+          "Western Australian native"
+        ],
+        "plantForm": [
+          "Tree"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "25–50 m"
+        ],
+        "barkType": [
+          "Fibrous",
+          "Stringy"
+        ],
+        "flowerColour": [
+          "White",
+          "Cream",
+          "Pink"
+        ],
+        "floweringSeason": [
+          "Winter",
+          "Spring",
+          "Summer"
+        ],
+        "substrate": [
+          "Grey sand",
+          "Clay",
+          "Sandy loam",
+          "Laterite"
+        ],
+        "habitat": [
+          "Hills",
+          "Rises"
+        ],
+        "bioregion": [
+          "Jarrah Forest",
+          "Swan Coastal Plain"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "Jarrah is a Western Australian tree recorded by Florabase to about 40 metres high.",
+        "identifying_features": "Rough fibrous bark is a major field character. Florabase records white to cream flowers, sometimes pink-toned.",
+        "habitat": "Recorded on grey sand, clay, sandy loam and laterite, especially on hills and rises.",
+        "phenology": "Flowering is recorded from June through December, sometimes extending into January.",
+        "distribution": "Native to Western Australia and strongly associated with the south-west.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026. A global-backbone and APC cross-check remains pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "5708",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/5708",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 5708, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Greenmount Hill National Park Jarrah Tree.jpg",
+          "category": "whole_form",
+          "title": "Jarrah in Greenmount Hill National Park",
+          "creator": "JarrahTree",
+          "licenceCode": "CC-BY-2.5-AU",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.5/au/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Greenmount_Hill_National_Park_Jarrah_Tree.jpg",
+          "caption": "Mature jarrah in Greenmount Hill National Park, Western Australia.",
+          "capturedAt": "2010-03-13"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-corymbia-calophylla",
+      "scientificName": "Corymbia calophylla",
+      "authorship": "(Lindl.) K.D.Hill & L.A.S.Johnson",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "17104"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Myrtales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "endemicStatus": [
+          "Western Australian native"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "25–50 m",
+          "Over 50 m"
+        ],
+        "barkType": [
+          "Tessellated"
+        ],
+        "flowerColour": [
+          "White",
+          "Pink"
+        ],
+        "floweringSeason": [
+          "Summer",
+          "Autumn"
+        ],
+        "substrate": [
+          "Clay loam",
+          "Sandy clay",
+          "Gravel",
+          "Sand over limestone",
+          "Granite",
+          "Laterite"
+        ],
+        "habitat": [
+          "Flats",
+          "Hills",
+          "Slopes",
+          "Breakaways",
+          "Wetlands",
+          "Drainage lines"
+        ],
+        "bioregion": [
+          "Jarrah Forest",
+          "Swan Coastal Plain",
+          "Warren"
+        ],
+        "exudate": [
+          "Kino"
+        ],
+        "exudateColour": [
+          "Red"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "Marri is usually a large tree, although Florabase notes that it can rarely occur as a mallee.",
+        "identifying_features": "The bark is rough and tessellated. White or pink flowers and large woody fruits are useful field characters.",
+        "habitat": "It occupies a broad range of south-western settings including flats, hills, slopes, breakaways, wetlands and drainage lines on varied soils.",
+        "phenology": "Flowering is recorded from December or January through May.",
+        "distribution": "Native to Western Australia and widespread through much of the south-west.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "exudates": "Marri can produce conspicuous red kino. This is retained as botanical exudate information only, with no grip-product content.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026. A global-backbone and APC cross-check remains pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "17104",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/17104",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 17104, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "The Corymbia Giant.jpg",
+          "category": "whole_form",
+          "title": "The Corymbia Giant",
+          "creator": "Thyacine",
+          "licenceCode": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:The_Corymbia_Giant.jpg",
+          "caption": "The Corymbia Giant, a very large marri tree.",
+          "capturedAt": "2013-08-02"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-eucalyptus-gomphocephala",
+      "scientificName": "Eucalyptus gomphocephala",
+      "authorship": "DC.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "5659"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Myrtales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia",
+          "Swan Coastal Plain"
+        ],
+        "establishment": [
+          "Native",
+          "Naturalised"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "10–25 m",
+          "25–50 m"
+        ],
+        "barkType": [
+          "Fissured"
+        ],
+        "flowerColour": [
+          "White"
+        ],
+        "floweringSeason": [
+          "Summer",
+          "Autumn"
+        ],
+        "substrate": [
+          "Sand over limestone"
+        ],
+        "habitat": [
+          "Coastal plains"
+        ],
+        "bioregion": [
+          "Swan Coastal Plain",
+          "Geraldton Sandplains",
+          "Esperance Plains"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "Tuart is a coastal eucalypt recorded by Florabase as a tree about 10–40 metres high.",
+        "identifying_features": "Florabase describes rough, box-type bark and white flowers.",
+        "habitat": "Characteristically associated with coastal plains and sand over limestone.",
+        "phenology": "Flowering is recorded from January to April.",
+        "distribution": "Florabase records native and naturalised occurrences, including the Swan Coastal Plain, Geraldton Sandplains and Esperance Plains.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026. The mixed native/naturalised status is preserved rather than simplified."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "5659",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/5659",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 5659, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Eucalyptus gomphocephala in Kings Park.jpg",
+          "category": "whole_form",
+          "title": "Tuart in Kings Park",
+          "creator": "Dcoetzee",
+          "licenceCode": "Public-Domain",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_gomphocephala_in_Kings_Park.jpg",
+          "caption": "Tuart in Kings Park, Perth, with the Swan River behind it.",
+          "capturedAt": "2007-04-21"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-eucalyptus-diversicolor",
+      "scientificName": "Eucalyptus diversicolor",
+      "authorship": "F.Muell.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "5625"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Myrtales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "endemicStatus": [
+          "Western Australian native"
+        ],
+        "plantForm": [
+          "Tree"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "25–50 m",
+          "Over 50 m"
+        ],
+        "barkType": [
+          "Smooth"
+        ],
+        "flowerColour": [
+          "White"
+        ],
+        "floweringSeason": [
+          "Autumn",
+          "Spring",
+          "Summer"
+        ],
+        "substrate": [
+          "Sandy loam"
+        ],
+        "habitat": [
+          "Hillsides"
+        ],
+        "bioregion": [
+          "Warren",
+          "Jarrah Forest"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "Karri is a very tall south-western eucalypt; Florabase records trees from about 10 metres to as much as 90 metres.",
+        "identifying_features": "The trunk is characteristically smooth-barked and the flowers are white.",
+        "habitat": "Recorded on sandy loam, particularly on hillsides.",
+        "phenology": "Florabase records flowering in May or from September through summer into February.",
+        "distribution": "Native to Western Australia, especially the high-rainfall south-west and Warren region.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "5625",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/5625",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 5625, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Karri trees in the Boranup Forest.jpg",
+          "category": "whole_form",
+          "title": "Karri trees in Boranup Forest",
+          "creator": "Boyup",
+          "licenceCode": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Karri_trees_in_the_Boranup_Forest.jpg",
+          "caption": "Karri forest in Boranup, Western Australia.",
+          "capturedAt": "2016-01-26",
+          "latitude": -34.129059,
+          "longitude": 115.06643
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-eucalyptus-wandoo",
+      "scientificName": "Eucalyptus wandoo",
+      "authorship": "Blakely",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "5797"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Myrtales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia",
+          "Swan Coastal Plain"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "endemicStatus": [
+          "Western Australian native"
+        ],
+        "plantForm": [
+          "Tree"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "3–10 m",
+          "10–25 m"
+        ],
+        "barkType": [
+          "Smooth"
+        ],
+        "flowerColour": [
+          "White",
+          "Cream"
+        ],
+        "floweringSeason": [
+          "Summer",
+          "Autumn"
+        ],
+        "substrate": [
+          "Sandy loam",
+          "Clay loam",
+          "Gravel",
+          "Laterite",
+          "Granite"
+        ],
+        "habitat": [
+          "Stony rises",
+          "Undulating terrain"
+        ],
+        "bioregion": [
+          "Avon Wheatbelt",
+          "Esperance Plains",
+          "Geraldton Sandplains",
+          "Jarrah Forest",
+          "Mallee",
+          "Swan Coastal Plain"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "Wandoo is a smooth-barked Western Australian tree recorded to about 25 metres high.",
+        "identifying_features": "The bark is smooth and may be powdery or non-powdery; flowers are white to cream.",
+        "habitat": "Recorded on sandy and clay loams, gravel, laterite and granite, often on stony rises and undulating country.",
+        "phenology": "Flowering is recorded from December or January through May.",
+        "distribution": "Native across several south-western bioregions, including the Avon Wheatbelt, Jarrah Forest and Swan Coastal Plain.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "5797",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/5797",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 5797, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Eucalyptus wandoo.JPG",
+          "category": "whole_form",
+          "title": "Flowering Eucalyptus wandoo",
+          "creator": "Jardí Botànic de Barcelona",
+          "licenceCode": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_wandoo.JPG",
+          "caption": "A flowering specimen of Eucalyptus wandoo.",
+          "capturedAt": "2014-09-25"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-agonis-flexuosa",
+      "scientificName": "Agonis flexuosa",
+      "authorship": "(Willd.) Sweet",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "5316"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Myrtales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia",
+          "Swan Coastal Plain"
+        ],
+        "establishment": [
+          "Native",
+          "Naturalised"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "3–10 m"
+        ],
+        "flowerColour": [
+          "White"
+        ],
+        "floweringSeason": [
+          "Winter",
+          "Spring",
+          "Summer"
+        ],
+        "substrate": [
+          "White sand",
+          "Grey sand",
+          "Laterite",
+          "Limestone"
+        ],
+        "habitat": [
+          "Coastal sand dunes",
+          "Granite outcrops",
+          "Limestone areas"
+        ],
+        "bioregion": [
+          "Esperance Plains",
+          "Geraldton Sandplains",
+          "Jarrah Forest",
+          "Swan Coastal Plain",
+          "Warren"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "WA peppermint is a tree or shrub recorded by Florabase to about 10 metres high.",
+        "identifying_features": "The species has a characteristically weeping habit and white flowers; its foliage is aromatic when crushed.",
+        "habitat": "Recorded on white or grey sand, sandy soils, laterite and limestone in coastal dunes, granite outcrops and limestone areas.",
+        "phenology": "Flowering is recorded from July through December.",
+        "distribution": "Florabase records both native and naturalised occurrences in Western Australia.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026. The mixed establishment status is retained."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "5316",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/5316",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 5316, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Agonis Flexuosa as street trees.JPG",
+          "category": "whole_form",
+          "title": "Agonis flexuosa street trees",
+          "creator": "JarrahTree",
+          "licenceCode": "CC-BY-2.5-AU",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.5/au/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Agonis_Flexuosa_as_street_trees.JPG",
+          "caption": "Old Agonis flexuosa street trees in Ascot, Western Australia.",
+          "capturedAt": "2012-05-14"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-allocasuarina-fraseriana",
+      "scientificName": "Allocasuarina fraseriana",
+      "authorship": "(Miq.) L.A.S.Johnson",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "1728"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Fagales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia",
+          "Swan Coastal Plain"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "endemicStatus": [
+          "Western Australian native"
+        ],
+        "plantForm": [
+          "Tree"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "3–10 m",
+          "10–25 m"
+        ],
+        "barkType": [
+          "Fibrous"
+        ],
+        "barkColour": [
+          "Reddish-brown"
+        ],
+        "flowerColour": [
+          "Brown"
+        ],
+        "floweringSeason": [
+          "Autumn",
+          "Winter",
+          "Spring"
+        ],
+        "substrate": [
+          "Lateritic soil",
+          "White sand",
+          "Grey sand",
+          "Yellow sand"
+        ],
+        "habitat": [
+          "Jarrah forest",
+          "Sand dunes"
+        ],
+        "bioregion": [
+          "Jarrah Forest",
+          "Swan Coastal Plain",
+          "Warren"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "Western sheoak is a dioecious tree recorded by Florabase at about 5–15 metres high.",
+        "identifying_features": "The bark is fibrous and reddish-brown. Male and female reproductive structures occur on separate plants.",
+        "habitat": "Recorded on lateritic soils and white, grey or yellow sands in jarrah forest and sand-dune habitats.",
+        "phenology": "Flowering is recorded from May through October.",
+        "distribution": "Native to Western Australia, particularly the Jarrah Forest, Swan Coastal Plain and Warren bioregions.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "1728",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/1728",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 1728, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Allocasuarina fraseriana 2.jpg",
+          "category": "whole_form",
+          "title": "Allocasuarina fraseriana in Albany",
+          "creator": "Hughesdarren",
+          "licenceCode": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Allocasuarina_fraseriana_2.jpg",
+          "caption": "Allocasuarina fraseriana photographed in Albany, Western Australia.",
+          "capturedAt": "2016-12-04"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-banksia-attenuata",
+      "scientificName": "Banksia attenuata",
+      "authorship": "R.Br.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "1800"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Proteales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia",
+          "Swan Coastal Plain"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "endemicStatus": [
+          "Western Australian native"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "Under 3 m",
+          "3–10 m"
+        ],
+        "flowerColour": [
+          "Yellow"
+        ],
+        "flowerStructure": [
+          "Cylindrical flower spike"
+        ],
+        "floweringSeason": [
+          "Spring",
+          "Summer"
+        ],
+        "substrate": [
+          "White sand",
+          "Yellow sand",
+          "Brown sand",
+          "Pale red sand",
+          "Laterite"
+        ],
+        "habitat": [
+          "Sand dunes",
+          "Sandplains"
+        ],
+        "fireResponse": [
+          "Lignotuber resprouter",
+          "Epicormic resprouter"
+        ],
+        "bioregion": [
+          "Swan Coastal Plain",
+          "Geraldton Sandplains",
+          "Jarrah Forest"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "Banksia attenuata is a lignotuberous tree or shrub, ranging from low shrubby forms to trees around 10 metres high.",
+        "identifying_features": "Bright yellow cylindrical flower spikes and narrow leaves are prominent features. Florabase records both lignotuberous and epicormic recovery structures.",
+        "habitat": "Recorded mainly on white, yellow, brown or pale red sands, sometimes over laterite, on dunes and sandplains.",
+        "phenology": "Flowering is recorded from October through summer, sometimes extending into February.",
+        "distribution": "Native to Western Australia and widespread across much of the south-west.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "fire_response": "Florabase identifies a lignotuber and epicormic buds, supporting resprouting after fire.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "1800",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/1800",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 1800, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Banksia attenuata tree.JPG",
+          "category": "whole_form",
+          "title": "Large Banksia attenuata tree",
+          "creator": "Hesperian",
+          "licenceCode": "CC-BY-SA-3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Banksia_attenuata_tree.JPG",
+          "caption": "A large Banksia attenuata in Bold Park, Perth.",
+          "capturedAt": "2009-08-11"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-nuytsia-floribunda",
+      "scientificName": "Nuytsia floribunda",
+      "authorship": "(Labill.) G.Don",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "2401"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Santalales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia",
+          "Swan Coastal Plain"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "endemicStatus": [
+          "Western Australian native"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "3–10 m"
+        ],
+        "barkType": [
+          "Fissured"
+        ],
+        "barkColour": [
+          "Grey-brown"
+        ],
+        "flowerColour": [
+          "Yellow",
+          "Orange"
+        ],
+        "floweringSeason": [
+          "Spring",
+          "Summer"
+        ],
+        "trophicMode": [
+          "Autotroph",
+          "Parasite"
+        ],
+        "symbiosis": [
+          "Root hemiparasite"
+        ],
+        "rootType": [
+          "Haustorial roots"
+        ],
+        "substrate": [
+          "White sand",
+          "Grey sand",
+          "Yellow sand",
+          "Sandy loam",
+          "Gravel over clay",
+          "Granite",
+          "Laterite",
+          "Limestone"
+        ],
+        "habitat": [
+          "Sandplains",
+          "Slopes",
+          "Rock outcrops"
+        ],
+        "bioregion": [
+          "Avon Wheatbelt",
+          "Esperance Plains",
+          "Geraldton Sandplains",
+          "Jarrah Forest",
+          "Mallee",
+          "Swan Coastal Plain",
+          "Warren"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "The Western Australian Christmas tree is a woody root hemiparasite recorded as a tree or shrub to about 10 metres high.",
+        "identifying_features": "Rough grey-brown bark and masses of yellow-orange flowers in late spring and early summer make it highly distinctive.",
+        "habitat": "Recorded on many sandy, gravelly and rocky substrates across sandplains, slopes and the bases of rock outcrops.",
+        "phenology": "Flowering is recorded from October through December or January.",
+        "distribution": "Native to Western Australia and recorded across a broad spread of south-western bioregions.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "ecology": "The plant forms haustorial root connections to host plants and remains photosynthetic, so it is represented as a root hemiparasite rather than a wholly non-photosynthetic parasite.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "2401",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/2401",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 2401, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Christmas tree 01 Gnangarra.jpg",
+          "category": "whole_form",
+          "title": "Western Australian Christmas tree",
+          "creator": "Gnangarra",
+          "licenceCode": "CC-BY-2.5-AU",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.5/au/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Christmas_tree_01_Gnangarra.jpg",
+          "caption": "Nuytsia floribunda flowering around Christmas in Perth.",
+          "capturedAt": "2006-12-19"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-xanthorrhoea-preissii",
+      "scientificName": "Xanthorrhoea preissii",
+      "authorship": "Endl.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "1256"
+      },
+      "classification": {
+        "class": "Liliopsida",
+        "order": "Asparagales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia",
+          "Swan Coastal Plain"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "endemicStatus": [
+          "Western Australian native"
+        ],
+        "plantForm": [
+          "Tree",
+          "Herb"
+        ],
+        "plantWoodiness": [
+          "Tree-like monocot"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "3–10 m"
+        ],
+        "barkType": [
+          "None"
+        ],
+        "flowerColour": [
+          "White",
+          "Cream"
+        ],
+        "flowerStructure": [
+          "Tall flower spike"
+        ],
+        "floweringSeason": [
+          "Winter",
+          "Spring",
+          "Summer"
+        ],
+        "exudate": [
+          "Resin"
+        ],
+        "exudateColour": [
+          "Yellow to amber"
+        ],
+        "substrate": [
+          "Grey sand",
+          "Black sand",
+          "Loam",
+          "Gravelly sandy clay",
+          "Laterite",
+          "Granite"
+        ],
+        "habitat": [
+          "Ranges",
+          "Coastal plain",
+          "Watercourses"
+        ],
+        "bioregion": [
+          "Avon Wheatbelt",
+          "Geraldton Sandplains",
+          "Jarrah Forest",
+          "Swan Coastal Plain",
+          "Warren"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ]
+      },
+      "profileSections": {
+        "summary": "Xanthorrhoea preissii is a perennial tree-like monocot recorded to about 5 metres high, with a trunk that can exceed 3 metres.",
+        "identifying_features": "A dense crown of narrow leaves sits above a dark trunk, and the flowering scape carries a long cream-white spike.",
+        "habitat": "Recorded on sands, loams, gravelly sandy clay, laterite and granite across ranges, the coastal plain and areas near watercourses.",
+        "phenology": "Flowering is recorded in June or from August through December.",
+        "distribution": "Native to Western Australia and widespread through several south-western bioregions.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "exudates": "The species can produce resinous exudate. ArbotFlash retains this as botanical and historical information only.",
+        "data_quality": "Florabase name and descriptive fields were curated into ArbotFlash on 17 June 2026."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "1256",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/1256",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 1256, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Xanthorrhoea preissii.jpg",
+          "category": "whole_form",
+          "title": "Xanthorrhoea preissii at Wireless Hill",
+          "creator": "Hesperian",
+          "licenceCode": "CC-BY-SA-3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Xanthorrhoea_preissii.jpg",
+          "caption": "Xanthorrhoea preissii at Wireless Hill Park, Perth.",
+          "capturedAt": "2009-08-01"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-acacia-acuminata",
+      "scientificName": "Acacia acuminata",
+      "authorship": "Benth.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "3200"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Fabales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native",
+          "Naturalised"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "Under 3 m",
+          "3–10 m",
+          "10–25 m"
+        ],
+        "flowerColour": [
+          "Yellow"
+        ],
+        "floweringSeason": [
+          "Winter",
+          "Spring"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "bioregion": [
+          "Avon Wheatbelt",
+          "Coolgardie",
+          "Esperance Plains",
+          "Geraldton Sandplains",
+          "Great Victoria Desert",
+          "Jarrah Forest",
+          "Mallee",
+          "Murchison",
+          "Nullarbor",
+          "Swan Coastal Plain",
+          "Yalgoo"
+        ]
+      },
+      "profileSections": {
+        "summary": "Raspberry Jam Wattle is a woody shrub or tree recorded from about 1 to 7 metres high, occasionally reaching about 12 metres.",
+        "identifying_features": "Its yellow flowering display is recorded from July to October. Florabase notes that it occupies a broad variety of soils and habitats.",
+        "habitat": "Recorded across varied soils and habitats rather than being restricted to one substrate type.",
+        "phenology": "Flowering is recorded from July through October.",
+        "distribution": "Florabase records a broad Western Australian range across numerous inland and south-western bioregions, including the Avon Wheatbelt, Jarrah Forest and Swan Coastal Plain.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia and as native in part of its range but naturalised elsewhere.",
+        "data_quality": "Florabase name and descriptive fields from profile 3200 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "3200",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/3200",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 3200, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Acacia acuminata flowers and foliage.jpg",
+          "category": "flowers",
+          "title": "Acacia acuminata flowers and foliage",
+          "creator": "Hughesdarren",
+          "licenceCode": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Acacia_acuminata_flowers_and_foliage.jpg",
+          "caption": "Yellow flowers and foliage of Acacia acuminata.",
+          "capturedAt": "2021-09-28"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-acacia-cyclops",
+      "scientificName": "Acacia cyclops",
+      "authorship": "G.Don",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "3282"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Fabales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "Under 3 m",
+          "3–10 m"
+        ],
+        "flowerColour": [
+          "Yellow"
+        ],
+        "floweringSeason": [
+          "Spring",
+          "Summer",
+          "Autumn"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "substrate": [
+          "White sand",
+          "Grey sand",
+          "Limestone"
+        ],
+        "habitat": [
+          "Coastal dunes"
+        ],
+        "bioregion": [
+          "Coolgardie",
+          "Esperance Plains",
+          "Geraldton Sandplains",
+          "Hampton",
+          "Jarrah Forest",
+          "Mallee",
+          "Swan Coastal Plain",
+          "Warren"
+        ]
+      },
+      "profileSections": {
+        "summary": "Coastal Wattle is usually a dense shrub and only occasionally a small tree, generally 0.8 to 4 metres high and sometimes about 7 metres.",
+        "identifying_features": "Florabase records yellow flowers and a dense coastal growth form. The selected diagnostic image shows the distinctive curved pods and conspicuous red-orange seed arils.",
+        "habitat": "Associated with white or grey sand, coastal dunes and limestone.",
+        "phenology": "Flowering is recorded from September to December and may also occur from January to May.",
+        "distribution": "Native to Western Australia, especially coastal and near-coastal regions spanning the south-west and south coast.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 3282 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "3282",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/3282",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 3282, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Acacia cyclops 5Dsr 2862.jpg",
+          "category": "fruit",
+          "title": "Acacia cyclops opened pods",
+          "creator": "SAplants",
+          "licenceCode": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Acacia_cyclops_5Dsr_2862.jpg",
+          "caption": "Opened pods of Acacia cyclops photographed in South Africa, outside the species’ native Western Australian range.",
+          "capturedAt": "2016-05-09"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-acacia-saligna",
+      "scientificName": "Acacia saligna",
+      "authorship": "(Labill.) H.L.Wendl.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "3527"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Fabales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "Under 3 m",
+          "3–10 m"
+        ],
+        "flowerColour": [
+          "Yellow"
+        ],
+        "floweringSeason": [
+          "Winter",
+          "Spring"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "bioregion": [
+          "Avon Wheatbelt",
+          "Coolgardie",
+          "Esperance Plains",
+          "Geraldton Sandplains",
+          "Jarrah Forest",
+          "Mallee",
+          "Murchison",
+          "Swan Coastal Plain",
+          "Warren",
+          "Yalgoo"
+        ]
+      },
+      "profileSections": {
+        "summary": "Golden Wreath Wattle is a dense, often weeping shrub or tree usually 1.5 to 6 metres high and occasionally about 9 metres.",
+        "identifying_features": "The often-weeping form and bright yellow flowering display are useful field characters.",
+        "habitat": "Florabase records the species across a wide variety of habitats.",
+        "phenology": "Flowering is recorded from July through November.",
+        "distribution": "Native to Western Australia and recorded across a broad set of south-western and inland bioregions.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 3527 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "3527",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/3527",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 3527, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Acacia saligna - Orange wattle.jpg",
+          "category": "whole_form",
+          "title": "Acacia saligna whole form",
+          "creator": "Zeynel Cebeci",
+          "licenceCode": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Acacia_saligna_-_Orange_wattle.jpg",
+          "caption": "Whole form of Acacia saligna photographed in cultivation in Türkiye, outside its native Western Australian range.",
+          "capturedAt": "2015-02-28"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-banksia-grandis",
+      "scientificName": "Banksia grandis",
+      "authorship": "Willd.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "1819"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Proteales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "Under 3 m",
+          "3–10 m"
+        ],
+        "flowerColour": [
+          "Yellow",
+          "Green"
+        ],
+        "floweringSeason": [
+          "Spring",
+          "Summer"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "substrate": [
+          "White sand",
+          "Grey sand",
+          "Laterite"
+        ],
+        "bioregion": [
+          "Geraldton Sandplains",
+          "Swan Coastal Plain",
+          "Avon Wheatbelt",
+          "Jarrah Forest",
+          "Warren",
+          "Esperance Plains"
+        ],
+        "fireResponse": [
+          "Epicormic resprouter"
+        ]
+      },
+      "profileSections": {
+        "summary": "Bull Banksia is a tree or, in south-coastal areas, a shrub, generally 1.5 to 10 metres high.",
+        "identifying_features": "Large divided leaves and broad yellow-green flower spikes are prominent characters. Florabase records epicormic buds.",
+        "habitat": "Recorded on white or grey sand and laterite.",
+        "phenology": "Flowering is recorded mainly from September to December, sometimes extending into January.",
+        "distribution": "Occurs in the South-west Botanical Province across bioregions including the Jarrah Forest, Swan Coastal Plain and Warren.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 1819 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "1819",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/1819",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 1819, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Banksia grandis-IMG 9320.JPG",
+          "category": "flowers",
+          "title": "Banksia grandis flower spike",
+          "creator": "Christer Johansson",
+          "licenceCode": "CC-BY-3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Banksia_grandis-IMG_9320.JPG",
+          "caption": "Flower spike of Banksia grandis photographed in cultivation at Bergianska botanical garden, Sweden.",
+          "capturedAt": "2015-04-04"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-banksia-ilicifolia",
+      "scientificName": "Banksia ilicifolia",
+      "authorship": "R.Br.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "1822"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Proteales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "3–10 m",
+          "10–25 m"
+        ],
+        "flowerColour": [
+          "Red",
+          "Orange",
+          "Yellow",
+          "Cream"
+        ],
+        "floweringSeason": [
+          "Summer",
+          "Autumn",
+          "Winter",
+          "Spring"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "substrate": [
+          "White sand",
+          "Grey sand",
+          "Black sandy loam",
+          "Limestone",
+          "Granite",
+          "Quartz"
+        ],
+        "habitat": [
+          "Consolidated dunes",
+          "Low-lying flats"
+        ],
+        "fireResponse": [
+          "Epicormic resprouter"
+        ]
+      },
+      "profileSections": {
+        "summary": "Holly-leaf Banksia is an erect tree or shrub reaching about 12 metres high.",
+        "identifying_features": "Holly-like lobed leaves and flower heads that can shift through cream, yellow, orange and red are strong field characters. Florabase records epicormic buds.",
+        "habitat": "Found on white or grey sand, black sandy loam, limestone, granite or quartz, including consolidated dunes and low-lying flats.",
+        "phenology": "Florabase records flowering across much of the year.",
+        "distribution": "Native to Western Australia and associated with the south-west.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 1822 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "1822",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/1822",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 1822, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Banksia ilicifolia inflorescence 2.jpg",
+          "category": "flowers",
+          "title": "Banksia ilicifolia inflorescence",
+          "creator": "Hesperian",
+          "licenceCode": "CC-BY-SA-3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Banksia_ilicifolia_inflorescence_2.jpg",
+          "caption": "Inflorescence of Banksia ilicifolia in Beeliar Regional Park, Perth, Western Australia.",
+          "capturedAt": "2009-08-23"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-banksia-littoralis",
+      "scientificName": "Banksia littoralis",
+      "authorship": "R.Br.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "1830"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Proteales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "Under 3 m",
+          "3–10 m",
+          "10–25 m"
+        ],
+        "flowerColour": [
+          "Yellow",
+          "Orange"
+        ],
+        "floweringSeason": [
+          "Autumn",
+          "Winter"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "substrate": [
+          "Grey peaty sand",
+          "Black peaty sand"
+        ],
+        "habitat": [
+          "Seasonally damp areas",
+          "Watercourses"
+        ],
+        "bioregion": [
+          "Geraldton Sandplains",
+          "Swan Coastal Plain",
+          "Avon Wheatbelt",
+          "Jarrah Forest",
+          "Warren",
+          "Esperance Plains"
+        ],
+        "fireResponse": [
+          "Epicormic resprouter"
+        ]
+      },
+      "profileSections": {
+        "summary": "Swamp Banksia is a tree or shrub generally 1.5 to 12 metres high.",
+        "identifying_features": "Yellow to orange-yellow flower spikes and its preference for damp ground are useful field clues. Florabase records epicormic buds.",
+        "habitat": "Associated with grey or black peaty sand in low-lying, seasonally damp areas and along watercourses.",
+        "phenology": "Flowering is recorded from March through August.",
+        "distribution": "Occurs in the South-west Botanical Province across bioregions including the Swan Coastal Plain, Jarrah Forest and Warren.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 1830 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "1830",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/1830",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 1830, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Banksia littoralis 01 gnangarra.jpg",
+          "category": "flowers",
+          "title": "Banksia littoralis flowering",
+          "creator": "Gnangarra",
+          "licenceCode": "CC-BY-2.5-AU",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.5/au/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Banksia_littoralis_01_gnangarra.jpg",
+          "caption": "Flowering Banksia littoralis photographed in the Banksia garden at Kings Park, Western Australia.",
+          "capturedAt": "2006-08-14"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-banksia-menziesii",
+      "scientificName": "Banksia menziesii",
+      "authorship": "R.Br.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "1834"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Proteales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "Under 3 m",
+          "3–10 m"
+        ],
+        "flowerColour": [
+          "Pink",
+          "Red",
+          "Yellow"
+        ],
+        "floweringSeason": [
+          "Summer",
+          "Autumn",
+          "Winter",
+          "Spring"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "substrate": [
+          "White sand",
+          "Grey sand",
+          "Yellow sand"
+        ],
+        "bioregion": [
+          "Geraldton Sandplains",
+          "Swan Coastal Plain",
+          "Avon Wheatbelt",
+          "Jarrah Forest"
+        ],
+        "fireResponse": [
+          "Lignotuber resprouter",
+          "Epicormic resprouter"
+        ]
+      },
+      "profileSections": {
+        "summary": "Firewood Banksia is a tree or shrub generally 1.3 to 7 metres high.",
+        "identifying_features": "Its large flower spikes may be pink, red or yellow. Florabase records regeneration from a lignotuber or epicormic buds.",
+        "habitat": "Recorded on white, grey or yellow sand.",
+        "phenology": "Flowering is recorded from February through October.",
+        "distribution": "Occurs in the South-west Botanical Province, including the Geraldton Sandplains, Swan Coastal Plain, Avon Wheatbelt and Jarrah Forest.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 1834 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "1834",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/1834",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 1834, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Banksia menziesii 1 gnangarra.jpg",
+          "category": "flowers",
+          "title": "Banksia menziesii flower spike",
+          "creator": "Gnangarra",
+          "licenceCode": "CC-BY-2.5-AU",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.5/au/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Banksia_menziesii_1_gnangarra.jpg",
+          "caption": "Flower spike of Banksia menziesii photographed at Jandakot Botanical Gardens, Western Australia.",
+          "capturedAt": "2006-06-15"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-banksia-prionotes",
+      "scientificName": "Banksia prionotes",
+      "authorship": "Lindl.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "1842"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Proteales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree",
+          "Shrub"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "3–10 m"
+        ],
+        "flowerColour": [
+          "Cream",
+          "Orange"
+        ],
+        "floweringSeason": [
+          "Summer",
+          "Autumn",
+          "Winter"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "substrate": [
+          "White sand",
+          "Grey sand",
+          "Yellow sand",
+          "Sandy loam",
+          "Brown clay",
+          "Laterite",
+          "Granite"
+        ],
+        "habitat": [
+          "Sandplains",
+          "Sand dunes",
+          "Undulating slopes"
+        ],
+        "bioregion": [
+          "Carnarvon",
+          "Yalgoo",
+          "Geraldton Sandplains",
+          "Swan Coastal Plain",
+          "Avon Wheatbelt",
+          "Jarrah Forest",
+          "Mallee"
+        ]
+      },
+      "profileSections": {
+        "summary": "Acorn Banksia is a non-lignotuberous tree or shrub reaching about 10 metres high.",
+        "identifying_features": "Cream-and-orange flower spikes and deeply toothed leaves are prominent field characters. Florabase specifically describes the taxon as non-lignotuberous.",
+        "habitat": "Recorded on several sandy and gravelly substrates, sandy loam, brown clay, laterite and granite, especially on sandplains, dunes and undulating slopes.",
+        "phenology": "Flowering is recorded from February through August.",
+        "distribution": "Occurs across both the Eremaean and South-west Botanical Provinces, including the Swan Coastal Plain, Geraldton Sandplains and Avon Wheatbelt.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 1842 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "1842",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/1842",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 1842, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Banksia prionotes 3 gnangarra.jpg",
+          "category": "flowers",
+          "title": "Banksia prionotes flowering",
+          "creator": "Gnangarra",
+          "licenceCode": "CC-BY-2.5-AU",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.5/au/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Banksia_prionotes_3_gnangarra.jpg",
+          "caption": "Flower spike of Banksia prionotes at Reabold Hill, Bold Park, Western Australia.",
+          "capturedAt": "2006-04-03"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-eucalyptus-accedens",
+      "scientificName": "Eucalyptus accedens",
+      "authorship": "W.Fitzg.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "5545"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Myrtales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "Under 3 m",
+          "3–10 m",
+          "10–25 m"
+        ],
+        "flowerColour": [
+          "White",
+          "Cream",
+          "Yellow"
+        ],
+        "floweringSeason": [
+          "Summer",
+          "Autumn"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "substrate": [
+          "Lateritic gravel",
+          "Clay loam"
+        ],
+        "habitat": [
+          "Lateritic breakaways",
+          "Stony ridges"
+        ],
+        "bioregion": [
+          "Avon Wheatbelt",
+          "Geraldton Sandplains",
+          "Jarrah Forest",
+          "Swan Coastal Plain"
+        ],
+        "barkType": [
+          "Smooth"
+        ]
+      },
+      "profileSections": {
+        "summary": "Powderbark Wandoo is a tree generally 2.5 to 15 metres high and occasionally about 25 metres.",
+        "identifying_features": "Smooth pink-white bark is a defining field feature. Flowers are white to cream, sometimes with a yellow tone.",
+        "habitat": "Usually found on lateritic breakaways or stony ridges in lateritic gravelly soils or clay loam.",
+        "phenology": "Flowering is recorded in December or from January through April.",
+        "distribution": "Native to Western Australia and recorded in the Avon Wheatbelt, Geraldton Sandplains, Jarrah Forest and Swan Coastal Plain.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 5545 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "5545",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/5545",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 5545, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Avon vally gnangarra-35.jpg",
+          "category": "whole_form",
+          "title": "Eucalyptus accedens in Avon Valley National Park",
+          "creator": "Gnangarra",
+          "licenceCode": "CC-BY-2.5-AU",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.5/au/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Avon_vally_gnangarra-35.jpg",
+          "caption": "Powderbark Wandoo in Avon Valley National Park, Western Australia; the landscape image also contains grass trees and other vegetation.",
+          "capturedAt": "2013-05-08"
+        }
+      ]
+    },
+    {
+      "taxonId": "treeid-eucalyptus-patens",
+      "scientificName": "Eucalyptus patens",
+      "authorship": "Benth.",
+      "acceptedNameStatus": "Current in Florabase",
+      "externalIdentifiers": {
+        "florabase": "5739"
+      },
+      "classification": {
+        "class": "Magnoliopsida",
+        "order": "Myrtales"
+      },
+      "traits": {
+        "continent": [
+          "Australia"
+        ],
+        "country": [
+          "Australia"
+        ],
+        "region": [
+          "Western Australia",
+          "South-west Western Australia"
+        ],
+        "establishment": [
+          "Native"
+        ],
+        "regionalStatus": [
+          "Not threatened in Western Australia"
+        ],
+        "plantForm": [
+          "Tree"
+        ],
+        "plantWoodiness": [
+          "Woody"
+        ],
+        "plantLongevity": [
+          "Perennial"
+        ],
+        "heightBand": [
+          "3–10 m",
+          "10–25 m"
+        ],
+        "flowerColour": [
+          "White",
+          "Cream"
+        ],
+        "floweringSeason": [
+          "Winter",
+          "Spring",
+          "Summer"
+        ],
+        "hasDescription": [
+          "Sourced description available"
+        ],
+        "hasDistribution": [
+          "Regional distribution evidence available"
+        ],
+        "hasTraits": [
+          "Identification traits available"
+        ],
+        "verifiedImages": "Available",
+        "mediaStatus": "Licensed media verified",
+        "profileStatus": "Partially enriched",
+        "taxonomyReconciliation": "Partially matched",
+        "sourceDataset": [
+          "Florabase",
+          "Wikimedia Commons"
+        ],
+        "lastReviewedBand": [
+          "Reviewed in 2026"
+        ],
+        "substrate": [
+          "Gravelly soils",
+          "Sandy clay",
+          "Loam"
+        ],
+        "habitat": [
+          "Depressions",
+          "Stream banks",
+          "Valleys"
+        ],
+        "bioregion": [
+          "Jarrah Forest",
+          "Swan Coastal Plain",
+          "Warren"
+        ],
+        "barkType": [
+          "Fissured"
+        ]
+      },
+      "profileSections": {
+        "summary": "Swan River Blackbutt is a tree generally 3 to 25 metres high.",
+        "identifying_features": "The bark is rough and longitudinally furrowed, making the trunk a strong diagnostic feature. Flowers are white to cream.",
+        "habitat": "Recorded on gravelly soils, sandy clay and loam in depressions, stream banks and valleys.",
+        "phenology": "Flowering is recorded in July and August and again from November through February.",
+        "distribution": "Native to Western Australia and recorded in the Jarrah Forest, Swan Coastal Plain and Warren bioregions.",
+        "conservation_status": "Florabase lists the taxon as not threatened in Western Australia.",
+        "data_quality": "Florabase name and descriptive fields from profile 5739 were curated into ArbotFlash on 17 June 2026. Australian Plant Census and global-backbone checks remain pending."
+      },
+      "source": {
+        "key": "florabase",
+        "profileId": "5739",
+        "url": "https://florabase.dbca.wa.gov.au/browse/profile/5739",
+        "citation": "Western Australian Herbarium (1998–). Florabase—the Western Australian flora. Taxon profile 5739, accessed 17 June 2026."
+      },
+      "media": [
+        {
+          "fileName": "Eucalyptus patens bark.jpg",
+          "category": "bark",
+          "title": "Eucalyptus patens bark",
+          "creator": "Geoff Derrin",
+          "licenceCode": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_patens_bark.jpg",
+          "caption": "Rough, furrowed bark of Eucalyptus patens at Helms Arboretum north of Esperance, Western Australia.",
+          "capturedAt": "2019-10-11"
+        }
+      ]
+    }
+  ]
+}
