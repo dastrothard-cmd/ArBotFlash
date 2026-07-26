@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "policy": {
+    "automaticPublication": false,
+    "requireHumanReviewForAcceptedNameChanges": true,
+    "retainCompetingClassifications": true
+  },
+  "sources": [
+    {
+      "id": "catalogue-of-life",
+      "name": "Catalogue of Life",
+      "scope": "global taxonomic backbone",
+      "priority": 100,
+      "watchMode": "archive-headers",
+      "releasePage": "https://www.catalogueoflife.org/data/download",
+      "archiveUrl": "https://download.checklistbank.org/col/latest_dwca.zip",
+      "format": "dwca",
+      "licence": "CC BY 4.0 unless a constituent dataset specifies otherwise",
+      "notes": "Pin a ChecklistBank dataset key and release DOI before ingestion. Never ingest the moving latest archive directly into a published release."
+    },
+    {
+      "id": "wcvp",
+      "name": "World Checklist of Vascular Plants",
+      "scope": "global vascular plant taxonomy",
+      "priority": 110,
+      "watchMode": "archive-headers",
+      "releasePage": "https://sftp.kew.org/pub/data-repositories/WCVP/",
+      "archiveUrl": "https://sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip",
+      "format": "dwca",
+      "licence": "Use the licence and citation included with the pinned WCVP release",
+      "notes": "Primary vascular-plant taxonomic overlay. Preserve source treatment when it differs from other backbones."
+    },
+    {
+      "id": "powo",
+      "name": "Plants of the World Online",
+      "scope": "plant profiles, distribution and media links",
+      "priority": 90,
+      "watchMode": "landing-page",
+      "releasePage": "https://powo.science.kew.org/",
+      "format": "reviewed-links",
+      "licence": "Source-specific; cite POWO and underlying datasets",
+      "notes": "Use for reviewed profile evidence and links, not as an unversioned bulk overwrite."
+    },
+    {
+      "id": "ipni",
+      "name": "International Plant Names Index",
+      "scope": "vascular plant nomenclature",
+      "priority": 95,
+      "watchMode": "landing-page",
+      "releasePage": "https://www.ipni.org/",
+      "format": "reviewed-api-or-export",
+      "licence": "Confirm current IPNI terms for each integration",
+      "notes": "Nomenclatural authority. A published name is not automatically the accepted taxonomic concept."
+    },
+    {
+      "id": "apni-apc",
+      "name": "Australian Plant Name Index and Australian Plant Census",
+      "scope": "Australian nomenclature and accepted regional taxonomy",
+      "priority": 120,
+      "watchMode": "landing-page",
+      "releasePage": "https://biodiversity.org.au/nsl/services/apni",
+      "format": "reviewed-regional-overlay",
+      "licence": "Confirm National Species List terms and attribution for each export",
+      "notes": "APNI records names and usage; APC supplies nationally accepted Australian concepts. Keep those roles distinct."
+    }
+  ]
+}
