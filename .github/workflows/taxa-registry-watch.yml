@@ -1,0 +1,60 @@
+name: Taxonomy Release Watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 3 * * 1'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check authority release signals
+        run: |
+          cp services/taxa_registry/state/source-state.json /tmp/taxa-source-state.json
+          python services/taxa_registry/taxonomy_watch.py \
+            --sources services/taxa_registry/config/sources.json \
+            --state /tmp/taxa-source-state.json \
+            --report /tmp/taxonomy-watch-report.json \
+            --fail-on-error
+      - name: Prepare review change
+        id: review
+        run: |
+          if python -c 'import json; raise SystemExit(0 if json.load(open("/tmp/taxonomy-watch-report.json"))["changed"] else 1)'; then
+            stamp="$(date -u +%Y-%m-%dT%H%M%SZ)"
+            mkdir -p services/taxa_registry/reports
+            cp /tmp/taxa-source-state.json services/taxa_registry/state/source-state.json
+            cp /tmp/taxonomy-watch-report.json "services/taxa_registry/reports/${stamp}.json"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "stamp=$stamp" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Open taxonomy review pull request
+        if: steps.review.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STAMP: ${{ steps.review.outputs.stamp }}
+        run: |
+          branch="automation/taxonomy-watch-${GITHUB_RUN_ID}"
+          git config user.name "Arbot Taxa Registry"
+          git config user.email "allfieldtechnical@gmail.com"
+          git switch -c "$branch"
+          git add services/taxa_registry/state/source-state.json services/taxa_registry/reports
+          git commit -m "Taxonomy authority release change detected ${STAMP}"
+          git push --set-upstream origin "$branch"
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "Review taxonomy authority changes ${STAMP}" \
+            --body "The automated watcher detected changed upstream release metadata. No taxonomy has been published. Review the attached report, pin the authority release, verify licence and citation, ingest it into staging, compare taxonomy events and approve any accepted-name changes manually."
