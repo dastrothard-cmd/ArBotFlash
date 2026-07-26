@@ -1,0 +1,135 @@
+openapi: 3.1.0
+info:
+  title: Arbot Taxa Registry API
+  version: 0.1.0
+  description: Versioned professional taxonomy search and profile API for Arbot products.
+servers:
+  - url: https://taxa.arbot.example/v1
+paths:
+  /taxa/search:
+    get:
+      summary: Search reviewed taxon concepts and names
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema: { type: string, minLength: 2, maxLength: 200 }
+        - name: region
+          in: query
+          schema: { type: string, maxLength: 20 }
+        - name: authority
+          in: query
+          schema: { type: string, default: global }
+        - name: arboreal
+          in: query
+          schema: { type: boolean, default: true }
+        - name: limit
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 100, default: 25 }
+      responses:
+        '200':
+          description: Matching concepts
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [registryRelease, results]
+                properties:
+                  registryRelease: { type: string }
+                  results:
+                    type: array
+                    items: { $ref: '#/components/schemas/TaxonSearchResult' }
+  /taxa/{conceptId}:
+    get:
+      summary: Get a reviewed taxon concept and source treatments
+      parameters:
+        - name: conceptId
+          in: path
+          required: true
+          schema: { type: string }
+        - name: region
+          in: query
+          schema: { type: string }
+        - name: authority
+          in: query
+          schema: { type: string, default: global }
+      responses:
+        '200':
+          description: Taxon concept profile
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/TaxonProfile' }
+        '404': { description: Concept not found }
+  /releases:
+    get:
+      summary: List published registry and source releases
+      responses:
+        '200':
+          description: Release manifest
+  /taxonomy-events:
+    get:
+      summary: List reviewed name and classification changes
+      parameters:
+        - name: since
+          in: query
+          schema: { type: string, format: date-time }
+        - name: reviewStatus
+          in: query
+          schema: { type: string }
+      responses:
+        '200':
+          description: Taxonomy events
+components:
+  schemas:
+    TaxonSearchResult:
+      type: object
+      required: [id, acceptedName, rank, arborealStatus]
+      properties:
+        id: { type: string }
+        acceptedName: { type: string }
+        authorship: { type: string }
+        commonName: { type: string }
+        aliases:
+          type: array
+          items: { type: string }
+        family: { type: string }
+        genus: { type: string }
+        rank: { type: string }
+        arborealStatus:
+          type: string
+          enum: [tree, tree-like, not-tree, unknown]
+        regionCodes:
+          type: array
+          items: { type: string }
+        authorityProfile: { type: string }
+        profileStatus: { type: string }
+    TaxonProfile:
+      allOf:
+        - $ref: '#/components/schemas/TaxonSearchResult'
+        - type: object
+          properties:
+            treatments:
+              type: array
+              items:
+                type: object
+                properties:
+                  source: { type: string }
+                  release: { type: string }
+                  scientificName: { type: string }
+                  status: { type: string }
+                  sourceTaxonId: { type: string }
+                  sourceUrl: { type: string }
+            vernacularNames:
+              type: array
+              items:
+                type: object
+                properties:
+                  name: { type: string }
+                  language: { type: string }
+                  region: { type: string }
+            traits:
+              type: object
+              additionalProperties: true
+            citations:
+              type: array
+              items: { type: string }
