@@ -56,6 +56,17 @@ def request_headers(url: str, timeout: int) -> dict[str, Any]:
         return {**signature_fields, "signature": signature}
 
 
+def source_watch_target(source: dict[str, Any]) -> str:
+    watch_mode = source.get("watchMode", "manual")
+    if watch_mode == "archive-headers":
+        return source.get("archiveUrl", "")
+    if watch_mode == "landing-page":
+        return source.get("releasePage", "")
+    if watch_mode == "manual":
+        return ""
+    raise ValueError(f"unsupported watchMode for {source.get('id', '<unknown>')}: {watch_mode}")
+
+
 def load_json(path: Path, fallback: Any) -> Any:
     if not path.exists():
         return fallback
@@ -85,7 +96,7 @@ def check_sources(args: argparse.Namespace) -> int:
         if not source_id:
             continue
         watch_mode = source.get("watchMode", "manual")
-        target = source.get("archiveUrl") if watch_mode == "archive-headers" else source.get("releasePage")
+        target = source_watch_target(source)
         if not target:
             current_sources[source_id] = {
                 "checkedAt": checked_at,
