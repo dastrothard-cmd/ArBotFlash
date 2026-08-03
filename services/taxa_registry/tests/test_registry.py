@@ -9,6 +9,7 @@ import unittest
 import zipfile
 from argparse import Namespace
 from pathlib import Path
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -144,6 +145,37 @@ class RegistryTests(unittest.TestCase):
             payload = json.loads(report.read_text(encoding="utf-8"))
             self.assertTrue(payload["publicationBlocked"])
             self.assertEqual(payload["changeCount"], 1)
+
+    def test_watch_skips_manual_sources_even_with_reference_urls(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            sources = root / "sources.json"
+            state = root / "state.json"
+            report = root / "report.json"
+            sources.write_text(json.dumps({
+                "sources": [{
+                    "id": "manual-reference",
+                    "name": "Manual Reference",
+                    "watchMode": "manual",
+                    "releasePage": "https://example.test/not-ci-watchable",
+                }]
+            }), encoding="utf-8")
+            args = Namespace(
+                sources=str(sources),
+                state=str(state),
+                report=str(report),
+                timeout=5,
+                report_first_seen=True,
+                fail_on_error=True,
+            )
+            with mock.patch.object(WATCH, "request_headers", side_effect=AssertionError("manual sources must not be probed")):
+                self.assertEqual(WATCH.check_sources(args), 0)
+            payload = json.loads(report.read_text(encoding="utf-8"))
+            state_payload = json.loads(state.read_text(encoding="utf-8"))
+            self.assertFalse(payload["changed"])
+            self.assertEqual(payload["errorCount"], 0)
+            self.assertTrue(payload["publicationBlocked"])
+            self.assertEqual(state_payload["sources"]["manual-reference"]["status"], "manual")
 
 
 if __name__ == "__main__":

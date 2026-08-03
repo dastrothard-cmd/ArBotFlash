@@ -35,11 +35,11 @@
       "name": "Plants of the World Online",
       "scope": "plant profiles, distribution and media links",
       "priority": 90,
-      "watchMode": "landing-page",
+      "watchMode": "manual",
       "releasePage": "https://powo.science.kew.org/",
       "format": "reviewed-links",
       "licence": "Source-specific; cite POWO and underlying datasets",
-      "notes": "Use for reviewed profile evidence and links, not as an unversioned bulk overwrite."
+      "notes": "Use for reviewed profile evidence and links, not as an unversioned bulk overwrite. Manual review only because the public site is protected by bot-challenge controls and does not provide a CI-safe release signal."
     },
     {
       "id": "ipni",
@@ -57,11 +57,11 @@
       "name": "Australian Plant Name Index and Australian Plant Census",
       "scope": "Australian nomenclature and accepted regional taxonomy",
       "priority": 120,
-      "watchMode": "landing-page",
+      "watchMode": "manual",
       "releasePage": "https://biodiversity.org.au/nsl/services/apni",
       "format": "reviewed-regional-overlay",
       "licence": "Confirm National Species List terms and attribution for each export",
-      "notes": "APNI records names and usage; APC supplies nationally accepted Australian concepts. Keep those roles distinct."
+      "notes": "APNI records names and usage; APC supplies nationally accepted Australian concepts. Keep those roles distinct. Manual review only because the public NSL services endpoint is protected by WAF challenge controls and does not provide a CI-safe release signal."
     }
   ]
 }
